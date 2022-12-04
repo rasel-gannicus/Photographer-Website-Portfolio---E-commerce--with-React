@@ -5,7 +5,7 @@ import bannerImg from '../../../utilities/img/bg.png';
 const Banner = () => {
     return (
         <div className='banner-div container'>
-            <div className="row">
+            <div className="row g-3">
             <div className="col-lg-6">
                 <div className="h-100">
                     <div className="banner-left h-100">

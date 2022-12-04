@@ -1,13 +1,9 @@
 
 
 .banner-div{
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    /* width: 90%; */
     margin: auto;
     padding: 0 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 .banner-left{
     display: flex;
