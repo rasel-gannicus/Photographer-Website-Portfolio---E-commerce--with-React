@@ -27,3 +27,12 @@
 .banner-right img{
     width: 500px;
 }
+
+@media only screen and (max-width:600px){
+    .banner-div{
+        width: 90%;
+    }
+    .banner-right img{
+        width: 100%;
+    }
+}
