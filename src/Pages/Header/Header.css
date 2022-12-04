@@ -1,11 +1,8 @@
 
-.header-div a.active {
-    color: orange;
-    border-bottom: 2px solid orange;
-  }
+
 
 .header-div{
-    padding: 15px 10px;
+    padding: 20px 10px;
 }
 .header-div a{
     text-decoration: none;
@@ -13,4 +10,15 @@
     margin: 0 25px;
     font-size: 20px;
     font-weight: 500;
-  }
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+.header-div a:hover {
+    color: black;
+}
+.header-div a.active{
+    background: #292929;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.5);
+}
