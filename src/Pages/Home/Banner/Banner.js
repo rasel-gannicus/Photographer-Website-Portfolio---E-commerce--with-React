@@ -11,8 +11,9 @@ const Banner = () => {
                         <div className="banner-left h-100">
                             <div className="banner-left-header">
                                 <p>Hi There</p>
-                                <h2>I am Jonathan Wick</h2>
+                                <h1><span className="special-color"></span>I am Jonathan Wick</h1>
                             </div>
+                            <p>A Professional Award Winning PhotoGrapher</p>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,12 @@
     justify-content: center;
     align-items: center;
 }
+.banner-left h1{
+    
+}
+.special-color{
+    color: #2D3F4D;
+}
 .banner-left-header{
     display: flex;
     justify-content: center;
