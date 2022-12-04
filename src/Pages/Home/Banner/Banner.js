@@ -4,7 +4,8 @@ import bannerImg from '../../../utilities/img/banner-bg.png';
 
 const Banner = () => {
     return (
-        <div className='banner-div container'>
+        <div className="banner-div">
+            <div className='container'>
             <div className="row g-3">
                 <div className="col-lg-6">
                     <div className="h-100">
@@ -27,6 +28,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };
