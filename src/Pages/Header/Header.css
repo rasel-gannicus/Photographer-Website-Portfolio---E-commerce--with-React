@@ -23,7 +23,9 @@
     color: white;
     box-shadow: 0 10px 12px rgba(0,0,0,0.5);
 }
-
+.cross-icon, .header-icon{
+    display: none;
+}
 
 @media only screen and (max-width:767px){
     .header-main-parent{
@@ -67,5 +69,22 @@
     .header-icon span{
         font-size: 30px;
         cursor: pointer;
+        display: block;
+    }
+    .cross-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        font-size: 20px;      
+        cursor: pointer;  
+    }
+    .cross-icon i{
+        font-weight: 800;
     }
 }
