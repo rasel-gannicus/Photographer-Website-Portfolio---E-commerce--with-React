@@ -11,7 +11,7 @@ const PortraitShowcase = () => {
             </div>
             <div className="col-6">
                 <div className="">
-                    <img src="https://i.ibb.co/JRw7CcC/christopher-campbell-Cp-LUHPRp-WM-unsplash.jpg" alt="" />
+                    <img src="https://i.ibb.co/XjysBcs/elijah-hiett-umfp-Fo-Kx-IVg-unsplash-1.jpg" alt="" />
                 </div>
             </div>
             <div className="col-6">
