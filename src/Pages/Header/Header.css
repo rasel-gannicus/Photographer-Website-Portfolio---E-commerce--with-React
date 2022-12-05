@@ -34,6 +34,7 @@
     overflow: hidden;
     margin-bottom: 30px;
     border: 6px solid #292929;
+    display: none;
 }
 .menu-logo img{
     width: 100%;
@@ -48,6 +49,11 @@
     }
     .banner-left-header h1{
         font-weight: 600;
+    }
+
+
+    .menu-logo{
+        display: block;
     }
     .header-main-parent{
         background: rgba(41, 41, 41, 0.519);
@@ -91,7 +97,7 @@
         align-items: center;
         padding: 35px 15px;
         z-index: 30;
-        box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
     .header-icon.hidden{
         display: none;
