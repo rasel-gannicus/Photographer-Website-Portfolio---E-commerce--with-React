@@ -10,14 +10,18 @@ const Header = () => {
     function showMenu(){
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
+        const headerMain = document.querySelector('.header-main');
         
+        headerMain.classList.add('active');
         headerParent.classList.add('active');
         headerIcon.classList.add('hidden');
     }
     function hideMenu(){
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
+        const headerMain = document.querySelector('.header-main');
         
+        headerMain.classList.remove('active');        
         headerParent.classList.remove('active');
         headerIcon.classList.remove('hidden');
     }
