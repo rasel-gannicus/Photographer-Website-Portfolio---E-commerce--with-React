@@ -11,7 +11,7 @@ const StreetShowcase = () => {
             </div>
             <div className="col-6">
                 <div className="">
-                    <img src="https://i.ibb.co/NSDBZ18/natalia-trofimova-QFNso-Xm-CUA4-unsplash-1.jpg" alt="" />
+                    <img src="https://i.ibb.co/jDcRDXD/kieran-sheehan-Jyky-UNl-Apw8-unsplash-1.jpg" alt="" />
                 </div>
             </div>
             <div className="col-6">
