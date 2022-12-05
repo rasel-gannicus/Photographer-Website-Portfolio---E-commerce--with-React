@@ -66,6 +66,9 @@
         align-items: center;
         padding: 25px 15px;
     }
+    .header-icon.hidden{
+        display: none;
+    }
     .header-icon span{
         font-size: 30px;
         cursor: pointer;

@@ -9,12 +9,17 @@ const Header = () => {
     //---------------- this function will show menu when the bar icon will be clicked in mobile view
     function showMenu(){
         const headerParent = document.querySelector('.header-main-parent');
+        const headerIcon = document.querySelector('.header-icon');
+        
         headerParent.classList.add('active');
+        headerIcon.classList.add('hidden');
     }
     function hideMenu(){
         const headerParent = document.querySelector('.header-main-parent');
+        const headerIcon = document.querySelector('.header-icon');
         
         headerParent.classList.remove('active');
+        headerIcon.classList.remove('hidden');
     }
     return (
         <div className='header-div'>
