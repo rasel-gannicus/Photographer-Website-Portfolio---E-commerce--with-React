@@ -7,8 +7,8 @@ import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
 
 const ShowCase = () => {
     return (
-        <div className='container showCase-div border mx-auto'>
-            <h2>ShowCase here</h2>
+        <div className='container showCase-div mx-auto'>
+            <h2 className='fw-bold my-5'>My Works</h2>
             <div className="row gx-0 gy-4 showcaseDiv-child h-100">
                 <div className="col-lg-6 h-100">
                     <div className="h-100 layer-parent">

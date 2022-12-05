@@ -30,7 +30,9 @@
     color: white;
 }
 
-
+.layer h1{
+    font-weight: 700;
+}
 .layer-2{
     background: rgba(185, 28, 28, 0.67);
 }
