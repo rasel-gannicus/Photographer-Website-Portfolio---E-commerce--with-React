@@ -1,16 +1,24 @@
 import React from 'react';
 import PortraitShowcase from './PortraitShowcase/PortraitShowcase';
 import './ShowCase.css';
+import ShowcasePopup from './ShowcasePopup/ShowcasePopup';
 import StreetShowcase from './StreetShowcase/StreetShowcase';
 import WeddingShowcase from './WeddingShowcase/WeddingShowcase';
 import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
 
 const ShowCase = () => {
+    function showWorks(){
+        let popupParent = document.querySelector('.showcase-popup-parent');
+        let showPopPotrait = document.querySelector('.show-popup-portrait');
+
+        popupParent.classList.add('active');
+        showPopPotrait.classList.add('active');
+    }
     return (
         <div className='container showCase-div mx-auto'>
             <h2 className='fw-bold my-5'>My Works</h2>
             <div className="row gx-0 gy-4 showcaseDiv-child h-100">
-                <div className="col-lg-6 h-100">
+                <div onClick={showWorks} draggable className="col-lg-6 h-100 clickable-div">
                     <div className="h-100 layer-parent">
                         <PortraitShowcase></PortraitShowcase>
                         <div className="layer">
@@ -42,6 +50,11 @@ const ShowCase = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="showcase-popup-parent">
+            <div className="show-popup-portrait">
+                        <ShowcasePopup></ShowcasePopup>
+                    </div>
             </div>
         </div>
     );
