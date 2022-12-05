@@ -30,7 +30,7 @@ const ShowCase = () => {
                     <div className="h-100 layer-parent">
                         <WeddingShowcase></WeddingShowcase>
                         <div className="layer layer-3">
-                            <h1>Portrait <br /> Photography</h1>
+                            <h1>Wedding <br /> Photography</h1>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const ShowCase = () => {
                     <div className="h-100 layer-parent">
                         <WildlifeShowcase></WildlifeShowcase>
                         <div className="layer">
-                            <h1>Portrait <br /> Photography</h1>
+                            <h1>Wildlife <br /> Photography</h1>
                         </div>
                     </div>
                 </div>
