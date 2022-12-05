@@ -36,8 +36,13 @@
 .layer-2{
     background: rgba(185, 28, 28, 0.67);
 }
+.layer-3 h1{    
+    color: white !important;
+}
 
 .layer-3{
-    background: rgba(255, 255, 0, 0.247);
-    color: black;
+    background: rgba(4, 92, 98, 0.664);
+}
+.layer-4{
+    background: rgba(255, 217, 0, 0.386);
 }
