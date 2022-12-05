@@ -43,6 +43,12 @@
     .app-div{
         margin-top: 90px !important;
     }
+    .banner-left-header{
+        flex-direction: column;
+    }
+    .banner-left-header h1{
+        font-weight: 600;
+    }
     .header-main-parent{
         background: rgba(41, 41, 41, 0.519);
         position: fixed;
