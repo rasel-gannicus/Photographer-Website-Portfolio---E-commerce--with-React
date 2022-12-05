@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars , faXmark } from '@fortawesome/free-solid-svg-icons';
-import menuLogo from '../../utilities/img/bg.png'
+import menuLogo from '../../utilities/img/banner-bg.png'
 
 
 const Header = () => {
