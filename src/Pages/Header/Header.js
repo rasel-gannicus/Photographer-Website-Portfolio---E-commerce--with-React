@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars , faXmark } from '@fortawesome/free-solid-svg-icons';
+import menuLogo from '../../utilities/img/bg.png'
 
 
 const Header = () => {
@@ -16,6 +17,7 @@ const Header = () => {
         headerParent.classList.add('active');
         headerIcon.classList.add('hidden');
     }
+    //---------------- this function will hide menu when the X-Mark icon will be clicked in mobile view
     function hideMenu(){
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
@@ -30,6 +32,9 @@ const Header = () => {
             <div className="header-main-parent">
                 <span  onClick={hideMenu} className='cross-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                 <div className="header-main">
+                    <div className="menu-logo">
+                        <img src={menuLogo} alt="" />
+                    </div>
                     <NavLink onClick={hideMenu} to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
                     <NavLink onClick={hideMenu} to="/reviews" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Reviews</NavLink>
                     <NavLink onClick={hideMenu} to="/dashboard" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Dashboard</NavLink>
