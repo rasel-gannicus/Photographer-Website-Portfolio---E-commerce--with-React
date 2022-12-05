@@ -4,8 +4,15 @@
     margin: 50px 0;
 }
 .showcaseDiv-child{
-    padding: 25px 15px;    
+    padding: 25px 15px;  
 }
 .showCase-div img{
     width: 100%
 }
+
+.showcase-card{
+    position: relative;
+    overflow: hidden;
+    z-index: -5000;
+}
+

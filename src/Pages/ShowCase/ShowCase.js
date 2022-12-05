@@ -11,22 +11,25 @@ const ShowCase = () => {
             <h2>ShowCase here</h2>
             <div className="row gx-0 gy-4 showcaseDiv-child">
                 <div className="col-lg-6 ">
-                    <div className="h-100">
+                    <div className="h-100 layer-parent">
                         <PortraitShowcase></PortraitShowcase>
+                        <div className="layer">
+                            <h1>Portrait <br /> Photography</h1>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="h-100">
+                    <div className="h-100 layer-parent">
                         <StreetShowcase></StreetShowcase>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="h-100">
+                    <div className="h-100 layer-parent">
                         <WeddingShowcase></WeddingShowcase>
                     </div>
                 </div>
                 <div className="col-lg-6">
-                    <div className="h-100">
+                    <div className="h-100 layer-parent">
                         <WildlifeShowcase></WildlifeShowcase>
                     </div>
                 </div>
