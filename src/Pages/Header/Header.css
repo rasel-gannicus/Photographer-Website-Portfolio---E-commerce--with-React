@@ -84,6 +84,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 35px 15px;
+        z-index: 30;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.5);
     }
     .header-icon.hidden{
         display: none;
