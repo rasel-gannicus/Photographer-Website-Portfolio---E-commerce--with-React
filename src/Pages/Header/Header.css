@@ -47,6 +47,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 10px;
         top: 0;
         left: -200%;
         height: 100vh;
@@ -67,7 +68,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 15px;
+        padding: 35px 15px;
     }
     .header-icon.hidden{
         display: none;
