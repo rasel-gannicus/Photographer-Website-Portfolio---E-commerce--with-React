@@ -6,6 +6,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
+    //---------------- this function will show menu when the bar icon will be clicked in mobile view
+    function showMenu(){
+        const headerParent = document.querySelector('.header-main-parent');
+        headerParent.classList.add('active');
+    }
     return (
         <div className='header-div'>
             <div className="header-main-parent">
@@ -19,7 +24,7 @@ const Header = () => {
             </div>
             <div className="header-icon">
                 <h2>PhotoGrapher</h2>
-                <span> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
+                <span onClick={showMenu}> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
             </div>
         </div>
     );
