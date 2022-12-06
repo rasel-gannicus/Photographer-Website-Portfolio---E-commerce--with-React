@@ -67,10 +67,12 @@
 .showcase-popup{
     background: white;
 }
-.show-popup-portrait{
+
+/* -------------- style for Potrait Photography Pop Up display -----------------*/
+.show-popup-portrait, .show-popup-street{
     display: none;
 }
-.show-popup-portrait.active{
+.show-popup-portrait.active , .show-popup-street.active{
     display: flex;
     justify-content: center;
     align-items: center;

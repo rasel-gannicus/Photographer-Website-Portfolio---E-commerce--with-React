@@ -8,21 +8,35 @@ import WeddingShowcase from './WeddingShowcase/WeddingShowcase';
 import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import StreetDisplay from './StreetDisplay/StreetDisplay';
 
 const ShowCase = () => {
     function showPortrait() {
-        let popupParent = document.querySelector('.showcase-popup-parent');
-        let showPopPotrait = document.querySelector('.show-popup-portrait');
+        const popupParent = document.querySelector('.showcase-popup-parent');
+        const showPopPotrait = document.querySelector('.show-popup-portrait');
 
         popupParent.classList.add('active');
         showPopPotrait.classList.add('active');
     }
-    function hidePopup() {
-        let popupParent = document.querySelector('.showcase-popup-parent');
-        let showPopPotrait = document.querySelector('.show-popup-portrait');
 
+    function showStreet(){
+        const popupParent = document.querySelector('.showcase-popup-parent');
+        popupParent.classList.add('active');
+
+        const showStreet = document.querySelector('.show-popup-street');
+        showStreet.classList.add('active');
+    }
+
+    // hiding the popup display when clicking x button
+    function hidePopup() {
+        const popupParent = document.querySelector('.showcase-popup-parent');
         popupParent.classList.remove('active');
-        showPopPotrait.classList.remove('active');
+
+        const showPopPotrait = document.querySelector('.show-popup-portrait');
+        showPopPotrait.classList.remove('active');        
+
+        const showStreet = document.querySelector('.show-popup-street');
+        showStreet.classList.remove('active');
     }
     return (
         <div className='container showCase-div mx-auto'>
@@ -36,7 +50,7 @@ const ShowCase = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 h-100">
+                <div onClick={showStreet} draggable className="col-lg-6 h-100 clickable-div">
                     <div className="h-100 layer-parent">
                         <StreetShowcase></StreetShowcase>
                         <div className="layer layer-2">
@@ -64,6 +78,12 @@ const ShowCase = () => {
             <div className="showcase-popup-parent">
                 <div className="show-popup-portrait">
                     <PotraitDisplay></PotraitDisplay>
+                    <div className="close-icons">
+                        <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                    </div>
+                </div>
+                <div className="show-popup-street">
+                    <StreetDisplay></StreetDisplay>
                     <div className="close-icons">
                         <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                     </div>
