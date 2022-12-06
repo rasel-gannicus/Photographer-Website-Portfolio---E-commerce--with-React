@@ -9,7 +9,7 @@ const PotraitDisplay = () => {
             <h2>Show Potrait</h2>
             <Carousel>
                 <div className='carousel-img-div border border-3'>
-                    <img src="https://i.ibb.co/gRcPr6d/tyler-nix-ZGa9d1a-4t-A-unsplash-1.jpg" />
+                    <img src="https://i.ibb.co/Y2gKv3F/robbie-down-f3vw-AXn7pgg-unsplash-1.jpg" />
                 </div>                
                 <div className='carousel-img-div'>
                     <img src="https://i.ibb.co/qsFHB2f/umar-kashif-u0g-H1-D-GJw-E-unsplash-2.jpg" />
