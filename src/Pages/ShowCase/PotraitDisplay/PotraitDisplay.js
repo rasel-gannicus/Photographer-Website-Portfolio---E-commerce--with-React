@@ -6,7 +6,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const PotraitDisplay = () => {
     return (
         <div className='portraitdiv-parent'>
-            <h2>Show Potrait</h2>
+            <h2 className='pt-2 '>My Portrait Photography  </h2>
+            <hr width='50%' className='text-center mx-auto' />
             <Carousel>
                 <div className='carousel-img-div '>
                     <img src="https://i.ibb.co/zFF2s3G/robbie-down-f3vw-AXn7pgg-unsplash-1.jpg" alt=''/>

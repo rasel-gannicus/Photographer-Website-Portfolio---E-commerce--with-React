@@ -5,6 +5,10 @@
     width:100%;
     overflow: scroll;
 }
+.portraitdiv-parent h2{
+    margin-bottom: 0 !important;
+    color: #2c2c2c;
+}
 .carousel-img-div img{
     width: 450px !important;
 }
