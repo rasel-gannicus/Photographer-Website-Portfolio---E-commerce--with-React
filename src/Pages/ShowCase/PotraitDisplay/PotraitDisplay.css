@@ -1,23 +1,15 @@
 
 
 .portraitdiv-parent{
-    border: 5px solid red;
     position: relative;
     width:100%;
     overflow: hidden;
 }
 .carousel-img-div img{
-    width: 350px !important;
+    width: 450px !important;
 }
 
-/* @media only screen and (max-width:640px){
-    .portraitdiv-parent{
-        width: 90%;
-    }
-    .carousel-img-div img{
-        width: 100% !important;
-    }
-} */
+
 
 @media only screen and (max-width:480px){
     .portraitdiv-parent{

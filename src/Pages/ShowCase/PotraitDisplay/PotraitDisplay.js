@@ -8,7 +8,7 @@ const PotraitDisplay = () => {
         <div className='portraitdiv-parent'>
             <h2>Show Potrait</h2>
             <Carousel>
-                <div className='carousel-img-div border border-3'>
+                <div className='carousel-img-div '>
                     <img src="https://i.ibb.co/zFF2s3G/robbie-down-f3vw-AXn7pgg-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
