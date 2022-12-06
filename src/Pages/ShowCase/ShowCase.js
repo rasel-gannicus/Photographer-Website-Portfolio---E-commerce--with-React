@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const ShowCase = () => {
-    function showWorks() {
+    function showPortrait() {
         let popupParent = document.querySelector('.showcase-popup-parent');
         let showPopPotrait = document.querySelector('.show-popup-portrait');
 
@@ -28,7 +28,7 @@ const ShowCase = () => {
         <div className='container showCase-div mx-auto'>
             <h2 className='fw-bold my-5'>My Works</h2>
             <div className="row gx-0 gy-4 showcaseDiv-child h-100">
-                <div onClick={showWorks} draggable className="col-lg-6 h-100 clickable-div">
+                <div onClick={showPortrait} draggable className="col-lg-6 h-100 clickable-div">
                     <div className="h-100 layer-parent">
                         <PortraitShowcase></PortraitShowcase>
                         <div className="layer">
