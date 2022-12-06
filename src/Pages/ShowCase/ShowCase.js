@@ -9,6 +9,7 @@ import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import StreetDisplay from './StreetDisplay/StreetDisplay';
+import WeddingDisplay from './WeddingDisplay/WeddingDisplay';
 
 const ShowCase = () => {
     // this function will show popup display for potrait photography works
@@ -29,7 +30,16 @@ const ShowCase = () => {
         showStreet.classList.add('active');
     }
 
-    // this function will hide the popup display when clicking x button
+    // this function will show popup display for Wedding photography works
+    function showWedding(){
+        const popupParent = document.querySelector('.showcase-popup-parent');
+        popupParent.classList.add('active');
+
+        const showWedding = document.querySelector('.show-popup-wedding');
+        showWedding.classList.add('active');
+    }
+
+    //-------------------------- this function will hide the popup display when clicking x button
     function hidePopup() {
         const popupParent = document.querySelector('.showcase-popup-parent');
         popupParent.classList.remove('active');
@@ -39,6 +49,9 @@ const ShowCase = () => {
 
         const showStreet = document.querySelector('.show-popup-street');
         showStreet.classList.remove('active');
+
+        const showWedding = document.querySelector('.show-popup-wedding');
+        showWedding.classList.remove('active');
     }
     return (
         <div className='container showCase-div mx-auto'>
@@ -60,7 +73,7 @@ const ShowCase = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 h-100">
+                <div onClick={showWedding} draggable className="col-lg-6 h-100 clickable-div">
                     <div className="h-100 layer-parent">
                         <WeddingShowcase></WeddingShowcase>
                         <div className="layer layer-3">
@@ -89,6 +102,14 @@ const ShowCase = () => {
                 {/*--------------------- Div for Street photography works Pop up display ---------------*/}
                 <div className="show-popup-street">
                     <StreetDisplay></StreetDisplay>
+                    <div className="close-icons">
+                        <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                    </div>
+                </div>
+
+                {/*--------------------- Div for Wedding photography works Pop up display ---------------*/}
+                <div className="show-popup-wedding">
+                    <WeddingDisplay></WeddingDisplay>
                     <div className="close-icons">
                         <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                     </div>
