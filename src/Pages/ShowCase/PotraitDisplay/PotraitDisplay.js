@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const PotraitDisplay = () => {
     return (
-        <div>
+        <div className='portraitdiv-parent'>
             <h2>Show Potrait</h2>
             <Carousel>
                 <div className='carousel-img-div'>
