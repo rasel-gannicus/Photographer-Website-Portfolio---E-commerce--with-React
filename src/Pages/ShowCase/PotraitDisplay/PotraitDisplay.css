@@ -9,5 +9,11 @@
     overflow: hidden;
 }
 .carousel-img-div img{
-    width: 100% !important;
+    width: 500px !important;
+}
+
+@media only screen and (max-width:640px){
+    .carousel-img-div img{
+        width: 100% !important;
+    }
 }
