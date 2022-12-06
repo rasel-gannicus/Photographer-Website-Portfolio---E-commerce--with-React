@@ -3,10 +3,11 @@
 .portraitdiv-parent{
     border: 5px solid red;
     position: relative;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    width: 95%;
     overflow: hidden;
 }
 .carousel-img-div img{
-    width: 500px !important;
+    width: 100% !important;
 }

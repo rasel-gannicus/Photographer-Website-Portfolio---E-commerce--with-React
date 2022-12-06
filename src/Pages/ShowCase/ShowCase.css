@@ -71,7 +71,10 @@
     display: none;
 }
 .show-popup-portrait.active{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     background: white;
     top: 50%;
