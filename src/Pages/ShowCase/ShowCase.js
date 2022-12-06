@@ -6,12 +6,18 @@ import ShowcasePopup from './ShowcasePopup/ShowcasePopup';
 import StreetShowcase from './StreetShowcase/StreetShowcase';
 import WeddingShowcase from './WeddingShowcase/WeddingShowcase';
 import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const ShowCase = () => {
     function showWorks() {
         let popupParent = document.querySelector('.showcase-popup-parent');
         let showPopPotrait = document.querySelector('.show-popup-portrait');
 
+        // // for responsive menu
+        // const headerParent = document.querySelector('.header-main-parent');
+
+        // headerParent.classList.remove('active');
         popupParent.classList.add('active');
         showPopPotrait.classList.add('active');
     }
@@ -55,7 +61,11 @@ const ShowCase = () => {
             <div className="showcase-popup-parent">
                 <div className="show-popup-portrait">
                     <PotraitDisplay></PotraitDisplay>
+                    <div className="close-icons">
+                        <span className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
