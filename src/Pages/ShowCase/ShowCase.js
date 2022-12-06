@@ -14,12 +14,15 @@ const ShowCase = () => {
         let popupParent = document.querySelector('.showcase-popup-parent');
         let showPopPotrait = document.querySelector('.show-popup-portrait');
 
-        // // for responsive menu
-        // const headerParent = document.querySelector('.header-main-parent');
-
-        // headerParent.classList.remove('active');
         popupParent.classList.add('active');
         showPopPotrait.classList.add('active');
+    }
+    function hidePopup(){
+        let popupParent = document.querySelector('.showcase-popup-parent');
+        let showPopPotrait = document.querySelector('.show-popup-portrait');
+
+        popupParent.classList.remove('active');
+        showPopPotrait.classList.remove('active');
     }
     return (
         <div className='container showCase-div mx-auto'>
@@ -62,7 +65,7 @@ const ShowCase = () => {
                 <div className="show-popup-portrait">
                     <PotraitDisplay></PotraitDisplay>
                     <div className="close-icons">
-                        <span className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                        <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                     </div>
                 </div>
 
