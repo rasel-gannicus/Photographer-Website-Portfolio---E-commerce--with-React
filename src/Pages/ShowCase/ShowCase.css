@@ -82,6 +82,7 @@
     transform: translate(-50%, -50%);
     width: 98%;
     height: 98%;
+    overflow: scroll;
 }
 .clickable-div{
     cursor: pointer;
