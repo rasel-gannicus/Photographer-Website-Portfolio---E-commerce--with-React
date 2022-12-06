@@ -11,6 +11,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import StreetDisplay from './StreetDisplay/StreetDisplay';
 
 const ShowCase = () => {
+    // this function will show popup display for potrait photography works
     function showPortrait() {
         const popupParent = document.querySelector('.showcase-popup-parent');
         const showPopPotrait = document.querySelector('.show-popup-portrait');
@@ -19,6 +20,7 @@ const ShowCase = () => {
         showPopPotrait.classList.add('active');
     }
 
+    // this function will show popup display for street photography works
     function showStreet(){
         const popupParent = document.querySelector('.showcase-popup-parent');
         popupParent.classList.add('active');
@@ -27,7 +29,7 @@ const ShowCase = () => {
         showStreet.classList.add('active');
     }
 
-    // hiding the popup display when clicking x button
+    // this function will hide the popup display when clicking x button
     function hidePopup() {
         const popupParent = document.querySelector('.showcase-popup-parent');
         popupParent.classList.remove('active');
