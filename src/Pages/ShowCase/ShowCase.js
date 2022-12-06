@@ -1,5 +1,6 @@
 import React from 'react';
 import PortraitShowcase from './PortraitShowcase/PortraitShowcase';
+import PotraitDisplay from './PotraitDisplay/PotraitDisplay';
 import './ShowCase.css';
 import ShowcasePopup from './ShowcasePopup/ShowcasePopup';
 import StreetShowcase from './StreetShowcase/StreetShowcase';
@@ -7,7 +8,7 @@ import WeddingShowcase from './WeddingShowcase/WeddingShowcase';
 import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
 
 const ShowCase = () => {
-    function showWorks(){
+    function showWorks() {
         let popupParent = document.querySelector('.showcase-popup-parent');
         let showPopPotrait = document.querySelector('.show-popup-portrait');
 
@@ -52,9 +53,9 @@ const ShowCase = () => {
                 </div>
             </div>
             <div className="showcase-popup-parent">
-            <div className="show-popup-portrait">
-                        <ShowcasePopup></ShowcasePopup>
-                    </div>
+                <div className="show-popup-portrait">
+                    <PotraitDisplay></PotraitDisplay>
+                </div>
             </div>
         </div>
     );
