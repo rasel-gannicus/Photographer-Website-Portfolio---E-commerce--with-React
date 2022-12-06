@@ -69,10 +69,10 @@
 }
 
 /* -------------- style for Potrait Photography Pop Up display -----------------*/
-.show-popup-portrait, .show-popup-street , .show-popup-wedding{
+.show-popup-portrait, .show-popup-street , .show-popup-wedding , .show-popup-wild{
     display: none;
 }
-.show-popup-portrait.active , .show-popup-street.active , .show-popup-wedding.active{
+.show-popup-portrait.active , .show-popup-street.active , .show-popup-wedding.active, .show-popup-wild.active{
     display: flex;
     justify-content: center;
     align-items: center;

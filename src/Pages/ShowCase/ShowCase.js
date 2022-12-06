@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import StreetDisplay from './StreetDisplay/StreetDisplay';
 import WeddingDisplay from './WeddingDisplay/WeddingDisplay';
+import WildDisplay from './WildDisplay/WildDisplay';
 
 const ShowCase = () => {
     // this function will show popup display for potrait photography works
@@ -39,6 +40,15 @@ const ShowCase = () => {
         showWedding.classList.add('active');
     }
 
+    // this function will show popup display for Wedding photography works
+    function showWild(){
+        const popupParent = document.querySelector('.showcase-popup-parent');
+        popupParent.classList.add('active');
+
+        const showWild = document.querySelector('.show-popup-wild');
+        showWild.classList.add('active');
+    }
+
     //-------------------------- this function will hide the popup display when clicking x button
     function hidePopup() {
         const popupParent = document.querySelector('.showcase-popup-parent');
@@ -52,6 +62,9 @@ const ShowCase = () => {
 
         const showWedding = document.querySelector('.show-popup-wedding');
         showWedding.classList.remove('active');
+
+        const showWild = document.querySelector('.show-popup-wild');
+        showWild.classList.remove('active');
     }
     return (
         <div className='container showCase-div mx-auto'>
@@ -81,7 +94,7 @@ const ShowCase = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 h-100">
+                <div onClick={showWild} draggable className="col-lg-6 h-100 clickable-div">
                     <div className="h-100 layer-parent">
                         <WildlifeShowcase></WildlifeShowcase>
                         <div className="layer layer-4">
@@ -90,6 +103,8 @@ const ShowCase = () => {
                     </div>
                 </div>
             </div>
+
+            {/*-------------- Div for  Pop up display ---------------*/}
             <div className="showcase-popup-parent">
                 {/*-------------- Div for Potrait photography works Pop up display ---------------*/}
                 <div className="show-popup-portrait">
@@ -110,6 +125,14 @@ const ShowCase = () => {
                 {/*--------------------- Div for Wedding photography works Pop up display ---------------*/}
                 <div className="show-popup-wedding">
                     <WeddingDisplay></WeddingDisplay>
+                    <div className="close-icons">
+                        <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                    </div>
+                </div>
+
+                {/*--------------------- Div for Wild photography works Pop up display ---------------*/}
+                <div className="show-popup-wild">
+                    <WildDisplay></WildDisplay>
                     <div className="close-icons">
                         <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                     </div>
