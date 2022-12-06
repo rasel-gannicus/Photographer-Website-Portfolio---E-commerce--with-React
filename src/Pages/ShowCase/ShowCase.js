@@ -17,7 +17,7 @@ const ShowCase = () => {
         popupParent.classList.add('active');
         showPopPotrait.classList.add('active');
     }
-    function hidePopup(){
+    function hidePopup() {
         let popupParent = document.querySelector('.showcase-popup-parent');
         let showPopPotrait = document.querySelector('.show-popup-portrait');
 
