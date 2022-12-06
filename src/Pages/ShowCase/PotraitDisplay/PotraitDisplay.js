@@ -18,7 +18,13 @@ const PotraitDisplay = () => {
                     <img src="https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
+                    <img src="https://i.ibb.co/6PjL5Kb/trevor-buntin-m-Qz-ALy-EB-T4-unsplash-1.jpg" alt=''/>
+                </div>                
+                <div className='carousel-img-div'>
                     <img src="https://i.ibb.co/mykk3S4/elijah-hiett-umfp-Fo-Kx-IVg-unsplash-2-1.jpg" alt=''/>
+                </div>                
+                <div className='carousel-img-div'>
+                    <img src="https://i.ibb.co/C9cJTwg/mark-pan4ratte-2x5-Eq-Shzu-E8-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
                     <img src="https://i.ibb.co/L1wbTcn/albert-dera-ILip77-Sbm-OE-unsplash-3-1.jpg" alt=''/>
