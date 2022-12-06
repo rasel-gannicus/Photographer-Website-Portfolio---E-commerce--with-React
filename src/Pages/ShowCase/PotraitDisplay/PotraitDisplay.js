@@ -23,6 +23,9 @@ const PotraitDisplay = () => {
                 <div className='carousel-img-div'>
                     <img src="https://i.ibb.co/L1wbTcn/albert-dera-ILip77-Sbm-OE-unsplash-3-1.jpg" alt=''/>
                 </div>                
+                <div className='carousel-img-div'>
+                    <img src="https://i.ibb.co/XsLSFVs/gregory-hayes-h5cd51-KXm-RQ-unsplash-1.jpg" alt=''/>
+                </div>                
             </Carousel>
         </div>
     );
