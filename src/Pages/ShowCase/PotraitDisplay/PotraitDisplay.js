@@ -9,22 +9,19 @@ const PotraitDisplay = () => {
             <h2>Show Potrait</h2>
             <Carousel>
                 <div className='carousel-img-div border border-3'>
-                    <img src="https://i.ibb.co/Y2gKv3F/robbie-down-f3vw-AXn7pgg-unsplash-1.jpg" />
+                    <img src="https://i.ibb.co/zFF2s3G/robbie-down-f3vw-AXn7pgg-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
-                    <img src="https://i.ibb.co/qsFHB2f/umar-kashif-u0g-H1-D-GJw-E-unsplash-2.jpg" />
+                    <img src="https://i.ibb.co/mCmYHqm/taylor-QPOFrbtoy-OQ-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
-                    <img src="https://i.ibb.co/JRw7CcC/christopher-campbell-Cp-LUHPRp-WM-unsplash.jpg" />
+                    <img src="https://i.ibb.co/z4ZW13j/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
-                    <img src="https://i.ibb.co/3dctc3Y/umar-kashif-GTHf-D5-Xbk-Sw-unsplash.jpg" />
+                    <img src="https://i.ibb.co/mykk3S4/elijah-hiett-umfp-Fo-Kx-IVg-unsplash-2-1.jpg" alt=''/>
                 </div>                
                 <div className='carousel-img-div'>
-                    <img src="https://i.ibb.co/843HCxZ/albert-dera-ILip77-Sbm-OE-unsplash-1.jpg" />
-                </div>                
-                <div className='carousel-img-div'>
-                    <img src="https://i.ibb.co/XjysBcs/elijah-hiett-umfp-Fo-Kx-IVg-unsplash-1.jpg" />
+                    <img src="https://i.ibb.co/L1wbTcn/albert-dera-ILip77-Sbm-OE-unsplash-3-1.jpg" alt=''/>
                 </div>                
             </Carousel>
         </div>
