@@ -78,12 +78,15 @@ const ShowCase = () => {
                 </div>
             </div>
             <div className="showcase-popup-parent">
+                {/*-------------- Div for Potrait photography works Pop up display ---------------*/}
                 <div className="show-popup-portrait">
                     <PotraitDisplay></PotraitDisplay>
                     <div className="close-icons">
                         <span onClick={hidePopup} className='close-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                     </div>
                 </div>
+
+                {/*--------------------- Div for Street photography works Pop up display ---------------*/}
                 <div className="show-popup-street">
                     <StreetDisplay></StreetDisplay>
                     <div className="close-icons">
