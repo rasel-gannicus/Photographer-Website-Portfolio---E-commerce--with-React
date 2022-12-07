@@ -24,7 +24,7 @@
     border-top: 5px solid #253745;
     border-bottom: 5px solid #253745;
     border-left: 5px solid #253745;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    /* box-shadow: 0 10px 15px rgba(0,0,0,0.5); */
     padding: 10px 15px;
 }
 .second-part-left p{
@@ -50,7 +50,7 @@
     border-top: 5px solid #253745;
     border-bottom: 5px solid #253745;
     border-right: 5px solid #253745;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    /* box-shadow: 0 10px 15px rgba(0,0,0,0.5); */
     padding: 10px 15px;
     font-weight: 600;
 }
