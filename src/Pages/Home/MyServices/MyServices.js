@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './MyServices.css';
 import WeddingPackages from './WeddingPackages/WeddingPackages';
 import WeddingService from './WeddingService/WeddingService';
 
@@ -10,7 +11,7 @@ const MyServices = () => {
         .then(data=>setPackages(data))
     },[])
     return (
-        <div className='my-5'>
+        <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
             {/* <WeddingService></WeddingService> */}
             <div className="wedding-packages-div">
