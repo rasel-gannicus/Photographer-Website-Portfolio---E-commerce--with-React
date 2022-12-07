@@ -8,6 +8,9 @@ const About = () => {
 
         const secondPartLeft = document.querySelector('.second-part-left');
         secondPartLeft.classList.add('active');
+
+        const secondPartRight = document.querySelector('.second-part-right');
+        secondPartRight.classList.add('active');
     }
     function hideAbout() {
         const secondPart = document.querySelector('.second-part');
@@ -15,6 +18,9 @@ const About = () => {
 
         const secondPartLeft = document.querySelector('.second-part-left');
         secondPartLeft.classList.remove('active');
+
+        const secondPartRight = document.querySelector('.second-part-right');
+        secondPartRight.classList.remove('active');
     }
     return (
         <div className='container about-div'>
