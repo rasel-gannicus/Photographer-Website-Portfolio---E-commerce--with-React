@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import profileLogo from '../../utilities/img/bg-low-size.png';
 
 const About = () => {
     function showAbout() {
@@ -36,8 +37,12 @@ const About = () => {
                                 Street & Wild-life Photography is my favourite Genre. I also have a good hand In Wedding & Portfolio Area. Some of my sample works are given below.
                             </p>
                         </div>
-                        <div className="second-part-right ">
-                            <h2>Who am I</h2>
+                        <div className="second-part-right">
+                            <div className="second-part-img-div">
+                                <div className="second-part-img">
+                                <img src={profileLogo} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
