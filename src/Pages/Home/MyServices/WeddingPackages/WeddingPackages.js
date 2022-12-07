@@ -22,7 +22,7 @@ const WeddingPackages = (props) => {
                                 <p>Hours Shooting</p>
                             </div>
                         </div>
-                        <div draggable className="book-button">
+                        <div onClick={()=>props.handleAddToBooking(id)} draggable className="book-button">
                             <p>Add to Booking</p>
                         </div>
                     </div>

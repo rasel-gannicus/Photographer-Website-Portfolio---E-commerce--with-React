@@ -23,6 +23,7 @@ const MyServices = () => {
                     packages.map(index=><WeddingPackages
                         index = {index}
                         key = {index.id}
+                        handleAddToBooking = {handleAddToBooking}
                     ></WeddingPackages>)
                 }
             </div>
