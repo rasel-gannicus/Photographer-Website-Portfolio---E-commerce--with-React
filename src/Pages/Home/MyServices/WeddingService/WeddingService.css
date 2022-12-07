@@ -1,0 +1,13 @@
+
+.wedding-card{
+    background: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+}
+.wedding-card-upper{
+    height: 30%;
+}
+.wedding-card-lower{
+    height: 70%;
+}
