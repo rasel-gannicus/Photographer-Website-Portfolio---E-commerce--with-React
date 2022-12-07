@@ -27,6 +27,9 @@ const About = () => {
                         <div className="second-part-left">
                             <h2>Who am I</h2>
                         </div>
+                        <div className="second-part-right">
+                            <h2>Who am I</h2>
+                        </div>
                     </div>
                 </div>
 

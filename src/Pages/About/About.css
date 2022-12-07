@@ -20,6 +20,21 @@
     align-items: center;
     transition: all 0.5s ease;
 }
+.second-part-right{
+    position: absolute;
+    top: 0;
+    right: -200%;
+    background: white;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.second-part-right.active{
+    right: 0;
+}
 
 .second-part-left.active{
     left: 0;
