@@ -9,7 +9,7 @@ const WeddingService = () => {
                     <img src="https://i.ibb.co/YBKKKww/dollar-gill-T-PUQa-J8-YEw-unsplash-1.jpg" alt="" />
                 </div>
                 <div className="wedding-card-lower border">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque id amet ullam, nemo assumenda laborum incidunt odit atque, libero nobis, nihil omnis magnam. Totam saepe, eius cupiditate reiciendis iure vero.</p>
+                    <h2>Regular Package</h2>
                 </div>
                 <div className="wedding-card-icon border">
                     <div className="wedding-card-icon-inner">2</div>
