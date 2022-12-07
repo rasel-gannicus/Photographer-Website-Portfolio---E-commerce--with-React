@@ -11,6 +11,9 @@ const WeddingService = () => {
                 <div className="wedding-card-lower border">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque id amet ullam, nemo assumenda laborum incidunt odit atque, libero nobis, nihil omnis magnam. Totam saepe, eius cupiditate reiciendis iure vero.</p>
                 </div>
+                <div className="wedding-card-icon border">
+                    <div className="wedding-card-icon-inner">2</div>
+                </div>
             </div>
         </div>
     );
