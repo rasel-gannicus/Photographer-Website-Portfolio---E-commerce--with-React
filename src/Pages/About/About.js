@@ -12,6 +12,9 @@ const About = () => {
     function hideAbout() {
         const secondPart = document.querySelector('.second-part');
         secondPart.classList.remove('active');
+
+        const secondPartLeft = document.querySelector('.second-part-left');
+        secondPartLeft.classList.remove('active');
     }
     return (
         <div className='container about-div'>
