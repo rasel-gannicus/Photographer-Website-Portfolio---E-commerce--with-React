@@ -13,7 +13,7 @@ const WeddingService = () => {
                         <h4>Regular Package</h4>
                         <div className="package-main-feature">
                             <div className="package-main-feature-left">
-                                <p>02</p>
+                                <p>01</p>
                                 <p>Camera Man</p>
                             </div>
                             <div className="package-main-feature-right">
@@ -27,7 +27,9 @@ const WeddingService = () => {
                     </div>
                 </div>
                 <div className="wedding-card-icon border">
-                    <div className="wedding-card-icon-inner">2</div>
+                    <div className="wedding-card-icon-inner">
+                        <p>Basic</p>
+                    </div>
                 </div>
             </div>
         </div>

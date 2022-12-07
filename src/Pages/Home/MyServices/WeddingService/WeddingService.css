@@ -66,9 +66,8 @@
 
 /* Book now button */
 .book-button{
-    /* border: 3px solid #253745; */
     width: 70%;
-    margin: 15px auto;
+    margin: 10px auto;
     padding: 10px 0;
     border-radius: 5px;
     background: #FED01A;
@@ -81,4 +80,9 @@
 }
 .book-button p:hover{
     color: black;
+}
+
+.wedding-card-icon-inner p{
+    margin: 0;
+    /* font-weight: 600; */
 }
