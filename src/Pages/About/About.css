@@ -28,6 +28,15 @@
     box-shadow: 0 10px 15px rgba(0,0,0,0.5);
     padding: 10px 15px;
 }
+.second-part-left p{
+    font-weight: 600 ;
+    font-size: 18px;
+    margin: 0;
+}
+.second-part-left.active{
+    left: 0;
+}
+
 .second-part-right{
     position: absolute;
     top: 0;
@@ -44,11 +53,8 @@
     border-right: 5px solid #253745;
     box-shadow: 0 10px 15px rgba(0,0,0,0.5);
     padding: 10px 15px;
+    font-weight: 600;
 }
 .second-part-right.active{
     right: 0;
-}
-
-.second-part-left.active{
-    left: 0;
 }
