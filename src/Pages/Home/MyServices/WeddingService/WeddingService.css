@@ -2,12 +2,19 @@
 .wedding-card{
     background: white;
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 5px;
 }
 .wedding-card-upper{
-    height: 30%;
+    height: 40%;
+    overflow: hidden;
+    /* background: url('https://i.ibb.co/YBKKKww/dollar-gill-T-PUQa-J8-YEw-unsplash-1.jpg') no-repeat;
+    position: center;
+    background-size: cover; */
+}
+.wedding-card-upper img{
+    width: 100%;
 }
 .wedding-card-lower{
-    height: 70%;
+    height: 60%;
 }

@@ -6,7 +6,7 @@ const WeddingService = () => {
         <div className='container'>
             <div className="wedding-card border">
                 <div className="wedding-card-upper border">
-                    <h4>Wedding Upper</h4>
+                    <img src="https://i.ibb.co/YBKKKww/dollar-gill-T-PUQa-J8-YEw-unsplash-1.jpg" alt="" />
                 </div>
                 <div className="wedding-card-lower border">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque id amet ullam, nemo assumenda laborum incidunt odit atque, libero nobis, nihil omnis magnam. Totam saepe, eius cupiditate reiciendis iure vero.</p>
