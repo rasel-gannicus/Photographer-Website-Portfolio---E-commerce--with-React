@@ -25,5 +25,14 @@ const data = [
         duration : '08',
         thumbImg : 'https://i.ibb.co/Fxvs434/sandy-millar-8va-QKYnaw-Hw-unsplash.jpg',
         price : 1050
+    },
+    {
+        id : 4,
+        packageCatagory : 'regular',
+        packageCatagoryName: 'Basic Package',
+        cameraMan : '01',
+        duration : '02',
+        thumbImg : 'https://i.ibb.co/Fxvs434/sandy-millar-8va-QKYnaw-Hw-unsplash.jpg',
+        price : 1050
     }
 ]

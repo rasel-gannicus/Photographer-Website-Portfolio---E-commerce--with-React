@@ -10,6 +10,10 @@ const MyServices = () => {
         .then(res=>res.json())
         .then(data=>setPackages(data))
     },[])
+
+    function handleAddToBooking(id){
+        console.log(id);
+    }
     return (
         <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
