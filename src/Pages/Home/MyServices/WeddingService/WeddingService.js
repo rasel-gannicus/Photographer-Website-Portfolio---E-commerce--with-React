@@ -21,6 +21,9 @@ const WeddingService = () => {
                                 <p>Hours Shooting</p>
                             </div>
                         </div>
+                        <div draggable className="book-button">
+                            <p>Add to Booking</p>
+                        </div>
                     </div>
                 </div>
                 <div className="wedding-card-icon border">

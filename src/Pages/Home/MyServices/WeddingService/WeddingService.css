@@ -9,9 +9,6 @@
 .wedding-card-upper{
     height: 40%;
     overflow: hidden;
-    /* background: url('https://i.ibb.co/YBKKKww/dollar-gill-T-PUQa-J8-YEw-unsplash-1.jpg') no-repeat;
-    position: center;
-    background-size: cover; */
 }
 .wedding-card-upper img{
     width: 100%;
@@ -20,7 +17,7 @@
     height: 60%;
 }
 .wedding-card-desc{
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 .wedding-card-icon{
@@ -65,4 +62,23 @@
     margin: 0;
     font-weight: 700;
     font-size: 22px;
+}
+
+/* Book now button */
+.book-button{
+    /* border: 3px solid #253745; */
+    width: 70%;
+    margin: 15px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    background: #FED01A;
+    cursor: pointer;
+}
+.book-button p{
+    margin: 0;
+    font-weight: 600;
+    color: #253745;
+}
+.book-button p:hover{
+    color: black;
 }
