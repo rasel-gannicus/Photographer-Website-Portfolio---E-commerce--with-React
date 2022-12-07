@@ -2,7 +2,7 @@
 .wedding-card{
     background: white;
     width: 300px;
-    height: 500px;
+    height: 600px;
     border-radius: 5px;
     position: relative;
 }
@@ -28,7 +28,7 @@
     height: 110px;
     background: white;
     position: absolute;
-    top: 145px;
+    top: 29%;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -47,4 +47,22 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.wedding-card-desc h4{
+    font-weight: 700;
+    margin: 0;
+}
+.package-main-feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    column-gap: 25px;
+}
+.package-main-feature p:first-child{
+    color: #369EE5;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
 }
