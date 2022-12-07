@@ -28,8 +28,11 @@ const WeddingService = () => {
                 </div>
                 <div className="wedding-card-icon border">
                     <div className="wedding-card-icon-inner">
-                        <p>Basic</p>
+                        <p>$150</p>
                     </div>
+                </div>
+                <div className="package-features">
+
                 </div>
             </div>
         </div>
