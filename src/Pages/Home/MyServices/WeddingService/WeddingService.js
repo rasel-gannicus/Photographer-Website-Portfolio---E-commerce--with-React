@@ -4,11 +4,11 @@ import './WeddingService.css';
 const WeddingService = () => {
     return (
         <div className='container'>
-            <div className="wedding-card border">
-                <div className="wedding-card-upper border">
+            <div className="wedding-card ">
+                <div className="wedding-card-upper">
                     <img src="https://i.ibb.co/YBKKKww/dollar-gill-T-PUQa-J8-YEw-unsplash-1.jpg" alt="" />
                 </div>
-                <div className="wedding-card-lower border">
+                <div className="wedding-card-lower ">
                     <div className="wedding-card-desc">
                         <h4>Regular Package</h4>
                         <div className="package-main-feature">
