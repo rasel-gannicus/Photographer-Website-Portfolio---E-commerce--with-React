@@ -18,5 +18,6 @@ function getBookingItems(){
 
 
 export{
-    addToBookingDb
+    addToBookingDb,
+    getBookingItems
 }
