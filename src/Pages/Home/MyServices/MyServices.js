@@ -5,14 +5,10 @@ import WeddingPackages from './WeddingPackages/WeddingPackages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router';
+import usePackages from '../../../utilities/Hooks/usePackages';
 
 const MyServices = () => {
-    const [packages, setPackages] = useState([]);
-    useEffect(() => {
-        fetch('https://raw.githubusercontent.com/shafik720/rest-api/main/photographer-package.json')
-            .then(res => res.json())
-            .then(data => setPackages(data))
-    }, [])
+    const [packages, setPackages] = usePackages();
 
     let [booking, setBooking] = useState([]);
     function handleAddToBooking(id) {
