@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { addToBookingDb } from '../../../utilities/Local Storage/bookings-storage';
 import './MyServices.css';
 import WeddingPackages from './WeddingPackages/WeddingPackages';
-import WeddingService from './WeddingService/WeddingService';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 
 const MyServices = () => {
     const[packages, setPackages] = useState([]);
@@ -13,13 +15,14 @@ const MyServices = () => {
 
     let[booking, setBooking] = useState([]);
     function handleAddToBooking(id){
+        addToBookingDb(id);
         let booked = [];
         booked = [...booking, id];
         setBooking(booked);
     }
     useEffect(()=>{
         let bookingCartNumber = document.querySelector('.booking-cart-number');
-        bookingCartNumber.innerText = booking.length;
+        // bookingCartNumber.innerText = booking.length;
     },[booking])
     return (
         <div className=' myServices-div my-5 mx-auto border'>
@@ -35,7 +38,7 @@ const MyServices = () => {
                 }
             </div>
             <div className="booking-cart-display">
-                <p className='booking-cart-number'>0</p>
+                <span className='booking-cart-number'><FontAwesomeIcon icon={faBook} /></span>
             </div>
         </div>
     );

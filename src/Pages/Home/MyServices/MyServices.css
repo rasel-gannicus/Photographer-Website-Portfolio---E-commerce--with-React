@@ -12,3 +12,8 @@
     flex-wrap: wrap;
     row-gap: 25px;
 }
+
+
+.booking-cart-display span {
+    font-size: 35px;
+}

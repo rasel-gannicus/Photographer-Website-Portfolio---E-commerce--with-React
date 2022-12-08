@@ -10,6 +10,10 @@ function addToBookingDb(id){
     localStorage.setItem('booking', JSON.stringify(bookings));
 }
 
+function getBookingItems(){
+    let bookings = JSON.parse(localStorage.getItem('booking') || '{}');
+    return bookings;
+}
 
 
 
