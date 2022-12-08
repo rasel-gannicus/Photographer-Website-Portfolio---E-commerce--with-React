@@ -11,8 +11,12 @@ const MyServices = () => {
         .then(data=>setPackages(data))
     },[])
 
+    let[booking, setBooking] = useState([]);
+    let booked = [];
     function handleAddToBooking(id){
-        console.log(id);
+        // booked = [...booking, id];
+        booked.push(id);
+        setBooking(booked);
     }
     return (
         <div className=' myServices-div my-5 mx-auto border'>
