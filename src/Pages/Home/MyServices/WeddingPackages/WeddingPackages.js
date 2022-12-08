@@ -3,6 +3,10 @@ import './WeddingPackages.css';
 
 const WeddingPackages = (props) => {
     const{id, packageCatagory, packageCatagoryName, cameraMan, duration, thumbImg, price} = props.index;
+    function bookButton(e){
+        // console.log(e.target.parentNode);
+        e.target.style.backgroundColor = 'red'
+    }
     return (
         <div className='mx-auto'>
             <div className="wedding-card ">
@@ -22,9 +26,10 @@ const WeddingPackages = (props) => {
                                 <p>Hours Shooting</p>
                             </div>
                         </div>
-                        <div onClick={()=>props.handleAddToBooking(id)} draggable className="book-button">
+                        {/* <div onClick={bookButton} draggable className="book-button">
                             <p>Add to Booking</p>
-                        </div>
+                        </div> */}
+                        <button onClick={bookButton} className="book-button">Add To Booking</button>
                     </div>
                 {/* <div className="package-feature">
                     <div className="package-features">

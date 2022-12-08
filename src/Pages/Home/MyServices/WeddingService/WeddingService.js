@@ -2,6 +2,9 @@ import React from 'react';
 import './WeddingService.css';
 
 const WeddingService = () => {
+    function bookButton(e){
+        // console.log(e);
+    }
     return (
         <div className='container'>
             <div className="wedding-card ">
@@ -21,7 +24,7 @@ const WeddingService = () => {
                                 <p>Hours Shooting</p>
                             </div>
                         </div>
-                        <div draggable className="book-button">
+                        <div onClick={bookButton} draggable className="book-button">
                             <p>Add to Booking</p>
                         </div>
                     </div>
