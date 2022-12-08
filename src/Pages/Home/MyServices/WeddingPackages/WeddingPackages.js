@@ -5,6 +5,7 @@ const WeddingPackages = (props) => {
     const{id, packageCatagory, packageCatagoryName, cameraMan, duration, thumbImg, price} = props.index;
     function bookButton(e){
         // console.log(e.target.parentNode);
+        props.handleAddToBooking(id);
         e.target.style.backgroundColor = '#ccc'
         e.target.innerText = 'Added';
     }
