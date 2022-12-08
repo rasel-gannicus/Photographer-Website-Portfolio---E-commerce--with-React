@@ -4,6 +4,7 @@ import './MyServices.css';
 import WeddingPackages from './WeddingPackages/WeddingPackages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router';
 
 const MyServices = () => {
     const [packages, setPackages] = useState([]);
@@ -29,7 +30,13 @@ const MyServices = () => {
             bookingCartNumberParent.style.display = 'none';
         }
         bookingCartNumber.innerText = booking.length;
-    }, [booking])
+    }, [booking]);
+
+    let navigation = useNavigate();
+    function goToBookingPage(){
+        let url = '/bookingCart';
+        navigation(url);
+    }
     return (
         <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
@@ -44,7 +51,7 @@ const MyServices = () => {
                 }
             </div>
             <div className="booking-cart-display-parent">
-                <div className="booking-cart-display">
+                <div draggable onClick={goToBookingPage} className="booking-cart-display">
                     <div className="booking-cart-number-parent">
                     <span><FontAwesomeIcon icon={faBook} /></span>
                         <p  className='booking-cart-number'></p>
