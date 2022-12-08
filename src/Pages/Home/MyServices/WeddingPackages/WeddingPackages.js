@@ -5,7 +5,8 @@ const WeddingPackages = (props) => {
     const{id, packageCatagory, packageCatagoryName, cameraMan, duration, thumbImg, price} = props.index;
     function bookButton(e){
         // console.log(e.target.parentNode);
-        e.target.style.backgroundColor = 'red'
+        e.target.style.backgroundColor = '#ccc'
+        e.target.innerText = 'Added';
     }
     return (
         <div className='mx-auto'>
