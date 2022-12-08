@@ -13,6 +13,12 @@
     row-gap: 25px;
 }
 
+
+.booking-cart-display-parent{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
 .booking-cart-display{
     position: relative;
 }
@@ -29,7 +35,7 @@
     position: absolute;
     top: -8px;
     right: -7PX;
-    background: #EDF1FD;
+    background: #FED01A;
     margin: 0;
     width: 35px ;
     height: 35px;
