@@ -12,12 +12,15 @@ const MyServices = () => {
     },[])
 
     let[booking, setBooking] = useState([]);
-    let booked = [];
     function handleAddToBooking(id){
-        // booked = [...booking, id];
-        booked.push(id);
+        let booked = [];
+        booked = [...booking, id];
         setBooking(booked);
     }
+    useEffect(()=>{
+        let bookingCartNumber = document.querySelector('.booking-cart-number');
+        bookingCartNumber.innerText = booking.length;
+    },[booking])
     return (
         <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
@@ -30,6 +33,9 @@ const MyServices = () => {
                         handleAddToBooking = {handleAddToBooking}
                     ></WeddingPackages>)
                 }
+            </div>
+            <div className="booking-cart-display">
+                <p className='booking-cart-number'>0</p>
             </div>
         </div>
     );
