@@ -8,22 +8,8 @@ import { useNavigate } from 'react-router';
 import usePackages from '../../../utilities/Hooks/usePackages';
 
 const MyServices = (props) => {
-    const [packages, setPackages] = usePackages();
-
-    let [booking, setBooking] = useState([]);
-    // function handleAddToBooking(id) {
-    //     addToBookingDb(id);
-    //     let booked = [];
-    //     booked = [...booking, id];
-    //     setBooking(booked);
-    // }
+    const [packages, setPackages] = usePackages();  
     
-
-    let navigation = useNavigate();
-    function goToBookingPage(){
-        let url = '/bookingCart';
-        navigation(url);
-    }
     return (
         <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
@@ -37,14 +23,6 @@ const MyServices = (props) => {
                     ></WeddingPackages>)
                 }
             </div>
-            {/* <div className="booking-cart-display-parent">
-                <div draggable onClick={goToBookingPage} className="booking-cart-display">
-                    <div className="booking-cart-number-parent">
-                    <span><FontAwesomeIcon icon={faBook} /></span>
-                        <p  className='booking-cart-number'></p>
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 };
