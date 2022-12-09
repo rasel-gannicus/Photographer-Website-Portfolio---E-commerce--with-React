@@ -20,11 +20,11 @@ const MyServices = () => {
     useEffect(() => {
         let bookingCartNumber = document.querySelector('.booking-cart-number');
         let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent');
-        if(booking.length != 0){
-            bookingCartNumberParent.style.display = 'block';
-        }else{
-            bookingCartNumberParent.style.display = 'none';
-        }
+        // if(booking.length != 0){
+        //     bookingCartNumberParent.style.display = 'block';
+        // }else{
+        //     bookingCartNumberParent.style.display = 'none';
+        // }
         bookingCartNumber.innerText = booking.length;
     }, [booking]);
 
