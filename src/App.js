@@ -55,7 +55,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home handleAddToBooking={handleAddToBooking}></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
-          <Route path='/bookingCart' element={<BookingCart></BookingCart>}></Route>
+          <Route path='/bookingCart' element={<BookingCart
+          cart = {cart}
+          handleAddToBooking={handleAddToBooking}
+          ></BookingCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>

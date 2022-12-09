@@ -3,17 +3,17 @@ import useCart from '../../utilities/Hooks/useCart';
 import './BookingCart.css';
 import BookingCartDisplay from './BookingCartDisplay/BookingCartDisplay';
 
-const BookingCart = () => {
-    let [cart, setCart] = useCart();
-    console.log(cart);
+const BookingCart = (props) => {
+    
     return (
         <div>
-            <h2>Booking Cart Here : {cart?.length}</h2>
+            <h2>Booking Cart Here : {props.cart?.length}</h2>
             <div className="">
                 {
-                    cart.map(index=><BookingCartDisplay 
+                    props.cart.map(index=><BookingCartDisplay 
                         index = {index}
                         key={index.id}
+                        handleAddToBooking={props.handleAddToBooking}
                     ></BookingCartDisplay>)
                 }
             </div>
