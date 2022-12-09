@@ -20,6 +20,9 @@ function decreaseFromDb(id){
     if(bookings[id]){
         bookings[id] = bookings[id]  - 1;
     }
+    if(bookings[id]<=0){
+        delete bookings[id];
+    }
     localStorage.setItem('booking', JSON.stringify(bookings));
 }
 

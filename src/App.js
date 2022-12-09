@@ -9,7 +9,7 @@ import BookingCart from './Pages/BookingCart/BookingCart';
 import CartIconDisplay from './Pages/CartIconDisplay/CartIconDisplay';
 import useCart from './utilities/Hooks/useCart';
 import { useEffect, useState } from 'react';
-import { addToBookingDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
+import { addToBookingDb, decreaseFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
 
 function App() {
@@ -40,7 +40,10 @@ function App() {
   }
 
   function decreaseBooking(id){
-    console.log(id);
+    decreaseFromDb(id);
+    let booked = [];
+    booked = [...booking, id];
+    setBooking(booked);
   }
 
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
