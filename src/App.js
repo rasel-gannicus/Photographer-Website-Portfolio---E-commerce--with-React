@@ -9,20 +9,32 @@ import BookingCart from './Pages/Home/MyServices/BookingCart/BookingCart';
 import CartIconDisplay from './Pages/CartIconDisplay/CartIconDisplay';
 import useCart from './utilities/Hooks/useCart';
 import { useEffect, useState } from 'react';
-import { addToBookingDb } from './utilities/Local Storage/bookings-storage';
+import { addToBookingDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
+import usePackages from './utilities/Hooks/usePackages';
 
 function App() {
-  useEffect(()=>{
+  
+  const [packages, setPackages] = usePackages();  
+  const [booking, setBooking] = useState([]);
     
-  },[])
-  let [cart, setCart] = useCart();
-  let [booking, setBooking] = useState([]);
+    let[cart, setCart] = useState([]);
+    useEffect(()=>{
+        let items = getBookingItems();
+        let freshCart = [];
+        for(let id in items){
+            let addedProduct = packages.find(index=> index.id == id);
+            if(addedProduct){
+                addedProduct.quantity = items[id];
+                freshCart.push(addedProduct);            
+            }
+            setCart(freshCart);
+        }
+    },[packages, booking]);
   function handleAddToBooking(id) {
         addToBookingDb(id);
         let booked = [];
         booked = [...booking, id];
         setBooking(booked);
-        console.log(id);
     }
   return (
     <div className="App">
