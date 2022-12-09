@@ -9,7 +9,6 @@ const CartIconDisplay = (props) => {
         let url = '/bookingCart';
         navigation(url);
     }
-    console.log(props.cart);
     let quantity = 0;
     props.cart.map(index=>{
         quantity = quantity + index.quantity;
