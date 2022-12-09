@@ -6,7 +6,6 @@ const BookingCart = (props) => {
     
     return (
         <div>
-            <h2>Booking Cart Here : {props.cart?.length}</h2>
             <div className="">
                 {
                     props.cart.map(index=><BookingCartDisplay 

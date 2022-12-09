@@ -36,7 +36,9 @@ function App() {
     addToBookingDb(id);
     if(qty==4){
       const popUpLimitMsg = document.querySelector('.popup-overLimit-msg');
+      const popUpLimitMsgText = document.querySelector('.popup-overLimit-msg p');
       popUpLimitMsg.classList.add('active');
+      popUpLimitMsgText.innerText = "Sorry we don't take Booking for more than 4 Days !";
       let x = setTimeout(() => {
         popUpLimitMsg.classList.remove('active');
       }, 2000);
