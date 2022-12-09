@@ -35,7 +35,12 @@ function App() {
   function handleAddToBooking(id, qty) {
     addToBookingDb(id);
     if(qty==4){
-      console.log('limite crossed');
+      const popUpLimitMsg = document.querySelector('.popup-overLimit-msg');
+      popUpLimitMsg.style.display = 'block'  
+      let x = setInterval(() => {
+        popUpLimitMsg.style.display = 'none'  
+      }, 500);
+      
     }
     let booked = [];
     booked = [...booking, id];
@@ -74,6 +79,9 @@ function App() {
         </Routes>
       </div>
       <CartIconDisplay cart={cart}></CartIconDisplay>
+      <div className="popup-overLimit-msg">
+        <p>Sorry You have crossed the cart limit</p>
+      </div>
     </div>
   );
 }
