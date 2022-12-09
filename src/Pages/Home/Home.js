@@ -5,13 +5,13 @@ import Banner from './Banner/Banner';
 import './Home.css';
 import MyServices from './MyServices/MyServices';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <div className='home-div'>
             <Banner></Banner>
             <About></About>
             <ShowCase></ShowCase>
-            <MyServices></MyServices>
+            <MyServices handleAddToBooking={props.handleAddToBooking}></MyServices>
         </div>
     );
 };
