@@ -1,5 +1,8 @@
 import React from 'react';
-import './BookingCartDisplay.css';
+import './BookingCartDisplay.css';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const BookingCartDisplay = (props) => {
     const { packageCatagoryName, cameraMan, duration, thumbImg , quantity } = props.index;
@@ -12,12 +15,16 @@ const BookingCartDisplay = (props) => {
                     </div>
                     <div className="cart-left-desc">
                         <p>{packageCatagoryName} </p>
-                        <p> {cameraMan} Camera-man </p>
-                        <p> {duration} Hours </p>
+                        <p> <span className='blue-text'>{cameraMan}</span>  Camera-man </p>
+                        <p> <span className='blue-text'>{duration}</span> Hours </p>
                     </div>
                 </div>
                 <div className="cart-card-right">
-                    <h4>{quantity}</h4>
+                    <div className="increment-div">
+                        <span className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
+                        <div> <span className='blue-text'>{quantity}</span>  Days </div>
+                        <span className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
+                    </div>
                 </div>
             </div>
         </div>

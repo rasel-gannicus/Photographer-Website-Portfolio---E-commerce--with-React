@@ -1,0 +1,22 @@
+
+
+.blue-text{
+    color: #007ACC;
+    font-weight: 700;
+}
+
+.increment-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    border: 3px solid ;
+    padding: 5px 10px;
+}
+.increment-icon{
+    cursor: pointer;  
+    font-size: 20px;  
+}
+.increment-icon:hover{
+    color: orangered;
+}
