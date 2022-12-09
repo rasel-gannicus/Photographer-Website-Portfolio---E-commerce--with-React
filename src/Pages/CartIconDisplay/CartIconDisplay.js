@@ -10,12 +10,16 @@ const CartIconDisplay = (props) => {
         navigation(url);
     }
     console.log(props.cart);
+    let quantity = 0;
+    props.cart.map(index=>{
+        quantity = quantity + index.quantity;
+    })
     return (
         <div className="booking-cart-display-parent">
                 <div draggable onClick={goToBookingPage} className="booking-cart-display">
                     <div className="booking-cart-number-parent">
                     <span><FontAwesomeIcon icon={faBook} /></span>
-                        <p  className='booking-cart-number'></p>
+                        <p  className='booking-cart-number'>{quantity}</p>
                     </div>
                 </div>
             </div>
