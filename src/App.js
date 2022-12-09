@@ -32,8 +32,11 @@ function App() {
   }, [packages, booking]); //--- if user added new Booking(by 'Add to Booking' button), local storage will be updated immediately by this dependency.
 
   //--- this function have been passed to the 'Add To Booking' button in 'Wedding & Portrait Packages', So that when user add a package to cart, this function will be triggered. 
-  function handleAddToBooking(id) {
+  function handleAddToBooking(id, qty) {
     addToBookingDb(id);
+    if(qty==4){
+      console.log('limite crossed');
+    }
     let booked = [];
     booked = [...booking, id];
     setBooking(booked);

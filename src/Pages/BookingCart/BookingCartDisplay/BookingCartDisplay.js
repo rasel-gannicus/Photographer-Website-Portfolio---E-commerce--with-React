@@ -6,6 +6,9 @@ import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 const BookingCartDisplay = (props) => {
     const { packageCatagoryName, cameraMan, duration, thumbImg , quantity, id } = props.index;
+    if(quantity>4){
+        console.log('limited');
+    }
     return (
         <div>
             <div className="cart-card">
@@ -24,7 +27,7 @@ const BookingCartDisplay = (props) => {
                     <div className="increment-div">
                         <span draggable onClick={()=>props.decreaseBooking(id)} className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
                         <div> <span className='blue-text'>{quantity}</span>  Days </div>
-                        <span draggable onClick={()=>props.handleAddToBooking(id)} className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
+                        <span draggable onClick={()=>props.handleAddToBooking(id , quantity)} className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                     </div>
                 </div>
             </div>
