@@ -24,7 +24,14 @@ const BookingCart = () => {
     return (
         <div>
             <h2>Booking Cart Here : {cart?.length}</h2>
-            <BookingCartDisplay></BookingCartDisplay>
+            <div className="">
+                {
+                    cart.map(index=><BookingCartDisplay 
+                        index = {index}
+                        key={index.id}
+                    ></BookingCartDisplay>)
+                }
+            </div>
         </div>
     );
 };
