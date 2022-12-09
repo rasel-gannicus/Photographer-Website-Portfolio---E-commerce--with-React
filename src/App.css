@@ -46,7 +46,11 @@
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
-  display: none;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.popup-overLimit-msg.active{
+  opacity: 1;
 }
 .popup-overLimit-msg p{
   margin-bottom: 0;

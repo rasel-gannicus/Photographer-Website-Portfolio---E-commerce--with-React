@@ -36,10 +36,10 @@ function App() {
     addToBookingDb(id);
     if(qty==4){
       const popUpLimitMsg = document.querySelector('.popup-overLimit-msg');
-      popUpLimitMsg.style.display = 'block'  
-      let x = setInterval(() => {
-        popUpLimitMsg.style.display = 'none'  
-      }, 500);
+      popUpLimitMsg.classList.add('active');
+      let x = setTimeout(() => {
+        popUpLimitMsg.classList.remove('active');
+      }, 2000);
       
     }
     let booked = [];
