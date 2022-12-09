@@ -41,7 +41,6 @@ function App() {
 
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
   useEffect(() => {
-    let bookingCartNumber = document.querySelector('.booking-cart-number');
     let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent');
     if(cart.length != 0){
         bookingCartNumberParent.style.display = 'block';
