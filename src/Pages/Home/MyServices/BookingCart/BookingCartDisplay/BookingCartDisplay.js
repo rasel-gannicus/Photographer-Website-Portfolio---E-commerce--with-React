@@ -11,7 +11,9 @@ const BookingCartDisplay = (props) => {
                         <img src={thumbImg} alt="" />
                     </div>
                     <div className="cart-left-desc">
-                        <p>Plan : {packageCatagoryName} </p>
+                        <p>{packageCatagoryName} </p>
+                        <p> {cameraMan} Camera-man </p>
+                        <p> {duration} Hours </p>
                     </div>
                 </div>
                 <div className="cart-card-right">

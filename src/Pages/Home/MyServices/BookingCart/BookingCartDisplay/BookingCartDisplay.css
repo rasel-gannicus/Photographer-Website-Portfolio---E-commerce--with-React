@@ -5,8 +5,31 @@
     justify-content: space-between;
     align-items: center;
     width: 600px;
-    margin: 25px auto;
+    margin: 35px auto;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+.cart-card-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
 }
 .cart-left-img img{
     width: 200px;
+}
+.cart-left-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cart-left-desc p{
+    margin: 7px 0;
+    font-weight: 600;
+}
+.cart-left-desc p:first-child{
+    font-size: 20px;
+    font-weight: 700;
 }
