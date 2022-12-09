@@ -39,6 +39,10 @@ function App() {
     setBooking(booked);
   }
 
+  function decreaseBooking(id){
+    console.log(id);
+  }
+
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
   useEffect(() => {
     let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent');
@@ -58,6 +62,7 @@ function App() {
           <Route path='/bookingCart' element={<BookingCart
           cart = {cart}
           handleAddToBooking={handleAddToBooking}
+          decreaseBooking={decreaseBooking}
           ></BookingCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>

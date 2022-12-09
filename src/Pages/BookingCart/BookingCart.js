@@ -13,6 +13,7 @@ const BookingCart = (props) => {
                         index = {index}
                         key={index.id}
                         handleAddToBooking={props.handleAddToBooking}
+                        decreaseBooking={props.decreaseBooking}
                     ></BookingCartDisplay>)
                 }
             </div>

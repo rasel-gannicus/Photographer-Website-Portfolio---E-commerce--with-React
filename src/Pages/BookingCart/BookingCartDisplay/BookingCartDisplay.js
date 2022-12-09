@@ -22,7 +22,7 @@ const BookingCartDisplay = (props) => {
                 <div className="cart-card-right">
                     <p>Book For</p>
                     <div className="increment-div">
-                        <span className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
+                        <span draggable onClick={()=>props.decreaseBooking(id)} className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
                         <div> <span className='blue-text'>{quantity}</span>  Days </div>
                         <span draggable onClick={()=>props.handleAddToBooking(id)} className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                     </div>
