@@ -6,8 +6,11 @@ import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Error from './Pages/Error/Error';
 import BookingCart from './Pages/Home/MyServices/BookingCart/BookingCart';
+import CartIconDisplay from './Pages/CartIconDisplay/CartIconDisplay';
+import useCart from './utilities/Hooks/useCart';
 
 function App() {
+  let [cart, setCart] = useCart();
   return (
     <div className="App">
       <Header></Header>
@@ -19,6 +22,7 @@ function App() {
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
+      <CartIconDisplay cart={cart}></CartIconDisplay>
     </div>
   );
 }

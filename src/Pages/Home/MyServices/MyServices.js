@@ -25,7 +25,7 @@ const MyServices = () => {
         // }else{
         //     bookingCartNumberParent.style.display = 'none';
         // }
-        bookingCartNumber.innerText = booking.length;
+        // bookingCartNumber.innerText = booking.length;
     }, [booking]);
 
     let navigation = useNavigate();
@@ -46,14 +46,14 @@ const MyServices = () => {
                     ></WeddingPackages>)
                 }
             </div>
-            <div className="booking-cart-display-parent">
+            {/* <div className="booking-cart-display-parent">
                 <div draggable onClick={goToBookingPage} className="booking-cart-display">
                     <div className="booking-cart-number-parent">
                     <span><FontAwesomeIcon icon={faBook} /></span>
                         <p  className='booking-cart-number'></p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
