@@ -25,7 +25,6 @@ const MyServices = (props) => {
         // }else{
         //     bookingCartNumberParent.style.display = 'none';
         // }
-        // bookingCartNumber.innerText = booking.length;
     }, [booking]);
 
     let navigation = useNavigate();
