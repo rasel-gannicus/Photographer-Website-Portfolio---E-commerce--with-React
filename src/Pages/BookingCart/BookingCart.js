@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import usePackages from '../../../../utilities/Hooks/usePackages';
+import useCart from '../../utilities/Hooks/useCart';
 import './BookingCart.css';
-import {getBookingItems} from '../../../../utilities/Local Storage/bookings-storage'
 import BookingCartDisplay from './BookingCartDisplay/BookingCartDisplay';
-import useCart from '../../../../utilities/Hooks/useCart';
 
 const BookingCart = () => {
     let [cart, setCart] = useCart();

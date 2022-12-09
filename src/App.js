@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Error from './Pages/Error/Error';
-import BookingCart from './Pages/Home/MyServices/BookingCart/BookingCart';
+import BookingCart from './Pages/BookingCart/BookingCart';
 import CartIconDisplay from './Pages/CartIconDisplay/CartIconDisplay';
 import useCart from './utilities/Hooks/useCart';
 import { useEffect, useState } from 'react';
