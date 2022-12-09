@@ -2,7 +2,7 @@ import React from 'react';
 import './BookingCartDisplay.css';
 
 const BookingCartDisplay = (props) => {
-    const { packageCatagoryName, cameraMan, duration, thumbImg } = props.index;
+    const { packageCatagoryName, cameraMan, duration, thumbImg , quantity } = props.index;
     return (
         <div>
             <div className="cart-card">
@@ -17,7 +17,7 @@ const BookingCartDisplay = (props) => {
                     </div>
                 </div>
                 <div className="cart-card-right">
-                    <h4>Quantity</h4>
+                    <h4>{quantity}</h4>
                 </div>
             </div>
         </div>
