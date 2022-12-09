@@ -3,7 +3,9 @@
 function addToBookingDb(id){
     let bookings = JSON.parse(localStorage.getItem('booking') || '{}');
     if(bookings[id]){
-        bookings[id] = bookings[id]  + 1;
+        if(bookings[id]<4){
+            bookings[id] = bookings[id]  + 1;
+        }        
     }else{
         bookings[id] = 1 ;
     }
