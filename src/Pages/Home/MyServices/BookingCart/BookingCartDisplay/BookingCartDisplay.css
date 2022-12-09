@@ -1,5 +1,12 @@
 
 
+.cart-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin: 25px auto;
+}
 .cart-left-img img{
     width: 200px;
 }
