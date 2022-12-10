@@ -8,10 +8,7 @@ const BookingCart = (props) => {
     
     return (
         <div>
-            {props.cart.length != 0 && <div onClick={props.clearBookingAll} className="delete-booking-div">
-                <p>Clear All</p>
-                <span><FontAwesomeIcon icon={faTrash} /></span>
-            </div>}
+            
             {props.cart.length == 0 && <div className="back-to-homepage">
                 <h2>No item in Booking Cart</h2>
                 <Link to='/'>Back To Home Page</Link>
@@ -26,6 +23,10 @@ const BookingCart = (props) => {
                     ></BookingCartDisplay>)
                 }
             </div>
+            {props.cart.length != 0 && <div onClick={props.clearBookingAll} className="delete-booking-div">
+                <p>Clear All</p>
+                <span><FontAwesomeIcon icon={faTrash} /></span>
+            </div>}
         </div>
     );
 };

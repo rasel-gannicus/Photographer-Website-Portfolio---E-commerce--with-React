@@ -47,7 +47,7 @@
   bottom: 40px;
   transform: translateX(-50%);
   scale: 0;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .popup-overLimit-msg.active{
   scale: 1;
