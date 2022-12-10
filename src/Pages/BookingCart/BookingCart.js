@@ -7,10 +7,10 @@ const BookingCart = (props) => {
     
     return (
         <div>
-            <div onClick={props.clearBookingAll} className="delete-booking-div">
+            {props.cart.length != 0 && <div onClick={props.clearBookingAll} className="delete-booking-div">
                 <p>Clear All</p>
                 <span><FontAwesomeIcon icon={faTrash} /></span>
-            </div>
+            </div>}
             <div className="">
                 {
                     props.cart.map(index=><BookingCartDisplay 
