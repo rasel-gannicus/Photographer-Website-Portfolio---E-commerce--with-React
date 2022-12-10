@@ -30,19 +30,8 @@ const WeddingPackages = (props) => {
                                 <p>Hours Shooting</p>
                             </div>
                         </div>
-                        {/* <div onClick={bookButton} draggable className="book-button">
-                            <p>Add to Booking</p>
-                        </div> */}
                         <button onClick={bookButton} className="book-button">Add To Booking</button>
                     </div>
-                {/* <div className="package-feature">
-                    <div className="package-features">
-                        <ul>
-                            <li>Calendar Containing Wedding Photos</li>
-                            <li>Diary Containing Your Wedding Photos</li>
-                        </ul>
-                    </div>
-                </div> */}
                 </div>
                 <div className="wedding-card-icon border">
                     <div className="wedding-card-icon-inner">

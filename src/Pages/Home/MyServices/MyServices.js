@@ -13,7 +13,6 @@ const MyServices = (props) => {
     return (
         <div className=' myServices-div my-5 mx-auto border'>
             <h2>My Services</h2>
-            {/* <WeddingService></WeddingService> */}
             <div className="wedding-packages-div">
                 {
                     packages.map(index => <WeddingPackages
