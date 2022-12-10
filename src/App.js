@@ -49,6 +49,7 @@ function App() {
     setBooking(booked);
   }
 
+  //--- this function will decrease the value from the booking cart
   function decreaseBooking(id){
     decreaseFromDb(id);
     let booked = [];
@@ -65,6 +66,10 @@ function App() {
         bookingCartNumberParent.style.display = 'none';
     }
 }, [booking, cart]);
+
+function clearBookingAll(){
+  console.log('clear');
+}
   return (
     <div className="App">
       <Header></Header>
@@ -76,6 +81,7 @@ function App() {
           cart = {cart}
           handleAddToBooking={handleAddToBooking}
           decreaseBooking={decreaseBooking}
+          clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
