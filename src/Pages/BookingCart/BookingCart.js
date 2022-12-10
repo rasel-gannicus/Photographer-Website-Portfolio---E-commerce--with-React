@@ -12,10 +12,10 @@ const BookingCart = (props) => {
                 <p>Clear All</p>
                 <span><FontAwesomeIcon icon={faTrash} /></span>
             </div>}
-            <div className="back-to-homepage">
+            {props.cart.length == 0 && <div className="back-to-homepage">
                 <h2>No item in Booking Cart</h2>
                 <Link to='/'>Back To Home Page</Link>
-            </div>
+            </div>}
             <div className="">
                 {
                     props.cart.map(index=><BookingCartDisplay 
