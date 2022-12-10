@@ -29,7 +29,7 @@ const MyServices = (props) => {
             <hr width='50%' className='mx-auto'/>
             <div className="portrait-packages-div">
                 {
-                    packages.map(index => index.mainCatagory == 'wedding' && <WeddingPackages
+                    packages.map(index => index.mainCatagory == 'portrait' && <WeddingPackages
                         index={index}
                         key={index.id}
                         handleAddToBooking={props.handleAddToBooking}

@@ -36,7 +36,7 @@ const data = [
         mainCatagory : 'portrait',
         cameraMan : '01',
         duration : '02',
-        thumbImg : 'https://i.ibb.co/gJwSYyp/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg',
+        thumbImg : 'https://i.ibb.co/B23VM7J/albert-dera-ILip77-Sbm-OE-unsplash-1.jpg',
         price : 320
     },
     {
@@ -46,7 +46,7 @@ const data = [
         mainCatagory : 'portrait',
         cameraMan : '02',
         duration : '06',
-        thumbImg : 'https://i.ibb.co/J58x7TN/azamat-zhanisov-Br-FBMSVz-SCU-unsplash.jpg',
+        thumbImg : 'https://i.ibb.co/2NtgQqq/bekah-allmark-Qt0og-Pnh-GWY-unsplash-1.jpg',
         price : 699
     },
     {
@@ -56,7 +56,7 @@ const data = [
         mainCatagory : 'portrait',
         cameraMan : '02',
         duration : '08',
-        thumbImg : 'https://i.ibb.co/HPR8brw/karsten-winegeart-Nz0d2wxw0t4-unsplash.jpg',
+        thumbImg : 'https://i.ibb.co/TLK54HD/mahaan-mehranii-1-Gcb-FITR4-M-unsplash-2.jpg',
         price : 999
     },
 ]
