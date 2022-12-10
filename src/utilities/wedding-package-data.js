@@ -42,7 +42,7 @@ const data = [
     {
         id : 5,
         packageCatagory : 'portrait',
-        packageCatagoryName: 'Aesthetic Portrait Plan',
+        packageCatagoryName: 'Aesthetic Portrait',
         mainCatagory : 'portrait',
         cameraMan : '02',
         duration : '06',
@@ -52,7 +52,7 @@ const data = [
     {
         id : 6,
         packageCatagory : 'portrait',
-        packageCatagoryName: 'Glamorous Portrait Plan',
+        packageCatagoryName: 'Glamorous Portrait',
         mainCatagory : 'portrait',
         cameraMan : '02',
         duration : '08',
