@@ -1,4 +1,25 @@
 
+.delete-booking-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    width: 600px;
+    width: 600px;
+    margin: 35px auto;
+    border: 3px solid #253745;
+    border-radius: 5px;
+    padding: 7px 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.delete-booking-div p{
+    margin-bottom: 0;
+}
+.delete-booking-div:hover{
+    background: #FED01A;
+    font-weight: 600;
+}
 
 .cart-card{
     display: flex;
@@ -71,7 +92,10 @@
 /*--------------------------------------------------------------------------
 For mobile:  
 ---------------------------------------------------------------------------*/
-@media only screen and (max-width:480px){
+@media only screen and (max-width:605px){
+    .delete-booking-div{
+        width: 90%;
+    }
     .cart-card{
         display: flex;
         flex-direction: column;
