@@ -28,11 +28,29 @@ const data = [
     },
     {
         id : 4,
-        packageCatagory : 'regular',
-        packageCatagoryName: 'Basic Package',
+        packageCatagory : 'portrait',
+        packageCatagoryName: 'Basic CV Package',
         cameraMan : '01',
         duration : '02',
-        thumbImg : 'https://i.ibb.co/Fxvs434/sandy-millar-8va-QKYnaw-Hw-unsplash.jpg',
-        price : 1050
-    }
+        thumbImg : 'https://i.ibb.co/gJwSYyp/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg',
+        price : 320
+    },
+    {
+        id : 5,
+        packageCatagory : 'portrait',
+        packageCatagoryName: 'Aesthetic Portrait Plan',
+        cameraMan : '02',
+        duration : '06',
+        thumbImg : 'https://i.ibb.co/J58x7TN/azamat-zhanisov-Br-FBMSVz-SCU-unsplash.jpg',
+        price : 699
+    },
+    {
+        id : 6,
+        packageCatagory : 'portrait',
+        packageCatagoryName: 'Glamorous Portrait Plan',
+        cameraMan : '02',
+        duration : '08',
+        thumbImg : 'https://i.ibb.co/HPR8brw/karsten-winegeart-Nz0d2wxw0t4-unsplash.jpg',
+        price : 999
+    },
 ]
