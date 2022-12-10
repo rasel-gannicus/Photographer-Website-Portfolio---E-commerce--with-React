@@ -15,7 +15,7 @@ const MyServices = (props) => {
             <h2>My Services</h2>
             <div className="wedding-packages-div">
                 {
-                    packages.map(index => <WeddingPackages
+                    packages.map(index => index.packageCatagory == 'wedding' && <WeddingPackages
                         index={index}
                         key={index.id}
                         handleAddToBooking={props.handleAddToBooking}
