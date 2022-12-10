@@ -13,6 +13,11 @@
     row-gap: 25px;
     margin: 30px 0;
 }
+.pacakge-heading{
+    color: orangered;
+    margin-top: 50px;
+    font-weight: 600;
+}
 
 
 .booking-cart-display-parent{
