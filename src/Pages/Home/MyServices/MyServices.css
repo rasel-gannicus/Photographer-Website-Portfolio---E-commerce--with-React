@@ -4,13 +4,14 @@
     width: 90%;
     margin: 0 auto;
 }
-.wedding-packages-div{
+.wedding-packages-div , .portrait-packages-div{
     display: flex;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 25px;
+    margin: 30px 0;
 }
 
 

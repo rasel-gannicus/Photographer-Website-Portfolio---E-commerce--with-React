@@ -11,11 +11,20 @@ const MyServices = (props) => {
     const [packages, setPackages] = usePackages();  
     
     return (
-        <div className=' myServices-div my-5 mx-auto border'>
+        <div className=' myServices-div my-5 mx-auto '>
             <h2>My Services</h2>
             <div className="wedding-packages-div">
                 {
-                    packages.map(index => index.packageCatagory == 'wedding' && <WeddingPackages
+                    packages.map(index => index.mainCatagory == 'wedding' && <WeddingPackages
+                        index={index}
+                        key={index.id}
+                        handleAddToBooking={props.handleAddToBooking}
+                    ></WeddingPackages>)
+                }
+            </div>
+            <div className="portrait-packages-div">
+                {
+                    packages.map(index => index.mainCatagory == 'wedding' && <WeddingPackages
                         index={index}
                         key={index.id}
                         handleAddToBooking={props.handleAddToBooking}
