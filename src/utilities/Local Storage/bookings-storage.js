@@ -28,10 +28,15 @@ function decreaseFromDb(id){
     localStorage.setItem('booking', JSON.stringify(bookings));
 }
 
+function deleteFromDb(){
+    localStorage.removeItem('booking');
+}
+
 
 
 export{
     addToBookingDb,
     getBookingItems, 
+    deleteFromDb,
     decreaseFromDb
 }

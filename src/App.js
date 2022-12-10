@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Pages/Header/Header';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useHref } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Error from './Pages/Error/Error';
@@ -9,7 +9,7 @@ import BookingCart from './Pages/BookingCart/BookingCart';
 import CartIconDisplay from './Pages/CartIconDisplay/CartIconDisplay';
 import useCart from './utilities/Hooks/useCart';
 import { useEffect, useState } from 'react';
-import { addToBookingDb, decreaseFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
+import { addToBookingDb, decreaseFromDb, deleteFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
 
 function App() {
@@ -56,6 +56,11 @@ function App() {
     booked = [...booking, id];
     setBooking(booked);
   }
+  function clearBookingAll(){
+    deleteFromDb();
+    window.location.reload();
+    setBooking('');
+  }
 
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
   useEffect(() => {
@@ -67,9 +72,6 @@ function App() {
     }
 }, [booking, cart]);
 
-function clearBookingAll(){
-  console.log('clear');
-}
   return (
     <div className="App">
       <Header></Header>
