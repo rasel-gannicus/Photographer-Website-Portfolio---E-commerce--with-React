@@ -37,7 +37,7 @@ const Header = () => {
                     </div>
                     <NavLink onClick={hideMenu} to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
                     <NavLink onClick={hideMenu} to="/reviews" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Reviews</NavLink>
-                    <NavLink onClick={hideMenu} to="/dashboard" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Dashboard</NavLink>
+                    <NavLink onClick={hideMenu} to="/shop" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Shop</NavLink>
                     <NavLink onClick={hideMenu} to="/blogs" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Blogs</NavLink>
                     <NavLink onClick={hideMenu} to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')} >About</NavLink>
                 </div>

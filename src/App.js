@@ -11,6 +11,7 @@ import useCart from './utilities/Hooks/useCart';
 import { useEffect, useState } from 'react';
 import { addToBookingDb, decreaseFromDb, deleteFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
+import Shop from './Pages/Shop/Shop';
 
 function App() {
 
@@ -85,6 +86,7 @@ function App() {
             decreaseBooking={decreaseBooking}
             clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
+          <Route path='/shop' element={<Shop></Shop>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
