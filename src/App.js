@@ -73,6 +73,11 @@ function App() {
     }
   }, [booking, cart]);
 
+
+  // -----  all Product buy and add to cart Functionality start from here
+  function addProduct(element){
+    console.log(element);
+  }
   return (
     <div className="App">
       <Header></Header>
@@ -86,7 +91,7 @@ function App() {
             decreaseBooking={decreaseBooking}
             clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
-          <Route path='/shop' element={<Shop></Shop>}></Route>
+          <Route path='/shop' element={<Shop addProduct={addProduct}></Shop>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>

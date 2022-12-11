@@ -3,7 +3,7 @@ import useProduct from '../../utilities/Hooks/useProduct';
 import ShopProuduct from '../MyShop/ShopProuduct/ShopProuduct';
 import './Shop.css';
 
-const Shop = () => {
+const Shop = (props) => {
     const[product, setProduct] = useProduct();
     return (
         <div>
@@ -13,6 +13,7 @@ const Shop = () => {
                     product.map(index=><ShopProuduct
                         index = {index}
                         key = {index.img}
+                        addProduct={props.addProduct}
                     ></ShopProuduct>)
                 }
             </div>

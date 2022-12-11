@@ -9,7 +9,7 @@ const ShopProuduct = (props) => {
                 <img src={img} alt="" />
             </div>
             <div className="product-first-div">
-                <button>Add to Cart</button>
+                <button onClick={()=>props.addProduct(img)}>Add to Cart</button>
             </div>
             <div className="product-second-div">
                 <button>Add to Wishlist</button>
