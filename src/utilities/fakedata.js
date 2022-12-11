@@ -96,42 +96,97 @@ let data = [
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/Km7PV9X/street-7.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/7kpLW1Y/street-11.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/X2hqr6d/street-14.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/y0tgQtw/street-19.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/wY5LRPS/street-25.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/MDdyKQL/street-31.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/fXK97RQ/street-37.jpg',
         price : 10
     },
     {
         catagory : 'street',
-        img : '',
+        img : 'https://i.ibb.co/4ZsP2Sg/street-39.jpg',
         price : 10
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/cF0kJQg/street-3.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/qyLDzmC/street-6.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/wgBhJtN/street-8.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/4JzjbF7/street-16.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/dB7c9YK/street-21.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/p445m5n/street-26.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/L6pRVd6/street-28.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/gv54V2B/street-29.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/fCpw0PD/street-35.jpg',
+        price : 13
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/g4Q1v4k/street-38.jpg',
+        price : 13
+    },
+    {
+        catagory : 'citylife',
+        img : '',
+        price : 13
     },
 ]
