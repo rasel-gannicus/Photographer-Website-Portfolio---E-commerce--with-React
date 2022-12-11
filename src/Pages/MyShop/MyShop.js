@@ -12,8 +12,12 @@ const MyShop = () => {
     return (
         <div className='my-5'>
             <h2 className='my-5'>Some Of My Product <br />You Can Buy To Decorate Your Home</h2>
-            <div className="product-show-div ">
-                <ShopProuduct></ShopProuduct>
+            <div className="product-show-div ">                
+                {
+                    product.map(index=><ShopProuduct
+                        index = {index}
+                    ></ShopProuduct>)
+                }
             </div>
         </div>
     );
