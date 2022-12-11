@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../About/About';
+import MyShop from '../MyShop/MyShop';
 import ShowCase from '../ShowCase/ShowCase';
 import Banner from './Banner/Banner';
 import './Home.css';
@@ -12,6 +13,7 @@ const Home = (props) => {
             <About></About>
             <ShowCase></ShowCase>
             <MyServices handleAddToBooking={props.handleAddToBooking}></MyServices>
+            <MyShop></MyShop>
         </div>
     );
 };
