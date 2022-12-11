@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ShopProuduct.css';
 
 const ShopProuduct = () => {
+    useEffect(()=>{
+        fetch('https://raw.githubusercontent.com/shafik720/rest-api/main/photographer-product-list.json')
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+    },[])
     return (
         <div className='product-img-parent'>
             <div className="product-img">
