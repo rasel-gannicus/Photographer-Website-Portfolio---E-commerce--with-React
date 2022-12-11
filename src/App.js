@@ -76,9 +76,13 @@ function App() {
 
 
   // -----  all Product buy and add to cart Functionality start from here
+  
+  // this function will add product to local storage
   function addProduct(element){
     addProductToCart(element);
   }
+
+  
   return (
     <div className="App">
       <Header></Header>
