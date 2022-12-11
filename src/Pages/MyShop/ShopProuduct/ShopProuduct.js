@@ -14,8 +14,9 @@ const ShopProuduct = (props) => {
             <div className="product-second-div">
                 <button>Add to Wishlist</button>
             </div>
-            
-            <p>Price</p>
+            <div className="price">
+                <p>$ {price} </p>
+            </div>            
         </div>
     );
 };

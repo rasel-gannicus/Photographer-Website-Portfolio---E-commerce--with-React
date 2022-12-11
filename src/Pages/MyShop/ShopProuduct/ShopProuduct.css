@@ -77,6 +77,29 @@
     color: black;
 }
 
+.price{
+    background: white;
+    color: #2a2a2a;
+    z-index: 90;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border-radius: 2px;
+    border: 2px solid #253745;
+    /* transition: all 0.1s ease; */
+    opacity: 1;
+}
+.price p{
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 3px 10px;
+}
+.product-img-parent:hover .price{
+    /* bottom: -50px; */
+    /* left: 600px; */
+    opacity: 0;
+}
+
 /* .product-first-div.active{
     top: 25px;
 } */
