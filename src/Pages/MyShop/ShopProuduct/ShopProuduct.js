@@ -10,6 +10,9 @@ const ShopProuduct = () => {
             <div className="product-first-div">
                 <h2>Add To Cart</h2>
             </div>
+            <div className="product-second-div">
+                <h2>Add To Cart</h2>
+            </div>
         </div>
     );
 };
