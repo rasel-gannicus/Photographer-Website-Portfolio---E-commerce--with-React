@@ -186,7 +186,52 @@ let data = [
     },
     {
         catagory : 'citylife',
-        img : '',
-        price : 13
+        img : 'https://i.ibb.co/Rg3Kjxf/street-5.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/SdHDq1V/street-9.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/1zqY3VB/street-12.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/zR0xsH2/street-17.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/vJw63zr/street-18.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/tXkbKTf/street-20.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/1mW0Dy8/street-22.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/BTgKrMX/street-23.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/G35ph54/street-24.jpg',
+        price : 15
+    },
+    {
+        catagory : 'citylife',
+        img : 'https://i.ibb.co/K0zLxbn/street-34.jpg',
+        price : 15
     },
 ]
