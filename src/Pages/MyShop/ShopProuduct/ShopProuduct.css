@@ -25,7 +25,7 @@
 }
 
 .product-first-div{
-    background: white;
+    background: rgba(255, 255, 255, 0.358);
     z-index: 100;
     position: absolute;
     top: -250px;
@@ -38,7 +38,7 @@
     height: 139px;
 }
 .product-second-div{
-    background: white;
+    background: rgba(255, 255, 255, 0.358);
     z-index: 100;
     position: absolute;
     bottom: -250px;
