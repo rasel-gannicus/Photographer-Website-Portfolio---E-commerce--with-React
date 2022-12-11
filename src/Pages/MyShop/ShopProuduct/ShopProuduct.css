@@ -7,7 +7,16 @@
     padding: 25px ;
     background: white;
     margin: auto;
+    position: relative;
+    width: 300px;
+    height: 335px;
+}
+.product-img{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
 }
 .product-img img{
-    width: 250px;
+    width: 100%;
 }
