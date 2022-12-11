@@ -1,0 +1,14 @@
+
+
+.product-img-parent{
+    margin: auto;
+}
+
+.product-img{
+    border: 5px solid #253745 ;
+    padding: 25px ;
+    background: white;
+}
+.product-img img{
+    width: 250px;
+}
