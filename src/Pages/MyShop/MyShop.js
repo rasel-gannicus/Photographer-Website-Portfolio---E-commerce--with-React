@@ -9,13 +9,22 @@ const MyShop = () => {
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[])
+
     const[secondProduct, setSecondProduct] = useState([]);
     let secondProductArray = [];
-    useEffect(()=>{
+    
+    useEffect(()=>{        
         secondProductArray = product.slice(0,3);
         setSecondProduct(secondProductArray);
-        console.log(secondProductArray);
     },[product])
+
+    let[secondCounter, setSecondCounter] = useState(6);
+    function loadMoreProduct(){
+        setSecondCounter(secondCounter+3);
+        console.log(secondCounter);
+        secondProductArray = product.slice(0,secondCounter);
+        setSecondProduct(secondProductArray);
+    }
     return (
         <div className='my-5'>
             <h2 className='my-5'>Some Of My Product <br />You Can Buy To Decorate Your Home</h2>
@@ -23,9 +32,11 @@ const MyShop = () => {
                 {
                     secondProduct.map(index=><ShopProuduct
                         index = {index}
+                        key = {index.img}
                     ></ShopProuduct>)
                 }
             </div>
+            <button onClick={loadMoreProduct}>Load More</button>
         </div>
     );
 };
