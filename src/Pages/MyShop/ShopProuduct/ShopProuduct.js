@@ -8,10 +8,10 @@ const ShopProuduct = () => {
                 <img src="https://i.ibb.co/6PjL5Kb/trevor-buntin-m-Qz-ALy-EB-T4-unsplash-1.jpg" alt="" />
             </div>
             <div className="product-first-div">
-                <h2>Add To Cart</h2>
+                <button>Add to Cart</button>
             </div>
             <div className="product-second-div">
-                <h2>Add To Cart</h2>
+                <button>Add to Wishlist</button>
             </div>
         </div>
     );

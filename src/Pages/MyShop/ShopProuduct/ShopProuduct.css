@@ -36,6 +36,9 @@
     border-right: 3px solid #253745;
     transition: all 0.3s;
     height: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .product-second-div{
     background: rgba(255, 255, 255, 0.358);
@@ -49,12 +52,29 @@
     border-right: 3px solid #253745;
     transition: all 0.3s;
     height: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .product-img-parent:hover .product-first-div{
     top: 25px;
 }
 .product-img-parent:hover .product-second-div{
     bottom: 25px;
+}
+
+
+.product-first-div button, .product-second-div button{
+    background: white;
+    outline: none;
+    padding: 8px 12px;
+    font-weight: 600;
+    color: #253745;
+    border: 3px solid #253745;
+}
+.product-first-div button:hover  , .product-second-div button:hover{
+    background: #FED01A;
+    color: black;
 }
 
 /* .product-first-div.active{
