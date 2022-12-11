@@ -34,7 +34,7 @@ function App() {
   //--- this function have been passed to the 'Add To Booking' button in 'Wedding & Portrait Packages', So that when user add a package to cart, this function will be triggered. 
   function handleAddToBooking(id, qty) {
     addToBookingDb(id);
-    if(qty==4){
+    if (qty == 4) {
       const popUpLimitMsg = document.querySelector('.popup-overLimit-msg');
       const popUpLimitMsgText = document.querySelector('.popup-overLimit-msg p');
       popUpLimitMsg.classList.add('active');
@@ -42,7 +42,7 @@ function App() {
       let x = setTimeout(() => {
         popUpLimitMsg.classList.remove('active');
       }, 2000);
-      
+
     }
     let booked = [];
     booked = [...booking, id];
@@ -50,13 +50,13 @@ function App() {
   }
 
   //--- this function will decrease the value from the booking cart
-  function decreaseBooking(id){
+  function decreaseBooking(id) {
     decreaseFromDb(id);
     let booked = [];
     booked = [...booking, id];
     setBooking(booked);
   }
-  function clearBookingAll(){
+  function clearBookingAll() {
     deleteFromDb();
     window.location.reload();
     setBooking('');
@@ -65,12 +65,12 @@ function App() {
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
   useEffect(() => {
     let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent');
-    if(cart.length != 0){
-        bookingCartNumberParent.style.display = 'block';
-    }else{
-        bookingCartNumberParent.style.display = 'none';
+    if (cart.length != 0) {
+      bookingCartNumberParent.style.display = 'block';
+    } else {
+      bookingCartNumberParent.style.display = 'none';
     }
-}, [booking, cart]);
+  }, [booking, cart]);
 
   return (
     <div className="App">
@@ -80,10 +80,10 @@ function App() {
           <Route path='/' element={<Home handleAddToBooking={handleAddToBooking}></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/bookingCart' element={<BookingCart
-          cart = {cart}
-          handleAddToBooking={handleAddToBooking}
-          decreaseBooking={decreaseBooking}
-          clearBookingAll={clearBookingAll}
+            cart={cart}
+            handleAddToBooking={handleAddToBooking}
+            decreaseBooking={decreaseBooking}
+            clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
