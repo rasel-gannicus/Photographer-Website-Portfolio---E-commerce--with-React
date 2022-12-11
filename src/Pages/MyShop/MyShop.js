@@ -36,7 +36,7 @@ const MyShop = () => {
                     ></ShopProuduct>)
                 }
             </div>
-            <button onClick={loadMoreProduct}>Load More</button>
+            <button className='loadMoreButton' onClick={loadMoreProduct}>Load More</button>
         </div>
     );
 };
