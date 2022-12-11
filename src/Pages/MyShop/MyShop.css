@@ -16,8 +16,8 @@
     transition: all 0.2s;
 }
 .loadMoreButton:hover{
-    background: #007ACC;
-    color: white;
+    background: #FED01A;
+    color: #2a2a2a;
     border: none;
 }
 .loading-text{

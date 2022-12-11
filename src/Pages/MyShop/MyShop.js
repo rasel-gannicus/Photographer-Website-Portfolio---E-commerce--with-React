@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
+import useProduct from '../../utilities/Hooks/useProduct';
 import './MyShop.css';
 import ShopProuduct from './ShopProuduct/ShopProuduct';
 
 const MyShop = () => {
-    const[product, setProduct] = useState([]);
-    useEffect(()=>{
-        fetch('https://raw.githubusercontent.com/shafik720/rest-api/main/photographer-product-list.json')
-        .then(res=>res.json())
-        .then(data=>setProduct(data))
-    },[])
-
+    const[product, setProduct] = useProduct();
     const[secondProduct, setSecondProduct] = useState([]);
     let secondProductArray = [];
     
