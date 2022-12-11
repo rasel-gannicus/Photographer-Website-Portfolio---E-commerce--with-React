@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react';
 import { addToBookingDb, decreaseFromDb, deleteFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
 import Shop from './Pages/Shop/Shop';
+import { addProductToCart } from './utilities/Local Storage/booking-product';
 
 function App() {
 
@@ -76,7 +77,7 @@ function App() {
 
   // -----  all Product buy and add to cart Functionality start from here
   function addProduct(element){
-    console.log(element);
+    addProductToCart(element);
   }
   return (
     <div className="App">
