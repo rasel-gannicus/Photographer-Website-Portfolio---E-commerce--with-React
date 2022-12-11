@@ -84,4 +84,54 @@ let data = [
         img : 'https://i.ibb.co/ssxpNzg/wild-17.jpg',
         price : 35
     },
+    {
+        catagory : 'street',
+        img : 'https://i.ibb.co/znK9D5Z/street-1.jpg',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : 'https://i.ibb.co/HHPYCDg/street-4.jpg',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
+    {
+        catagory : 'street',
+        img : '',
+        price : 10
+    },
 ]
