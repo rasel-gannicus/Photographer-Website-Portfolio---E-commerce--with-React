@@ -1,6 +1,21 @@
 let data = [
     {
         catagory : 'wild',
+        img : 'https://i.ibb.co/QC9v3FN/wild-6.jpg',
+        price : 35
+    },
+    {
+        catagory : 'wild',
+        img : 'https://i.ibb.co/mSr8VgQ/wild-3.jpg',
+        price : 35
+    },
+    {
+        catagory : 'wild',
+        img : 'https://i.ibb.co/d5nTnj8/wild-19.jpg',
+        price : 35
+    },
+    {
+        catagory : 'wild',
         img : 'https://i.ibb.co/M25hy52/wild-1.jpg',
         price : 35
     },
@@ -11,17 +26,7 @@ let data = [
     },
     {
         catagory : 'wild',
-        img : 'https://i.ibb.co/mSr8VgQ/wild-3.jpg',
-        price : 35
-    },
-    {
-        catagory : 'wild',
         img : 'https://i.ibb.co/R3vkCLg/wild-4.jpg',
-        price : 35
-    },
-    {
-        catagory : 'wild',
-        img : 'https://i.ibb.co/QC9v3FN/wild-6.jpg',
         price : 35
     },
     {
@@ -77,11 +82,6 @@ let data = [
     {
         catagory : 'wild',
         img : 'https://i.ibb.co/ssxpNzg/wild-17.jpg',
-        price : 35
-    },
-    {
-        catagory : 'wild',
-        img : 'https://i.ibb.co/d5nTnj8/wild-19.jpg',
         price : 35
     },
 ]
