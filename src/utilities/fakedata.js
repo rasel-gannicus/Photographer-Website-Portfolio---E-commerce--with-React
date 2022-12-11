@@ -5,6 +5,16 @@ let data = [
         price : 35
     },
     {
+        catagory : 'street',
+        img : 'https://i.ibb.co/7kpLW1Y/street-11.jpg',
+        price : 10
+    },
+    {
+        catagory : 'urban',
+        img : 'https://i.ibb.co/gv54V2B/street-29.jpg',
+        price : 13
+    },
+    {
         catagory : 'wild',
         img : 'https://i.ibb.co/mSr8VgQ/wild-3.jpg',
         price : 35
@@ -99,11 +109,7 @@ let data = [
         img : 'https://i.ibb.co/Km7PV9X/street-7.jpg',
         price : 10
     },
-    {
-        catagory : 'street',
-        img : 'https://i.ibb.co/7kpLW1Y/street-11.jpg',
-        price : 10
-    },
+    
     {
         catagory : 'street',
         img : 'https://i.ibb.co/X2hqr6d/street-14.jpg',
@@ -167,11 +173,6 @@ let data = [
     {
         catagory : 'urban',
         img : 'https://i.ibb.co/L6pRVd6/street-28.jpg',
-        price : 13
-    },
-    {
-        catagory : 'urban',
-        img : 'https://i.ibb.co/gv54V2B/street-29.jpg',
         price : 13
     },
     {
