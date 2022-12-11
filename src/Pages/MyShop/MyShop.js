@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import './MyShop.css';
 import ShopProuduct from './ShopProuduct/ShopProuduct';
 
@@ -20,10 +21,14 @@ const MyShop = () => {
 
     let[secondCounter, setSecondCounter] = useState(6);
     function loadMoreProduct(){
-        setSecondCounter(secondCounter+3);
-        console.log(secondCounter);
-        secondProductArray = product.slice(0,secondCounter);
-        setSecondProduct(secondProductArray);
+        document.querySelector('.loading-text').style.display='block';
+        setTimeout(() => {
+            setSecondCounter(secondCounter+3);
+            secondProductArray = product.slice(0,secondCounter);
+            setSecondProduct(secondProductArray);
+            document.querySelector('.loading-text').style.display='none';    
+        }, 700);
+        
     }
     return (
         <div className='my-5'>
@@ -36,6 +41,7 @@ const MyShop = () => {
                     ></ShopProuduct>)
                 }
             </div>
+            <p className='loading-text mt-5'><Spinner animation="border" variant="primary" /></p>
             <button className='loadMoreButton' onClick={loadMoreProduct}>Load More</button>
         </div>
     );
