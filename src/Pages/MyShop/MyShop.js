@@ -9,12 +9,19 @@ const MyShop = () => {
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[])
+    const[secondProduct, setSecondProduct] = useState([]);
+    let secondProductArray = [];
+    useEffect(()=>{
+        secondProductArray = product.slice(0,3);
+        setSecondProduct(secondProductArray);
+        console.log(secondProductArray);
+    },[product])
     return (
         <div className='my-5'>
             <h2 className='my-5'>Some Of My Product <br />You Can Buy To Decorate Your Home</h2>
             <div className="product-show-div ">                
                 {
-                    product.map(index=><ShopProuduct
+                    secondProduct.map(index=><ShopProuduct
                         index = {index}
                     ></ShopProuduct>)
                 }
