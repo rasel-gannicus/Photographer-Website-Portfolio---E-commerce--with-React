@@ -4,7 +4,7 @@ import useProduct from '../../utilities/Hooks/useProduct';
 import './MyShop.css';
 import ShopProuduct from './ShopProuduct/ShopProuduct';
 
-const MyShop = () => {
+const MyShop = (props) => {
     const[product, setProduct] = useProduct();
     const[secondProduct, setSecondProduct] = useState([]);
     let secondProductArray = [];
@@ -33,6 +33,7 @@ const MyShop = () => {
                     secondProduct.map(index=><ShopProuduct
                         index = {index}
                         key = {index.img}
+                        addProduct={props.addProduct}
                     ></ShopProuduct>)
                 }
             </div>

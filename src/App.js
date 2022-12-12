@@ -82,7 +82,7 @@ function App() {
   // this function will add product to local storage
   let [product, setProduct] = useProduct();
   let [toggle, setToggle] = useState([]);
-  
+
   function addProduct(element) {
     let freshCart = [];
     addProductToCart(element);
@@ -103,7 +103,7 @@ function App() {
       setBasket(newCart);
     }
   }, [product, toggle])
-  
+
   //--- showing or hiding 'Product cart' icon when cart is zero or not. if the 'Product Cart' icon is zero there will be no Cart Icon in every webpage. 
   useEffect(() => {
     let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent-two');
@@ -119,7 +119,10 @@ function App() {
       <Header></Header>
       <div className="app-div">
         <Routes>
-          <Route path='/' element={<Home handleAddToBooking={handleAddToBooking}></Home>}></Route>
+          <Route path='/' element={<Home
+            handleAddToBooking={handleAddToBooking}
+            addProduct={addProduct}
+          ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/bookingCart' element={<BookingCart
             cart={cart}

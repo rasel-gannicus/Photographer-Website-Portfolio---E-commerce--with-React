@@ -13,7 +13,7 @@ const Home = (props) => {
             <About></About>
             <ShowCase></ShowCase>
             <MyServices handleAddToBooking={props.handleAddToBooking}></MyServices>
-            <MyShop></MyShop>
+            <MyShop addProduct={props.addProduct}></MyShop>
         </div>
     );
 };
