@@ -10,7 +10,12 @@ function addProductToCart(id){
     localStorage.setItem('photo-product', JSON.stringify(bookings));
 }
 
+function getProductFromCart(){
+    const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
+    return bookings;
+}
 
 export {
-    addProductToCart
+    addProductToCart,
+    getProductFromCart
 }
