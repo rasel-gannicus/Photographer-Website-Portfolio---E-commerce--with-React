@@ -179,11 +179,11 @@ const Shop = (props) => {
 
     return (
         <div>
-            <div className="catagory my-3">
-                <div className="catagory-title">
-                    <p>Cataory : </p>
+            <div className="catagory my-3  ">
+                <div className="catagory-title ">
+                    <p>Catagory : </p>
                 </div>
-                <div className="catagory-detail">
+                <div className="catagory-detail ">
                     <button onClick={showUrban}>Urban</button>
                     <button onClick={showStreet}>Street</button>
                     <button onClick={showWild}>Wild Life</button>

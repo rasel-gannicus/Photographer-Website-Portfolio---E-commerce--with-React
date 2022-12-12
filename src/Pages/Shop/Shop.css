@@ -3,3 +3,17 @@
 .hideMe{
     display: none;
 }
+
+.catagory{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.catagory p{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
