@@ -4,11 +4,11 @@
     bottom: 30px;
     right: 30px;
 }
-.booking-cart-display-parent-two{
+/* .booking-cart-display-parent-two{
     position: fixed;
     bottom: 100px;
     right: 30px;
-}
+} */
 .booking-cart-display{
     position: relative;
     cursor: pointer;

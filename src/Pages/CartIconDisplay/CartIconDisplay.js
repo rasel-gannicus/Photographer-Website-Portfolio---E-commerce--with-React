@@ -28,8 +28,8 @@ const CartIconDisplay = (props) => {
         navigation(url);
     }
     return (
-        <div className="">
-            <div className="booking-cart-display-parent">
+        <div className="booking-cart-display-parent">
+            <div className="booking-cart-display-parent-one">
                 <div draggable onClick={goToBookingPage} className="booking-cart-display">
                     <div className="booking-cart-number-parent">
                         <span><FontAwesomeIcon icon={faBook} /></span>

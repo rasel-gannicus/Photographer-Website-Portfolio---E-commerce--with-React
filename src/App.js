@@ -68,7 +68,7 @@ function App() {
 
   //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
   useEffect(() => {
-    let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent');
+    let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent-one');
     if (cart.length != 0) {
       bookingCartNumberParent.style.display = 'block';
     } else {
@@ -104,6 +104,15 @@ function App() {
     }
   }, [product, toggle])
   
+  //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
+  useEffect(() => {
+    let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent-two');
+    if (basket.length != 0) {
+      bookingCartNumberParent.style.display = 'block';
+    } else {
+      bookingCartNumberParent.style.display = 'none';
+    }
+  }, [toggle, basket]);
 
   return (
     <div className="App">
