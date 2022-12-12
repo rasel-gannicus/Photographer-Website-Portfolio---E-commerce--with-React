@@ -14,6 +14,7 @@ import usePackages from './utilities/Hooks/usePackages';
 import Shop from './Pages/Shop/Shop';
 import { addProductToCart, getProductFromCart } from './utilities/Local Storage/booking-product';
 import useProduct from './utilities/Hooks/useProduct';
+import ProductCart from './ProductCart/ProductCart';
 
 function App() {
 
@@ -118,6 +119,7 @@ function App() {
             clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
           <Route path='/shop' element={<Shop addProduct={addProduct}></Shop>}></Route>
+          <Route path='/productCart' element={<ProductCart></ProductCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
