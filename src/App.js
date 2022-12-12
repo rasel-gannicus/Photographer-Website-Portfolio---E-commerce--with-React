@@ -104,7 +104,7 @@ function App() {
     }
   }, [product, toggle])
   
-  //--- showing or hiding booking cart icon when cart is zero or not. if the Booking Cart icon is zero there will be no Cart Icon in the webpage. 
+  //--- showing or hiding 'Product cart' icon when cart is zero or not. if the 'Product Cart' icon is zero there will be no Cart Icon in every webpage. 
   useEffect(() => {
     let bookingCartNumberParent = document.querySelector('.booking-cart-display-parent-two');
     if (basket.length != 0) {
