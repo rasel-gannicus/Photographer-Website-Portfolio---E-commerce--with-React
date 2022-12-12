@@ -22,7 +22,7 @@
     position: relative;
     width: 55px;
 }
-.booking-cart-number{
+.booking-cart-number , .booking-cart-number-2{
     position: absolute;
     top: -8px;
     right: -7PX;
@@ -36,5 +36,10 @@
     border-radius: 50%;
     font-size: 20px;
     font-weight: 600;
+    border: 1px solid #2c2c2c;
+}
+.booking-cart-number-2{
+    background: darkred;
+    color: white;
     border: 1px solid #2c2c2c;
 }

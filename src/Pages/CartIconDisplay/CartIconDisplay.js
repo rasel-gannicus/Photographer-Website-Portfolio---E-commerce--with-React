@@ -42,7 +42,7 @@ const CartIconDisplay = (props) => {
                 <div draggable onClick={goToProductCartPage} className="booking-cart-display mt-3">
                     <div className="booking-cart-number-parent">
                         <span><FontAwesomeIcon icon={faCartShopping} /></span>
-                        <p className='booking-cart-number'>{productQuantity}</p>
+                        <p className='booking-cart-number-2'>{productQuantity}</p>
                     </div>
                 </div>
             </div>
