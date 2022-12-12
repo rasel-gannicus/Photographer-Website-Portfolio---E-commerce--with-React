@@ -148,6 +148,34 @@ const Shop = (props) => {
 
         }, 500);
     }
+    //--- This function will show only 'All' catagory
+    function showAll() {
+        const spinner = document.querySelector('.spinners');
+        spinner.classList.remove('hideMe');
+
+        setTimeout(() => {
+            spinner.classList.add('hideMe');
+
+            const allProductDiv = document.querySelector('.all-product');
+            allProductDiv.classList.remove('hideMe');
+
+            const urbanDiv = document.querySelector('.urban-product');
+            urbanDiv.classList.add('hideMe');
+
+            const streetDiv = document.querySelector('.street-product');
+            streetDiv.classList.add('hideMe');
+            
+            const wildDiv = document.querySelector('.wild-product');
+            wildDiv.classList.add('hideMe');
+
+            const citylifeDiv = document.querySelector('.citylife-product');
+            citylifeDiv.classList.add('hideMe');
+
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.add('hideMe');
+
+        }, 500);
+    }
 
     return (
         <div>
@@ -158,6 +186,7 @@ const Shop = (props) => {
                 <button onClick={showWild}>Wild Life</button>
                 <button onClick={showCitylife}>City Life </button>
                 <button onClick={otherslife}>Others </button>
+                <button onClick={showAll}>All </button>
             </div>
             <p className="spinners hideMe"><Spinner animation="border" variant="primary" /></p>
 
