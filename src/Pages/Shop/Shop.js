@@ -44,6 +44,9 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'Street Photography';
+
 
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
@@ -72,6 +75,8 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'Wild Photography';
 
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
@@ -101,6 +106,8 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'City Life Photography';
 
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
@@ -130,6 +137,8 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'Others Photography';
 
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
@@ -158,6 +167,8 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'All Photography';
 
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.remove('hideMe');
@@ -197,7 +208,7 @@ const Shop = (props) => {
             </div>
             <p className="spinners hideMe"><Spinner animation="border" variant="primary" /></p>
 
-            <h2 className='mb-4'>Showing <span className='product-title'>All</span> Product </h2>
+            <h2 className='my-5'>Showing <span className='product-title'>All</span> Product </h2>
             {/* -------------- This div will show only 'All' catagory ------------ */}
             <div className="product-show-div all-product">
                 {
