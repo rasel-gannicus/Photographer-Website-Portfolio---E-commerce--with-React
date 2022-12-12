@@ -179,7 +179,7 @@ const Shop = (props) => {
 
     return (
         <div>
-            <div className="catagory my-3  ">
+            <div className="catagory  ">
                 <div className="catagory-title ">
                     <p>Catagory : </p>
                 </div>
