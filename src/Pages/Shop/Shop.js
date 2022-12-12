@@ -5,7 +5,8 @@ import './Shop.css';
 
 const Shop = (props) => {
     const[product, setProduct] = useProduct();
-    function showUrban(element){
+
+    function showUrban(){
         const allProductDiv = document.querySelector('.all-product');
         allProductDiv.classList.add('hideMe');
 
@@ -16,7 +17,7 @@ const Shop = (props) => {
         <div>
             <h2>Shop here</h2>
             <div className="catagory my-3">
-                <button onClick={()=>showUrban('urban')}>Urban</button>
+                <button onClick={showUrban}>Urban</button>
             </div>
             <div className="product-show-div all-product">                
                 {
@@ -27,6 +28,7 @@ const Shop = (props) => {
                     ></ShopProuduct>)
                 }
             </div>
+    {/* -------------- This div will show only 'Urban' catagory ------------ */}
             <div className="product-show-div urban-product hideMe">                
                 {
                     product.map(index=> index.catagory == 'urban' && <ShopProuduct
@@ -36,6 +38,8 @@ const Shop = (props) => {
                     ></ShopProuduct>)
                 }
             </div>
+
+    
         </div>
     );
 };
