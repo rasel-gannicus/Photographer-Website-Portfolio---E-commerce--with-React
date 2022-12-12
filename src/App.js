@@ -12,7 +12,8 @@ import { useEffect, useState } from 'react';
 import { addToBookingDb, decreaseFromDb, deleteFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
 import Shop from './Pages/Shop/Shop';
-import { addProductToCart } from './utilities/Local Storage/booking-product';
+import { addProductToCart, getProductFromCart } from './utilities/Local Storage/booking-product';
+import useProduct from './utilities/Hooks/useProduct';
 
 function App() {
 
@@ -76,14 +77,26 @@ function App() {
 
 
   // -----  all Product buy and add to cart Functionality start from here
-  
+
   // this function will add product to local storage
-  function addProduct(element){
+  let [product, setProduct] = useProduct();
+  function addProduct(element) {
     addProductToCart(element);
   }
 
-  
-  
+  let [basket, setBasket] = useState([]);
+  useEffect(() => {
+    let cartValue = getProductFromCart();
+    let newCart = [];
+    for (let id in cartValue) {
+      let addedProduct = product.find(index => index.img == id);
+      if (addedProduct) {
+        addedProduct.quantity = cartValue[id];
+        newCart.push(addedProduct);
+      }
+      setBasket(newCart);
+    }
+  }, [product])
   return (
     <div className="App">
       <Header></Header>
