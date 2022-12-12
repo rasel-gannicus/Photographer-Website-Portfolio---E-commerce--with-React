@@ -26,6 +26,9 @@ const Shop = (props) => {
             const citylifeDiv = document.querySelector('.citylife-product');
             citylifeDiv.classList.add('hideMe')
 
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.add('hideMe');
+
             const urbanDiv = document.querySelector('.urban-product');
             urbanDiv.classList.remove('hideMe');
         }, 500);
@@ -49,7 +52,10 @@ const Shop = (props) => {
             wildDiv.classList.add('hideMe');
 
             const citylifeDiv = document.querySelector('.citylife-product');
-            citylifeDiv.classList.add('hideMe')
+            citylifeDiv.classList.add('hideMe');
+
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.add('hideMe');
 
             const streetDiv = document.querySelector('.street-product');
             streetDiv.classList.remove('hideMe');
@@ -75,6 +81,9 @@ const Shop = (props) => {
 
             const citylifeDiv = document.querySelector('.citylife-product');
             citylifeDiv.classList.add('hideMe');
+
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.add('hideMe');
             
             const wildDiv = document.querySelector('.wild-product');
             wildDiv.classList.remove('hideMe');
@@ -102,8 +111,40 @@ const Shop = (props) => {
             const wildDiv = document.querySelector('.wild-product');
             wildDiv.classList.add('hideMe');
 
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.add('hideMe');
+
             const citylifeDiv = document.querySelector('.citylife-product');
             citylifeDiv.classList.remove('hideMe');
+
+        }, 500);
+    }
+
+    //--- This function will show only 'Others Div' catagory
+    function otherslife() {
+        const spinner = document.querySelector('.spinners');
+        spinner.classList.remove('hideMe');
+
+        setTimeout(() => {
+            spinner.classList.add('hideMe');
+
+            const allProductDiv = document.querySelector('.all-product');
+            allProductDiv.classList.add('hideMe');
+
+            const urbanDiv = document.querySelector('.urban-product');
+            urbanDiv.classList.add('hideMe');
+
+            const streetDiv = document.querySelector('.street-product');
+            streetDiv.classList.add('hideMe');
+            
+            const wildDiv = document.querySelector('.wild-product');
+            wildDiv.classList.add('hideMe');
+
+            const citylifeDiv = document.querySelector('.citylife-product');
+            citylifeDiv.classList.add('hideMe');
+
+            const othersDiv = document.querySelector('.others-product');
+            othersDiv.classList.remove('hideMe');
 
         }, 500);
     }
@@ -113,9 +154,10 @@ const Shop = (props) => {
             <h2>Shop here</h2>
             <div className="catagory my-3">
                 <button onClick={showUrban}>Urban</button>
-                <button onClick={showStreet}>Street Photography</button>
-                <button onClick={showWild}>Wild Photography</button>
+                <button onClick={showStreet}>Street</button>
+                <button onClick={showWild}>Wild Life</button>
                 <button onClick={showCitylife}>City Life </button>
+                <button onClick={otherslife}>Others </button>
             </div>
             <p className="spinners hideMe"><Spinner animation="border" variant="primary" /></p>
 
@@ -166,6 +208,17 @@ const Shop = (props) => {
             <div className="product-show-div citylife-product hideMe">
                 {
                     product.map(index => index.catagory == 'citylife' && <ShopProuduct
+                        index={index}
+                        key={index.img}
+                        addProduct={props.addProduct}
+                    ></ShopProuduct>)
+                }
+            </div>
+
+            {/* -------------- This div will show only 'Others' catagory ------------ */}
+            <div className="product-show-div others-product hideMe">
+                {
+                    product.map(index => index.catagory == 'others' && <ShopProuduct
                         index={index}
                         key={index.img}
                         addProduct={props.addProduct}
