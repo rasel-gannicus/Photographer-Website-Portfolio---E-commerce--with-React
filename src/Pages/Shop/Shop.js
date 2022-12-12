@@ -14,6 +14,9 @@ const Shop = (props) => {
 
         setTimeout(() => {
             spinner.classList.add('hideMe');
+            let productTitle = document.querySelector('.product-title');
+            productTitle.innerText = 'Urban Photography';
+
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
 
@@ -194,7 +197,7 @@ const Shop = (props) => {
             </div>
             <p className="spinners hideMe"><Spinner animation="border" variant="primary" /></p>
 
-            <h2 className='mb-4'>Showing All Product</h2>
+            <h2 className='mb-4'>Showing <span className='product-title'>All</span> Product </h2>
             {/* -------------- This div will show only 'All' catagory ------------ */}
             <div className="product-show-div all-product">
                 {
