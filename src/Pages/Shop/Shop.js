@@ -16,12 +16,15 @@ const Shop = (props) => {
             spinner.classList.add('hideMe');
             const allProductDiv = document.querySelector('.all-product');
             allProductDiv.classList.add('hideMe');
-
-            const urbanDiv = document.querySelector('.urban-product');
-            urbanDiv.classList.remove('hideMe');
+            
+            const wildDiv = document.querySelector('.wild-product');
+            wildDiv.classList.add('hideMe');
 
             const streetDiv = document.querySelector('.street-product');
             streetDiv.classList.add('hideMe');
+
+            const urbanDiv = document.querySelector('.urban-product');
+            urbanDiv.classList.remove('hideMe');
         }, 500);
     }
 
@@ -38,6 +41,9 @@ const Shop = (props) => {
 
             const urbanDiv = document.querySelector('.urban-product');
             urbanDiv.classList.add('hideMe');
+            
+            const wildDiv = document.querySelector('.wild-product');
+            wildDiv.classList.add('hideMe');
 
             const streetDiv = document.querySelector('.street-product');
             streetDiv.classList.remove('hideMe');
