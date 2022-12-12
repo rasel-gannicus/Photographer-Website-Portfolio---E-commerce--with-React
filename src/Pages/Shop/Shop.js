@@ -194,6 +194,7 @@ const Shop = (props) => {
             </div>
             <p className="spinners hideMe"><Spinner animation="border" variant="primary" /></p>
 
+            <h2 className='mb-4'>Showing All Product</h2>
             {/* -------------- This div will show only 'All' catagory ------------ */}
             <div className="product-show-div all-product">
                 {
