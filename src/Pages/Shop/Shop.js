@@ -27,15 +27,21 @@ const Shop = (props) => {
 
     //--- This function will show only 'Street' catagory
     function showStreet() {
-        const allProductDiv = document.querySelector('.all-product');
-        allProductDiv.classList.add('hideMe');
+        const spinner = document.querySelector('.spinners');
+        spinner.classList.remove('hideMe');
 
-        const urbanDiv = document.querySelector('.urban-product');
-        urbanDiv.classList.add('hideMe');
+        setTimeout(() => {
+            spinner.classList.add('hideMe');
 
-        const streetDiv = document.querySelector('.street-product');
-        streetDiv.classList.remove('hideMe');
+            const allProductDiv = document.querySelector('.all-product');
+            allProductDiv.classList.add('hideMe');
 
+            const urbanDiv = document.querySelector('.urban-product');
+            urbanDiv.classList.add('hideMe');
+
+            const streetDiv = document.querySelector('.street-product');
+            streetDiv.classList.remove('hideMe');
+        }, 500);
     }
 
     return (
