@@ -1,4 +1,4 @@
-import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { faBook ,faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,11 @@ const CartIconDisplay = (props) => {
     props.cart.map(index=>{
         quantity = quantity + index.quantity;
     })
+
+    let productQuantity = 0;
+    props.basket.map(index=>{
+        productQuantity = productQuantity + index.quantity;
+    })
     console.log(props.basket);
     return (
         <div className="booking-cart-display-parent">
@@ -20,6 +25,12 @@ const CartIconDisplay = (props) => {
                     <div className="booking-cart-number-parent">
                     <span><FontAwesomeIcon icon={faBook} /></span>
                         <p  className='booking-cart-number'>{quantity}</p>
+                    </div>
+                </div>
+                <div draggable onClick={goToBookingPage} className="booking-cart-display mt-3">
+                    <div className="booking-cart-number-parent">
+                    <span><FontAwesomeIcon icon={faCartShopping} /></span>
+                        <p  className='booking-cart-number'>{productQuantity}</p>
                     </div>
                 </div>
             </div>
