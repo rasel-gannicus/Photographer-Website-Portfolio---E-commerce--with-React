@@ -20,37 +20,3 @@
 }
 
 
-.booking-cart-display-parent{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
-.booking-cart-display{
-    position: relative;
-    cursor: pointer;
-}
-.booking-cart-display span {
-    font-size: 40px;
-    position: relative;
-}
-
-.booking-cart-number-parent{
-    position: relative;
-    width: 55px;
-}
-.booking-cart-number{
-    position: absolute;
-    top: -8px;
-    right: -7PX;
-    background: #FED01A;
-    margin: 0;
-    width: 35px ;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 600;
-    border: 1px solid #2c2c2c;
-}
