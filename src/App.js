@@ -76,12 +76,17 @@ function App() {
   }, [booking, cart]);
 
 
-  // -----  all Product buy and add to cart Functionality start from here
+  // -----------------------  all Product buy and add to cart Functionality start from here
 
   // this function will add product to local storage
   let [product, setProduct] = useProduct();
+  let [toggle, setToggle] = useState([]);
+  
   function addProduct(element) {
+    let freshCart = [];
     addProductToCart(element);
+    freshCart = [...toggle, element];
+    setToggle(freshCart);
   }
 
   let [basket, setBasket] = useState([]);
@@ -96,7 +101,13 @@ function App() {
       }
       setBasket(newCart);
     }
-  }, [product])
+  }, [product, toggle])
+  
+  // let productQuantity = 0;
+  // basket.map(index=>{
+  //   productQuantity = productQuantity + index.quantity;
+  // })
+  // console.log(productQuantity);
   return (
     <div className="App">
       <Header></Header>
@@ -114,7 +125,7 @@ function App() {
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
-      <CartIconDisplay cart={cart}></CartIconDisplay>
+      <CartIconDisplay cart={cart} basket={basket}></CartIconDisplay>
       <div className="popup-overLimit-msg">
         <p>Sorry You have crossed the cart limit</p>
       </div>
