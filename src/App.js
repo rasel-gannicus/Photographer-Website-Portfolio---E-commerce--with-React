@@ -103,11 +103,7 @@ function App() {
     }
   }, [product, toggle])
   
-  // let productQuantity = 0;
-  // basket.map(index=>{
-  //   productQuantity = productQuantity + index.quantity;
-  // })
-  // console.log(productQuantity);
+
   return (
     <div className="App">
       <Header></Header>
