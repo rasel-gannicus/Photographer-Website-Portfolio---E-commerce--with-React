@@ -7,7 +7,7 @@ const ProductCartDisplay = (props) => {
     const { price, img, quantity } = props.index;
     let costPerUnit = quantity * price;
 
-    
+
     return (
         <div>
             <div className="product-card">
@@ -16,10 +16,13 @@ const ProductCartDisplay = (props) => {
                 <p>Quantity : {quantity} </p>
                 <p>Cost : {costPerUnit} </p>
                 <div className="increment-div my-3 mx-auto">
-                        <span onClick={()=>props.decreaseProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
-                        <div> <span className='blue-text'>{quantity}</span>  Unit </div>
-                        <span onClick={()=>props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
-                    </div>
+                    <span onClick={() => props.decreaseProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
+                    <div> <span className='blue-text'>{quantity}</span>  Unit </div>
+                    <span onClick={() => props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
+                </div>
+                <div className="delete-icon-parent">
+                    <p>Delete</p>
+                </div>
             </div>
         </div>
     );
