@@ -1,21 +1,30 @@
 
 
-function addProductToCart(id){
+function addProductToCart(id) {
     const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
-    if(bookings[id]){
+    if (bookings[id]) {
         bookings[id] = bookings[id] + 1;
-    }else{
-        bookings[id] = 1 ;
+    } else {
+        bookings[id] = 1;
     }
     localStorage.setItem('photo-product', JSON.stringify(bookings));
 }
 
-function getProductFromCart(){
+function getProductFromCart() {
     const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
     return bookings;
 }
 
+function decreaseProductFromCart(id) {
+    const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
+    if (bookings[id]) {
+        bookings[id] = bookings[id] - 1;
+    }
+    localStorage.setItem('photo-product', JSON.stringify(bookings));
+}
+
 export {
     addProductToCart,
-    getProductFromCart
+    getProductFromCart,
+    decreaseProductFromCart
 }
