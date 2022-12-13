@@ -8,7 +8,7 @@ const ProductCartDisplay = (props) => {
         <div>
             <div className="product-card">
                 <img src={img} alt="" />
-                <p>Product cart : {props.index.price} </p>
+                <p>Price Per Unit : <span className='bold-text'>$ {props.index.price}</span> </p>
             </div>
         </div>
     );
