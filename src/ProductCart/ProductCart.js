@@ -6,8 +6,10 @@ import ProductCartDisplay from './ProductCartDisplay/ProductCartDisplay';
 const ProductCart = (props) => {
     
     let price = 0;    
+    let quantity = 0;
     props.basket.map(index=>{
         price = price + (index.price * index.quantity);
+        quantity = quantity + index.quantity;
     })
     return (
         <div className="">
@@ -30,7 +32,9 @@ const ProductCart = (props) => {
         </div>
         
         <div className="cart-calculation">
-                <h2>Price : {price} </h2>
+                <p>Price : {price} </p>
+                <p> Total Quantity : {quantity} </p>
+                <p>Shipping Charge : </p>
             </div>
         </div>
         
