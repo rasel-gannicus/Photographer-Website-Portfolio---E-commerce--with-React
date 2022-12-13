@@ -2,12 +2,12 @@ import React from 'react';
 import './ProductCart.css';
 import ProductCartDisplay from './ProductCartDisplay/ProductCartDisplay';
 
-const ProductCart = ({basket}) => {
-    // console.log(basket);
+const ProductCart = (props) => {
+    // console.log(props.basket);
     return (
         <div>
             {
-                basket.map(index=><ProductCartDisplay
+                props.basket.map(index=><ProductCartDisplay
                     index = {index}
                     key = {index.img}
                 ></ProductCartDisplay>)
