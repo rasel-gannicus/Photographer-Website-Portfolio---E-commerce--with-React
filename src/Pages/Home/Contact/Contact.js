@@ -18,10 +18,13 @@ const Contact = () => {
                             <div className="contact-form">
                                 <h2 className='my-3 fw-bold'>Contact Me </h2>
                                 <div className="input-fields">
-                                    <div className="input-field">
-                                        <input type="text" name="" id="" />
-                                    </div>
-                                    <p>Write Your Name ...</p>
+                                    <form action="">
+                                        <div className="input-field">
+                                            <input type="text" name="" id="" required/>
+                                            <span className='input-placeholder'>Write Your Name </span>
+                                        </div>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>

@@ -12,11 +12,39 @@
 .contact-left img{
     width: 100%;
 }
-.contact-form input{
+
+.input-field{
+    position: relative;
+}
+.input-field input{
     width: 100%;
     height: 50px;
     border: 3px solid #334E60;
     padding: 0 15px;
     color: #334E60;
     box-sizing: border-box;
+    /* z-index: 50; */
+    background: transparent;
+    position: relative;
+}
+.input-field span{
+    position: absolute;
+    display: inline-block;
+    top: 7px;
+    left: 15px;
+    color: #334E60;
+    /* z-index: 20; */
+    transition: all 0.3s ease;
+    background: white;
+    pointer-events: none;
+    font-size: 18px;
+    padding: 3px 5px 1px 5px;
+}
+
+.input-field input:focus ~ .input-placeholder , 
+.input-field input:valid ~ .input-placeholder  {
+    transform: translateY(-20px) translateX(-5px);
+    /* color: black; */
+    font-size: 16px;
+    font-weight: 600;
 }
