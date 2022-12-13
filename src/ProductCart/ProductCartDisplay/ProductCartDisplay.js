@@ -2,10 +2,14 @@ import React from 'react';
 import './ProductCartDisplay.css';
 
 const ProductCartDisplay = (props) => {
-    // console.log(props.basket)
+    const { price, img, quantity } = props.index;
+    console.log(props.index);
     return (
         <div>
-            <h2>Product cart : {props.index.price} </h2>
+            <div className="product-card">
+                <img src={img} alt="" />
+                <p>Product cart : {props.index.price} </p>
+            </div>
         </div>
     );
 };
