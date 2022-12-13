@@ -16,7 +16,7 @@ const ProductCartDisplay = (props) => {
                 <p>Quantity : {quantity} </p>
                 <p>Cost : {costPerUnit} </p>
                 <div className="increment-div my-3 mx-auto">
-                        <span draggable className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
+                        <span onClick={()=>props.decreaseProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
                         <div> <span className='blue-text'>{quantity}</span>  Unit </div>
                         <span onClick={()=>props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                     </div>

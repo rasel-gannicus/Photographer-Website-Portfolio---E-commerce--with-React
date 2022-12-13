@@ -11,6 +11,7 @@ const ProductCart = (props) => {
                     index = {index}
                     key = {index.img}
                     addProduct={props.addProduct}
+                    decreaseProduct={props.decreaseProduct}
                 ></ProductCartDisplay>)
             }
         </div>
