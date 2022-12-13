@@ -95,12 +95,6 @@ function App() {
     freshCart = [...toggle, id];
     setToggle(freshCart);
   }
-  function deleteProduct(id){
-    deleteProductFromCart(id);
-    let freshCart = [];
-    freshCart = [...toggle, id];
-    setToggle(freshCart);
-  }
 
   let [basket, setBasket] = useState([]);
   useEffect(() => {
@@ -115,6 +109,16 @@ function App() {
       setBasket(newCart);
     }
   }, [product, toggle])
+  
+  function deleteProduct(id){
+    deleteProductFromCart(id);
+    let freshCart = [];
+    freshCart = [...toggle, id];
+    setToggle(freshCart);
+    if(basket.length<=1){
+      window.location.reload();
+    }
+  }
 
   //--- showing or hiding 'Product cart' icon when cart is zero or not. if the 'Product Cart' icon is zero there will be no Cart Icon in every webpage. 
   useEffect(() => {
