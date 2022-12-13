@@ -19,9 +19,17 @@ const Contact = () => {
                                 <h2 className='my-3 fw-bold'>Contact Me </h2>
                                 <div className="input-fields">
                                     <form action="">
-                                        <div className="input-field">
+                                        <div className="input-field ">
                                             <input type="text" name="" id="" required/>
-                                            <span className='input-placeholder'>Write Your Name </span>
+                                            <span className='input-placeholder'>Your Name </span>
+                                        </div>
+                                        <div className="input-field ">
+                                            <input type="text" name="" id="" required/>
+                                            <span className='input-placeholder'>Your Email </span>
+                                        </div>
+                                        <div className="input-field ">
+                                            <textarea name="" id="" cols="20" rows="6" required></textarea>
+                                            <span className='input-placeholder'>Your Message </span>
                                         </div>
                                     </form>
 
