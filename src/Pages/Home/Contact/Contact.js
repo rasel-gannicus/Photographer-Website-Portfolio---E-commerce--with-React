@@ -31,6 +31,9 @@ const Contact = () => {
                                             <textarea name="" id="" cols="20" rows="6" required></textarea>
                                             <span className='input-placeholder'>Your Message </span>
                                         </div>
+                                        <div className="message-button-div ">
+                                            <button>Send Message</button>
+                                        </div>
                                     </form>
 
                                 </div>
