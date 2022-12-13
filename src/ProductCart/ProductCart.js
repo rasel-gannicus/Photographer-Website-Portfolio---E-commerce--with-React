@@ -1,11 +1,17 @@
 import React from 'react';
 import './ProductCart.css';
+import ProductCartDisplay from './ProductCartDisplay/ProductCartDisplay';
 
 const ProductCart = ({basket}) => {
     // console.log(basket);
     return (
         <div>
-            <h2>Product Cart Here</h2>
+            {
+                basket.map(index=><ProductCartDisplay
+                    index = {index}
+                    key = {index.img}
+                ></ProductCartDisplay>)
+            }
         </div>
     );
 };
