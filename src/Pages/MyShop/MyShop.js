@@ -27,7 +27,7 @@ const MyShop = (props) => {
     }
     return (
         <div className='my-5'>
-            <h2 className='my-5'>Some Of My Product <br />You Can Buy To Decorate Your Home</h2>
+            <h2 className='my-5'>Some Of My Product <br />You Can Buy To Decorate Your Wall</h2>
             <div className="product-show-div ">                
                 {
                     secondProduct.map(index=><ShopProuduct
