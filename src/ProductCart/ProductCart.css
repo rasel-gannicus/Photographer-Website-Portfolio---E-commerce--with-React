@@ -30,3 +30,14 @@
 .last-tr{
     border-bottom:  2px solid crimson;
 }
+.cart-calculation button{
+    outline:  none;
+    height: 50px ;
+    padding: 0 20px;
+    background: crimson;
+    color: white;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+    box-shadow:  0 10px 15px rgba(0,0,0,0.5);
+}

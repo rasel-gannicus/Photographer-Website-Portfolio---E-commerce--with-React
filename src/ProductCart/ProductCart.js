@@ -1,3 +1,5 @@
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProductCart.css';
@@ -59,6 +61,7 @@ const ProductCart = (props) => {
                         <td> {totalCost} </td>
                     </tr>
                 </table>
+                <button className='my-5'>Proceed To Check Out <FontAwesomeIcon className='ms-3' icon={faArrowRight} /> </button>
             </div>}
         </div>
 
