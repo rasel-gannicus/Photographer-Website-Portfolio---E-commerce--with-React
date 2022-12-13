@@ -21,7 +21,7 @@ const ProductCartDisplay = (props) => {
                     <span onClick={() => props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                 </div>
                 <div className="delete-icon-parent">
-                    <div className='delete-icon'><FontAwesomeIcon icon={faTrashCan} />
+                    <div onClick={()=>props.deleteProduct(img)} draggable className='delete-icon'><FontAwesomeIcon icon={faTrashCan} />
                     </div>
                         <div className="second-delete">
                             <p>Delete</p>

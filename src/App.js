@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 import { addToBookingDb, decreaseFromDb, deleteFromDb, getBookingItems } from './utilities/Local Storage/bookings-storage';
 import usePackages from './utilities/Hooks/usePackages';
 import Shop from './Pages/Shop/Shop';
-import { addProductToCart, decreaseProductFromCart, getProductFromCart } from './utilities/Local Storage/booking-product';
+import { addProductToCart, decreaseProductFromCart, deleteProductFromCart, getProductFromCart } from './utilities/Local Storage/booking-product';
 import useProduct from './utilities/Hooks/useProduct';
 import ProductCart from './ProductCart/ProductCart';
 
@@ -95,6 +95,12 @@ function App() {
     freshCart = [...toggle, id];
     setToggle(freshCart);
   }
+  function deleteProduct(id){
+    deleteProductFromCart(id);
+    let freshCart = [];
+    freshCart = [...toggle, id];
+    setToggle(freshCart);
+  }
 
   let [basket, setBasket] = useState([]);
   useEffect(() => {
@@ -141,6 +147,7 @@ function App() {
           basket={basket}
           addProduct={addProduct}
           decreaseProduct={decreaseProduct}
+          deleteProduct={deleteProduct}
           ></ProductCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
