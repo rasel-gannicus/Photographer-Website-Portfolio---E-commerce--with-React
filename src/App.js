@@ -77,7 +77,7 @@ function App() {
   }, [booking, cart]);
 
 
-  // -----------------------  all Product buy and add to cart Functionality start from here
+  // -----------------------  all 'Product buy and add to cart' Functionality start from here
 
   // this function will add product to local storage
   let [product, setProduct] = useProduct();
@@ -131,7 +131,7 @@ function App() {
             clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
           <Route path='/shop' element={<Shop addProduct={addProduct}></Shop>}></Route>
-          <Route path='/productCart' element={<ProductCart></ProductCart>}></Route>
+          <Route path='/productCart' element={<ProductCart basket={basket}></ProductCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
