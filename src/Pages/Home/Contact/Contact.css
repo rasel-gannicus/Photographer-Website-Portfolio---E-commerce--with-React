@@ -1,6 +1,22 @@
 
 
+.contact-parent{
+    background: white;
+}
 
+.contact-form{
+    /* border: 2px solid; */
+    width: 80%;
+    margin:  0 auto;
+}
 .contact-left img{
-    width: 90%;
+    width: 100%;
+}
+.contact-form input{
+    width: 100%;
+    height: 50px;
+    border: 3px solid #334E60;
+    padding: 0 15px;
+    color: #334E60;
+    box-sizing: border-box;
 }

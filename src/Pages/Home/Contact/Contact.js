@@ -16,7 +16,7 @@ const Contact = () => {
                     <div className="col-lg-6">
                         <div className="h-100">
                             <div className="contact-form">
-                                <h2>Contact Me </h2>
+                                <h2 className='my-3 fw-bold'>Contact Me </h2>
                                 <div className="input-fields">
                                     <div className="input-field">
                                         <input type="text" name="" id="" />
