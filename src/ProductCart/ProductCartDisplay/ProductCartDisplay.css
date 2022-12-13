@@ -30,6 +30,7 @@
     z-index: 50;
     order: 1;
     position: relative;
+    transition: all 0.2s;
 }
 .second-delete{
     background: white;
@@ -42,7 +43,7 @@
     opacity: 0;
     top: 6px;
     right: 30px;
-    /* transform-origin:  right; */
+    transform-origin:  right;
     order: 2;
 }
 .delete-icon-parent:hover .second-delete{
@@ -50,7 +51,9 @@
     width: 80px;
     opacity: 1;
 }
-
+.delete-icon-parent:hover .delete-icon{
+    color: blue;
+}
 
 .product-card img{
     width: 100%;

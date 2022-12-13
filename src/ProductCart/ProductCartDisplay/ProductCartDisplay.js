@@ -1,4 +1,4 @@
-import { faMinus, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faPlus, faTrash, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './ProductCartDisplay.css';
@@ -21,7 +21,7 @@ const ProductCartDisplay = (props) => {
                     <span onClick={() => props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                 </div>
                 <div className="delete-icon-parent">
-                    <div className='delete-icon'><FontAwesomeIcon icon={faTrash} />
+                    <div className='delete-icon'><FontAwesomeIcon icon={faTrashCan} />
                     </div>
                         <div className="second-delete">
                             <p>Delete</p>
