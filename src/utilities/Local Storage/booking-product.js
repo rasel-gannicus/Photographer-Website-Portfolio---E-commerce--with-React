@@ -17,7 +17,7 @@ function getProductFromCart() {
 
 function decreaseProductFromCart(id) {
     const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
-    if (bookings[id]) {
+    if (bookings[id] >=2 ) {
         bookings[id] = bookings[id] - 1;
     }
     localStorage.setItem('photo-product', JSON.stringify(bookings));
