@@ -18,7 +18,7 @@ const ProductCartDisplay = (props) => {
                 <div className="increment-div my-3 mx-auto">
                         <span draggable className='increment-icon'><FontAwesomeIcon icon={faMinus} /></span>
                         <div> <span className='blue-text'>{quantity}</span>  Unit </div>
-                        <span draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
+                        <span onClick={()=>props.addProduct(img)} draggable className='increment-icon'><FontAwesomeIcon icon={faPlus} /></span>
                     </div>
             </div>
         </div>

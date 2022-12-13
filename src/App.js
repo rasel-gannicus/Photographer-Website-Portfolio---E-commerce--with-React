@@ -131,7 +131,10 @@ function App() {
             clearBookingAll={clearBookingAll}
           ></BookingCart>}></Route>
           <Route path='/shop' element={<Shop addProduct={addProduct}></Shop>}></Route>
-          <Route path='/productCart' element={<ProductCart basket={basket}></ProductCart>}></Route>
+          <Route path='/productCart' element={<ProductCart 
+          basket={basket}
+          addProduct={addProduct}
+          ></ProductCart>}></Route>
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>

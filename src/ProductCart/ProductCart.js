@@ -10,6 +10,7 @@ const ProductCart = (props) => {
                 props.basket.map(index=><ProductCartDisplay
                     index = {index}
                     key = {index.img}
+                    addProduct={props.addProduct}
                 ></ProductCartDisplay>)
             }
         </div>
