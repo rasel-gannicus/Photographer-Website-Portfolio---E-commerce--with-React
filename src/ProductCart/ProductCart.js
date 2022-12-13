@@ -12,7 +12,12 @@ const ProductCart = (props) => {
         price = price + (index.price * index.quantity);
         quantity = quantity + index.quantity;        
     })
-    shipping = 50 * quantity;
+    if(quantity<=5){
+        shipping = 50 * quantity;
+    }else{
+        shipping = 50 * 5;
+    }
+    
     return (
         <div className="">
             <div className='product-card-parent-div mx-auto my-4'>
