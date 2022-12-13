@@ -38,7 +38,7 @@ const ProductCart = (props) => {
             </div>}
         </div>
         
-        <div className="cart-calculation">
+        <div className="cart-calculation my-5">
             <table className='mx-auto'>
                 <tr>
                     <td>Price</td>
@@ -49,7 +49,7 @@ const ProductCart = (props) => {
                     <td>{quantity}</td>
                 </tr>
                 <tr>
-                    <td>Shipping Charge :</td>
+                    <td>Shipping Charge : <br /> <small className='text-primary'>(For Order more than 5 unit the Shipping charge will be Free)</small> </td>
                     <td>{shipping}</td>
                 </tr>
             </table>
