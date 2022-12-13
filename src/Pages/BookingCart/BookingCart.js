@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './BookingCart.css';
 import BookingCartDisplay from './BookingCartDisplay/BookingCartDisplay';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus,faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faPlus, faMinus,faTrash, faHome } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const BookingCart = (props) => {
@@ -11,7 +11,7 @@ const BookingCart = (props) => {
             
             {props.cart.length == 0 && <div className="back-to-homepage">
                 <h2>No item in Booking Cart</h2>
-                <Link to='/'>Back To Home Page</Link>
+                <Link to='/'>Back To Home Page <FontAwesomeIcon className='text-danger ms-2' icon={faHome} /> </Link>
             </div>}
             <div className="">
                 {

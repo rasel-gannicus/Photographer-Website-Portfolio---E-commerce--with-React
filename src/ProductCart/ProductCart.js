@@ -1,4 +1,4 @@
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -38,7 +38,7 @@ const ProductCart = (props) => {
                 {/* showing "Back to Home" when cart is empty */}
                 {props.basket.length == 0 && <div className="back-to-homepage">
                     <h2>No item in Cart</h2>
-                    <Link to='/'>Back To Home Page</Link>
+                    <Link to='/'>Back To Home Page <FontAwesomeIcon className='text-danger ms-2' icon={faHome} /> </Link>
                 </div>}
             </div>
 
