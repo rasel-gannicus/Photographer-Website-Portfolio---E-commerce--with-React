@@ -7,10 +7,12 @@ const ProductCart = (props) => {
     
     let price = 0;    
     let quantity = 0;
+    let shipping = 0;
     props.basket.map(index=>{
         price = price + (index.price * index.quantity);
-        quantity = quantity + index.quantity;
+        quantity = quantity + index.quantity;        
     })
+    shipping = 50 * quantity;
     return (
         <div className="">
             <div className='product-card-parent-div mx-auto my-4'>
@@ -32,9 +34,23 @@ const ProductCart = (props) => {
         </div>
         
         <div className="cart-calculation">
-                <p>Price : {price} </p>
+            <table className='mx-auto'>
+                <tr>
+                    <td>Price</td>
+                    <td>{price}</td>
+                </tr>
+                <tr>
+                    <td>Total Quantity :</td>
+                    <td>{quantity}</td>
+                </tr>
+                <tr>
+                    <td>Shipping Charge :</td>
+                    <td>{shipping}</td>
+                </tr>
+            </table>
+                {/* <p>Price : {price} </p>
                 <p> Total Quantity : {quantity} </p>
-                <p>Shipping Charge : </p>
+                <p>Shipping Charge : </p> */}
             </div>
         </div>
         

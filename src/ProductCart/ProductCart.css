@@ -13,3 +13,14 @@
     font-weight: 600;
     margin: 5px 0;
 }
+.cart-calculation table{
+    border: 3px solid #253745;
+    border-radius: 5px;
+}
+.cart-calculation table tr td{
+    text-align: left;
+    padding: 10px 25px;
+}
+.cart-calculation table tr td:nth-child(2) {
+    font-weight: 700;
+}
