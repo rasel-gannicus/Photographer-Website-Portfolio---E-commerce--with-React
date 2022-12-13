@@ -5,7 +5,7 @@ import ProductCartDisplay from './ProductCartDisplay/ProductCartDisplay';
 const ProductCart = (props) => {
     // console.log(props.basket);
     return (
-        <div className='product-card-parent-div'>
+        <div className='product-card-parent-div mx-auto my-4'>
             {
                 props.basket.map(index=><ProductCartDisplay
                     index = {index}
