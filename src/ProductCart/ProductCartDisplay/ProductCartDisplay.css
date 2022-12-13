@@ -6,10 +6,12 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
+    width: 220px;
+    margin: 0 auto;
 }
 
 .product-card img{
-    width: 200px;
+    width: 100%;
 }
 .product-card p{
     font-weight: 600;
@@ -21,4 +23,15 @@
     color: #253745;
     font-weight: 700;
     font-size: 18px;
+}
+
+
+@media only screen and (max-width:500px){
+    .product-card{
+        width: 90%;
+    }
+    .product-card img{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
