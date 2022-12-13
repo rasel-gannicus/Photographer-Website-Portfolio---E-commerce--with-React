@@ -23,8 +23,17 @@ function decreaseProductFromCart(id) {
     localStorage.setItem('photo-product', JSON.stringify(bookings));
 }
 
+function deleteProductFromCart(id){
+    const bookings = JSON.parse(localStorage.getItem('photo-product') || '{}');
+    if (bookings[id]) {
+        delete bookings[id];
+    }
+    localStorage.setItem('photo-product', JSON.stringify(bookings));
+}
+
 export {
     addProductToCart,
     getProductFromCart,
-    decreaseProductFromCart
+    decreaseProductFromCart,
+    deleteProductFromCart
 }

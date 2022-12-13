@@ -1,7 +1,4 @@
-
-
-
-.product-card{
+.product-card {
     border: 3px solid teal;
     padding: 5px;
     display: flex;
@@ -11,31 +8,33 @@
     position: relative;
     overflow: hidden;
 }
-.delete-icon-parent{
+
+.delete-icon-parent {
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
-.delete-icon{
-    z-index: 50 ;
+.delete-icon {
+    z-index: 50;
     background: white;
     width: 40px;
     height: 40px;
-    border-radius: 50%;   
+    border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
     z-index: 50;
     order: 1;
     position: relative;
     transition: all 0.3s ease;
 }
-.second-delete{
+
+.second-delete {
     background: white;
     position: absolute;
-    z-index: 0 ;    
+    z-index: 0;
     /* scale: 0; */
     transition: all 0.2s ease;
     width: 0;
@@ -43,29 +42,32 @@
     opacity: 0;
     top: 6px;
     right: 30px;
-    transform-origin:  right;
+    transform-origin: right;
     order: 2;
 }
-.delete-icon-parent:hover .second-delete{
+
+.delete-icon-parent:hover .second-delete {
     scale: 1;
     width: 80px;
     opacity: 1;
 }
-.delete-icon-parent:hover .delete-icon{
-    color: #90041F;    
-  transform: rotate(360deg);
+
+.delete-icon-parent:hover .delete-icon {
+    color: #90041F;
+    transform: rotate(360deg);
 }
 
-.product-card img{
+.product-card img {
     width: 100%;
 }
-.product-card p{
+
+.product-card p {
     font-weight: 600;
     margin-bottom: 0;
     font-size: 18px;
 }
 
-.bold-text{
+.bold-text {
     color: #253745;
     font-weight: 700;
     font-size: 18px;
@@ -73,11 +75,12 @@
 
 
 
-@media only screen and (max-width:500px){
-    .product-card{
+@media only screen and (max-width:500px) {
+    .product-card {
         width: 100%;
     }
-    .product-card img{
+
+    .product-card img {
         width: 100%;
         margin: 0 auto;
     }
