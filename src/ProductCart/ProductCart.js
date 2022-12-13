@@ -4,7 +4,11 @@ import './ProductCart.css';
 import ProductCartDisplay from './ProductCartDisplay/ProductCartDisplay';
 
 const ProductCart = (props) => {
-    // console.log(props.basket);
+    
+    let price = 0;    
+    props.basket.map(index=>{
+        price = price + (index.price * index.quantity);
+    })
     return (
         <div className="">
             <div className='product-card-parent-div mx-auto my-4'>
@@ -26,7 +30,7 @@ const ProductCart = (props) => {
         </div>
         
         <div className="cart-calculation">
-                <h2>Price : </h2>
+                <h2>Price : {price} </h2>
             </div>
         </div>
         
