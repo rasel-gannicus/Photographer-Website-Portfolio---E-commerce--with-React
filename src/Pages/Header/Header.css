@@ -27,11 +27,13 @@
     display: none;
 }
 
+
 .header-icon-left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 5px;
+    cursor: pointer;
 }
 .header-icon img{
     width: 35px;

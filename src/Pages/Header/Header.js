@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -28,6 +28,12 @@ const Header = () => {
         headerParent.classList.remove('active');
         headerIcon.classList.remove('hidden');
     }
+
+    let navigation = useNavigate();
+    function goHome(){
+        let url = '/';
+        navigation(url);
+    }
     return (
         <div className='header-div'>
             <div className="header-main-parent">
@@ -44,8 +50,8 @@ const Header = () => {
                 </div>
             </div>
             <div className="header-icon">
-                <div className="header-icon-left">
-                    <span><img src={headerLogo} alt="" /></span>
+                <div onClick={goHome} draggable className="header-icon-left">
+                    <img src={headerLogo} alt="" />
                     <h2>Jonathan Wick</h2>
                 </div>
                 <span onClick={showMenu}> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
