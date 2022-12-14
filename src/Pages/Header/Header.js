@@ -2,35 +2,36 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars , faXmark } from '@fortawesome/free-solid-svg-icons';
-import menuLogo from '../../utilities/img/banner-bg.png'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import menuLogo from '../../utilities/img/banner-bg.png';
+import headerLogo from '../../Logo Icon/photographer.png';
 
 
 const Header = () => {
     //---------------- this function will show menu when the bar icon will be clicked in mobile view
-    function showMenu(){
+    function showMenu() {
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
         const headerMain = document.querySelector('.header-main');
-        
+
         headerMain.classList.add('active');
         headerParent.classList.add('active');
         headerIcon.classList.add('hidden');
     }
     //---------------- this function will hide menu when the X-Mark icon will be clicked in mobile view
-    function hideMenu(){
+    function hideMenu() {
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
         const headerMain = document.querySelector('.header-main');
-        
-        headerMain.classList.remove('active');        
+
+        headerMain.classList.remove('active');
         headerParent.classList.remove('active');
         headerIcon.classList.remove('hidden');
     }
     return (
         <div className='header-div'>
             <div className="header-main-parent">
-                <span  onClick={hideMenu} className='cross-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
+                <span onClick={hideMenu} className='cross-icon'><FontAwesomeIcon icon={faXmark}></FontAwesomeIcon> </span>
                 <div className="header-main">
                     <div className="menu-logo">
                         <img src={menuLogo} alt="" />
@@ -43,7 +44,10 @@ const Header = () => {
                 </div>
             </div>
             <div className="header-icon">
-                <h2>PhotoGrapher</h2>
+                <div className="header-icon-left">
+                    <span><img src={headerLogo} alt="" /></span>
+                    <h2>Jonathan Wick</h2>
+                </div>
                 <span onClick={showMenu}> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon> </span>
             </div>
         </div>

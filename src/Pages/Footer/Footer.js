@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footer-bottom">
-                <p className='mb-0'>All Right &copy; Reserved By Jonathan Wick </p>
+                <p className='mb-0'>All Right &copy; Reserved By Shafiqul Hasan Russell </p>
             </div>
         </div>
     );
