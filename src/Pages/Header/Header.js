@@ -19,7 +19,7 @@ const Header = () => {
         headerIcon.classList.add('hidden');
     }
     //---------------- this function will hide menu when the X-Mark icon will be clicked in mobile view
-    function hideMenu() {
+    function hideMenu() { 
         const headerParent = document.querySelector('.header-main-parent');
         const headerIcon = document.querySelector('.header-icon');
         const headerMain = document.querySelector('.header-main');

@@ -95,9 +95,11 @@
         height: 100vh;
         width: 70%;
         transition: all 0.2s ease;
+        z-index: 50000;
     }
     .header-main.active{
         left: 0;
+        z-index: 50000;
     }
 
     .header-icon{
@@ -111,7 +113,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 35px 15px;
-        z-index: 30;
+        z-index: 50000;
         box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
     .header-icon.hidden{
