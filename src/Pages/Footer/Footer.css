@@ -1,5 +1,12 @@
 
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-upper img{
     width: 30px;
 }

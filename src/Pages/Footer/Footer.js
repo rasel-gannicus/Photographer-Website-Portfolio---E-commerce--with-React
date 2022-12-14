@@ -37,6 +37,10 @@ const Footer = () => {
                     <span className='second-logo'><img src={linkedIn2} alt="" /></span>
                 </div>
             </div>
+            <hr />
+            <div className="footer-bottom">
+                <p>All Right &copy; Reserved By Jonathan Wick </p>
+            </div>
         </div>
     );
 };
