@@ -18,8 +18,27 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
-.fb-icon:hover{
-    background: blue;
-    color: white;
+
+.first-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+.second-logo{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+.social-div:hover .first-logo{
+    top: -50%;
+}
+.social-div:hover .second-logo{
+    top: 50%;
 }
