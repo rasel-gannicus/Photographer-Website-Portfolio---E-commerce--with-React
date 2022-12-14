@@ -15,6 +15,7 @@ import Shop from './Pages/Shop/Shop';
 import { addProductToCart, decreaseProductFromCart, deleteProductFromCart, getProductFromCart } from './utilities/Local Storage/booking-product';
 import useProduct from './utilities/Hooks/useProduct';
 import ProductCart from './ProductCart/ProductCart';
+import Footer from './Pages/Footer/Footer';
 
 function App() {
 
@@ -156,6 +157,7 @@ function App() {
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
+      <Footer></Footer>
       <CartIconDisplay cart={cart} basket={basket}></CartIconDisplay>
       <div className="popup-overLimit-msg">
         <p>Sorry You have crossed the cart limit</p>
