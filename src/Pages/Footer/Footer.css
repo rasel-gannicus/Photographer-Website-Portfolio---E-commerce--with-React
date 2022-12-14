@@ -10,6 +10,13 @@
     justify-content: center;
     align-items: center;
 }
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 .social-div{
     border: 3px solid #2a2a2a;
     width: 50px ;
