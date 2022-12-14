@@ -157,11 +157,11 @@ function App() {
           <Route path='*' element={<Error></Error>}></Route>
         </Routes>
       </div>
-      <Footer></Footer>
       <CartIconDisplay cart={cart} basket={basket}></CartIconDisplay>
       <div className="popup-overLimit-msg">
         <p>Sorry You have crossed the cart limit</p>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
