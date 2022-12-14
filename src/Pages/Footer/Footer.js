@@ -14,7 +14,7 @@ import linkedIn2 from '../../Logo Icon/likedin (1).svg'
 
 const Footer = () => {
     return (
-        <div className='footer mt-5'>
+        <div className='footer'>
             <div className="footer-upper">
                 <div className="social-div fb-icon">
                     <span className='first-logo'><img src={facebookLogo} alt="" /></span>
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="footer-bottom">
-                <p>All Right &copy; Reserved By Jonathan Wick </p>
+                <p className='mb-0'>All Right &copy; Reserved By Jonathan Wick </p>
             </div>
         </div>
     );
