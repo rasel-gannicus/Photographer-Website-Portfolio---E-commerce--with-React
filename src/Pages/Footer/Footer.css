@@ -1,6 +1,6 @@
 
 
-.footer-bottom img{
+.footer-upper img{
     width: 30px;
 }
 
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 }
-.footer-bottom{
+.footer-upper{
     display: flex;
     justify-content: center;
     align-items: center;
