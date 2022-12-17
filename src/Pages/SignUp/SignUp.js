@@ -31,10 +31,12 @@ const SignUp = () => {
         e.preventDefault();
         if(password.length<6){
             errorText.innerText = 'Password length must be more than 6 character'
+            return;
         }else if(password !== repassword){
-            errorText.innerText = 'Password is not matched !'
+            errorText.innerText = 'Password is not matched !';
+            return;
         }
-        
+        errorText.innerText = '';
     }
 
     return (
