@@ -5,6 +5,9 @@ import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import auth from '../../utilities/firebase.init';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -16,15 +19,19 @@ const SignUp = () => {
     const[password, setPassword] = useState('');
     const[repassword, setRepassword] = useState('');
 
+    // this function will get email from user and will reserve it to 'email' state
     function handleEmail(e){
         setEmail(e.target.value);
     }
+    // this function will get password from user and will reserve it to 'password' state
     function handlePassword(e){
         setPassword(e.target.value);
     }
+    // this function will get re-password from user and will reserve it to 'repassword' state
     function handleRepassword(e){
         setRepassword(e.target.value);
     }
+    const [createUserWithEmailAndPassword, user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
 
     let errorText = document.querySelector('.error-message p');
     function handleSubmit(e){
