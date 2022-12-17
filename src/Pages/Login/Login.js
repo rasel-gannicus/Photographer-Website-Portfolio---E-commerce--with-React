@@ -4,8 +4,13 @@ import './Login.css';
 import googleLogo from '../../Logo Icon/google.svg';
 import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const navigate = useNavigate();
+    function navigation(){
+        navigate('/signup');
+    }
     return (
         <div className='container'>
             <div className="row">
@@ -25,7 +30,7 @@ const Login = () => {
                                     <button>Login</button>
                                 </div>
                             </form>
-                            <p>Don't have an account ? <span className='text-danger red-text'>Register Here</span> </p>
+                            <p>Don't have an account ? <span onClick={navigation} draggable className='text-danger red-text'>Register Here</span> </p>
                             <div className='or-div'>
                                 <hr />
                                 <p>Or</p>
