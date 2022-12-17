@@ -16,6 +16,7 @@ import { addProductToCart, decreaseProductFromCart, deleteProductFromCart, getPr
 import useProduct from './utilities/Hooks/useProduct';
 import ProductCart from './ProductCart/ProductCart';
 import Footer from './Pages/Footer/Footer';
+import Login from './Pages/Login/Login';
 
 function App() {
 
@@ -141,6 +142,7 @@ function App() {
             addProduct={addProduct}
           ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
+          <Route path='/login' element={<Login></Login>} ></Route>
           <Route path='/bookingCart' element={<BookingCart
             cart={cart}
             handleAddToBooking={handleAddToBooking}
