@@ -34,21 +34,21 @@ const SignUp = () => {
             <div className="input-fields mx-auto login-div ">
                 <h4>Sign Up</h4>
                 <hr width='70%' className='mx-auto' />
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <div className="input-field ">
                         <input type="text" name="" id="" required />
                         <span className='input-placeholder'>Your Name </span>
                     </div>
                     <div className="input-field ">
-                        <input type="text" name="" id="" required />
+                        <input onBlur={handleEmail} type="text" name="" id="" required />
                         <span className='input-placeholder'>Your Email </span>
                     </div>
                     <div className="input-field ">
-                        <input type="password" name="" id="" required />
+                        <input onBlur={handlePassword} type="password" name="" id="" required />
                         <span className='input-placeholder'>Your password </span>
                     </div>
                     <div className="input-field ">
-                        <input type="password" name="" id="" required />
+                        <input onBlur={handleRepassword} type="password" name="" id="" required />
                         <span className='input-placeholder'>Confirm password </span>
                     </div>
                     <div className="message-button-div login-button-div">
