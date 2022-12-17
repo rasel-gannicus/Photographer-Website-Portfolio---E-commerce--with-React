@@ -1,6 +1,10 @@
 import React from 'react';
 import './Login.css';
 
+import googleLogo from '../../Logo Icon/google.svg';
+import facebookLogo from '../../Logo Icon/facebook (1).svg';
+import githubLogo from '../../Logo Icon/github.svg';
+
 const Login = () => {
     return (
         <div className='container'>
@@ -27,7 +31,18 @@ const Login = () => {
                                 <p>Or</p>
                             </div>
                             <div className="social-login-div">
-                                Sign in using
+                                <p>Sign in using</p>
+                                <div className="social-login-div-icon">
+                                    <div className="social-login">
+                                        <img src={googleLogo} alt="" />
+                                    </div>
+                                    <div className="social-login">
+                                        <img src={facebookLogo} alt="" />
+                                    </div>
+                                    <div className="social-login">
+                                        <img src={githubLogo} alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
