@@ -14,3 +14,18 @@
     cursor: pointer;
     font-weight: 600;
 }
+.or-div{
+    position: relative;
+    margin: 25px 0;
+}
+.or-div p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 0 3px;
+    font-weight: 600;
+    font-size: 18px;
+}
