@@ -52,6 +52,7 @@ const SignUp = () => {
     }
     if(error){
         console.log(error);
+        errorText.innerText = `${error.message}`;
     }
     return (
         <div>
@@ -75,6 +76,7 @@ const SignUp = () => {
                         <input onBlur={handleRepassword} type="password" name="" id="" required />
                         <span className='input-placeholder'>Confirm password </span>
                     </div>
+            {/* ------------------ Error message will be shown here ----------------- */}
                     <div className="error-message">
                         <p></p>
                     </div>
