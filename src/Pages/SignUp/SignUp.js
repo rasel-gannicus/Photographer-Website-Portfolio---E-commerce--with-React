@@ -44,8 +44,15 @@ const SignUp = () => {
             return;
         }
         errorText.innerText = '';
+        createUserWithEmailAndPassword(email, password);
+        return;
     }
-
+    if(user){
+        navigate('/');
+    }
+    if(error){
+        console.log(error);
+    }
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
