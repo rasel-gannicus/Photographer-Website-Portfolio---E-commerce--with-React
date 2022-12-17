@@ -6,7 +6,7 @@ import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import auth from '../../utilities/firebase.init';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Spinner } from 'react-bootstrap';
 
 
@@ -32,7 +32,10 @@ const SignUp = () => {
     function handleRepassword(e){
         setRepassword(e.target.value);
     }
+    // sign in with 'email & password' 
     const [createUserWithEmailAndPassword, user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
+    // sign in with 'google' 
+    const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
 
     let errorText = document.querySelector('.error-message p');
     let spinnerSignup = document.querySelector('.spinner-signup');
@@ -52,7 +55,7 @@ const SignUp = () => {
         createUserWithEmailAndPassword(email, password);
         return;
     }
-    if(user){
+    if(user || user2){
         navigate('/');
     }
     if(error){
@@ -99,7 +102,7 @@ const SignUp = () => {
                 <div className="social-login-div">
                     <p>Sign in using</p>
                     <div className="social-login-div-icon">
-                        <div className="social-login">
+                        <div onClick={()=>signInWithGoogle()} draggable className="social-login">
                             <img src={googleLogo} alt="" />
                         </div>
                         <div className="social-login">
