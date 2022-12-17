@@ -35,7 +35,6 @@ const Contact = () => {
                                             <button>Send Message</button>
                                         </div>
                                     </form>
-
                                 </div>
                             </div>
                         </div>
