@@ -3,12 +3,32 @@ import googleLogo from '../../Logo Icon/google.svg';
 import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const SignUp = () => {
     const navigate = useNavigate();
     function navigation() {
         navigate('/login');
     }
+
+    const[email, setEmail] = useState('');
+    const[password, setPassword] = useState('');
+    const[repassword, setRepassword] = useState('');
+
+    function handleEmail(e){
+        setEmail(e.target.value);
+    }
+    function handlePassword(e){
+        setPassword(e.target.value);
+    }
+    function handleRepassword(e){
+        setRepassword(e.target.value);
+    }
+
+    function handleSubmit(e){
+        e.preventDefault();
+    }
+
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
