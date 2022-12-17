@@ -22,6 +22,13 @@ const Login = () => {
                                 </div>
                             </form>
                             <p>Don't have an account ? <span className='text-danger red-text'>Register Here</span> </p>
+                            <div className='or-div'>
+                                <hr />
+                                <p>Or</p>
+                            </div>
+                            <div className="social-login-div">
+                                Sign in using
+                            </div>
                         </div>
                     </div>
                 </div>
