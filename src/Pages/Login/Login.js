@@ -29,7 +29,7 @@ const Login = () => {
                         <button>Login</button>
                     </div>
                 </form>
-                <p>Don't have an account ? <span onClick={navigation} draggable className='text-danger red-text'>Register Here</span> </p>
+                <p>Don't have an account ? <span onClick={navigation} draggable className=' red-text'>Register Here</span> </p>
                 <div className='or-div'>
                     <hr />
                     <p>Or</p>

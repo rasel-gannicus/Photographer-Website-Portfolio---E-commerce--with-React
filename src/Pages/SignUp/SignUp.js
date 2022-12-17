@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import auth from '../../utilities/firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Spinner } from 'react-bootstrap';
 
 
 const SignUp = () => {
@@ -34,13 +35,17 @@ const SignUp = () => {
     const [createUserWithEmailAndPassword, user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
 
     let errorText = document.querySelector('.error-message p');
+    let spinnerSignup = document.querySelector('.spinner-signup');
     function handleSubmit(e){
+        spinnerSignup.style.display = 'block';
         e.preventDefault();
         if(password.length<6){
             errorText.innerText = 'Password length must be more than 6 character'
+            spinnerSignup.style.display = 'none';
             return;
         }else if(password !== repassword){
             errorText.innerText = 'Password is not matched !';
+            spinnerSignup.style.display = 'none';
             return;
         }
         errorText.innerText = '';
@@ -53,6 +58,7 @@ const SignUp = () => {
     if(error){
         console.log(error);
         errorText.innerText = `${error.message}`;
+        spinnerSignup.style.display = 'none';
     }
     return (
         <div>
@@ -78,13 +84,14 @@ const SignUp = () => {
                     </div>
             {/* ------------------ Error message will be shown here ----------------- */}
                     <div className="error-message">
+                        <span className='spinner-signup'><Spinner animation="border"  variant="primary" /></span>
                         <p></p>
                     </div>
                     <div className="message-button-div login-button-div">
                         <button>Login</button>
                     </div>
                 </form>
-                <p>Already have an account ? <span onClick={navigation} draggable className='text-danger red-text'>Login Here</span> </p>
+                <p>Already have an account ? <span onClick={navigation} draggable className='red-text'>Login Here</span> </p>
                 <div className='or-div'>
                     <hr />
                     <p>Or</p>

@@ -5,3 +5,6 @@
 .login-div .input-field span{
     color: #ccc;
 }
+.spinner-signup{
+    display: none;
+}
