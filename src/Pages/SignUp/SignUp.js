@@ -6,7 +6,7 @@ import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import auth from '../../utilities/firebase.init';
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithFacebook, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Spinner } from 'react-bootstrap';
 
 
@@ -36,6 +36,9 @@ const SignUp = () => {
     const [createUserWithEmailAndPassword, user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
     // sign in with 'google' 
     const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
+    // sign in with 'facebook' 
+    const [signInWithFacebook, user3, loading3, error3] = useSignInWithFacebook(auth);
+
 
     let errorText = document.querySelector('.error-message p');
     let spinnerSignup = document.querySelector('.spinner-signup');
@@ -55,7 +58,7 @@ const SignUp = () => {
         createUserWithEmailAndPassword(email, password);
         return;
     }
-    if(user || user2){
+    if(user || user2 || user3){
         navigate('/');
     }
     if(error){
@@ -105,7 +108,7 @@ const SignUp = () => {
                         <div onClick={()=>signInWithGoogle()} draggable className="social-login">
                             <img src={googleLogo} alt="" />
                         </div>
-                        <div className="social-login">
+                        <div onClick={()=>signInWithFacebook()} draggable className="social-login">
                             <img src={facebookLogo} alt="" />
                         </div>
                         <div className="social-login">
