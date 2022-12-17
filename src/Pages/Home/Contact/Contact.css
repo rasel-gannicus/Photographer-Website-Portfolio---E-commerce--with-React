@@ -80,14 +80,14 @@
 .input-field input:focus ~ .input-placeholder , 
 .input-field input:valid ~ .input-placeholder  {
     transform: translateY(-20px) translateX(-5px);
-    /* color: black; */
+    color: black;
     font-size: 16px;
     font-weight: 600;
 }
 .input-field textarea:focus ~ .input-placeholder , 
 .input-field textarea:valid ~ .input-placeholder  {
     transform: translateY(-20px) translateX(-5px);
-    /* color: black; */
+    color: black;
     font-size: 16px;
     font-weight: 600;
 }

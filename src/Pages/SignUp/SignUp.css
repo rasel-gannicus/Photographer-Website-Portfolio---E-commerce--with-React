@@ -2,3 +2,6 @@
 .error-message p{
     color: red;
 }
+.login-div .input-field span{
+    color: #ccc;
+}
