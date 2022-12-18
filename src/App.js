@@ -18,6 +18,7 @@ import ProductCart from './ProductCart/ProductCart';
 import Footer from './Pages/Footer/Footer';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
+import Wishlist from './Pages/Wishlist/Wishlist';
 
 function App() {
 
@@ -144,6 +145,7 @@ function App() {
           ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/login' element={<Login></Login>} ></Route>
+          <Route path='/wishlist' element={<Wishlist></Wishlist>} ></Route>
           <Route path='/signup' element={<SignUp></SignUp>} ></Route>
           <Route path='/bookingCart' element={<BookingCart
             cart={cart}
