@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import menuLogo from '../../utilities/img/banner-bg.png';
 import headerLogo from '../../Logo Icon/photographer.png';
+import auth from '../../utilities/firebase.init';
+import { useAuthState, useSignOut } from 'react-firebase-hooks/auth';
 
 
 const Header = () => {
@@ -34,6 +36,9 @@ const Header = () => {
         let url = '/';
         navigation(url);
     }
+    const [user] = useAuthState(auth);
+    const [signOut] = useSignOut(auth);
+
     return (
         <div className='header-div'>
             <div className="header-main-parent">
@@ -45,7 +50,8 @@ const Header = () => {
                     <NavLink onClick={hideMenu} to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
                     <NavLink onClick={hideMenu} to="/shop" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Shop</NavLink>
                     <NavLink onClick={hideMenu} to="/wishlist" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Wishlist</NavLink>
-                    <NavLink onClick={hideMenu} to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>
+                    {user ? <a onClick={()=>signOut()} href="">Logout</a> : <NavLink onClick={hideMenu} to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>}
+                    
                     <NavLink onClick={hideMenu} to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')} >About</NavLink>
                 </div>
             </div>

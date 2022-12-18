@@ -4,13 +4,15 @@ import './Login.css';
 import googleLogo from '../../Logo Icon/google.svg';
 import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../utilities/firebase.init';
 import { Spinner } from 'react-bootstrap';
 
 const Login = () => {
     const navigate = useNavigate();
+    let location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     function navigation() {
         navigate('/signup');
     }
@@ -41,12 +43,14 @@ const Login = () => {
         e.preventDefault();
         
         signInWithEmailAndPassword(email, password);
+        navigate(from, { replace: true });
         errorText.innerText = '';
 
         return;
     }
     if(user || user2 || user3 || user4){
         navigate('/');
+        navigate(from, { replace: true });
     }
     if(error){
         errorText.innerText = `${error.message}`;
