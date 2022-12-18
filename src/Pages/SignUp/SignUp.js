@@ -32,13 +32,13 @@ const SignUp = () => {
     function handleRepassword(e){
         setRepassword(e.target.value);
     }
-    // sign in with 'email & password' 
+    // sign up with 'email & password' 
     const [createUserWithEmailAndPassword, user,loading,error,] = useCreateUserWithEmailAndPassword(auth);
-    // sign in with 'google' 
+    // sign up with 'google' 
     const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
-    // sign in with 'facebook' 
+    // sign up with 'facebook' 
     const [signInWithFacebook, user3, loading3, error3] = useSignInWithFacebook(auth);
-    // sign in with 'github' 
+    // sign up with 'github' 
     const [signInWithGithub, user4, loading4, error4] = useSignInWithGithub(auth);
 
 

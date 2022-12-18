@@ -5,12 +5,21 @@ import googleLogo from '../../Logo Icon/google.svg';
 import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
+import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../utilities/firebase.init';
 
 const Login = () => {
     const navigate = useNavigate();
     function navigation() {
         navigate('/signup');
     }
+
+    // sign up with 'google' 
+    const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
+    // sign up with 'facebook' 
+    const [signInWithFacebook, user3, loading3, error3] = useSignInWithFacebook(auth);
+    // sign up with 'github' 
+    const [signInWithGithub, user4, loading4, error4] = useSignInWithGithub(auth);
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
@@ -37,13 +46,13 @@ const Login = () => {
                 <div className="social-login-div">
                     <p>Sign in using</p>
                     <div className="social-login-div-icon">
-                        <div className="social-login">
+                        <div onClick={()=>signInWithGoogle()} draggable className="social-login">
                             <img src={googleLogo} alt="" />
                         </div>
-                        <div className="social-login">
+                        <div onClick={()=>signInWithFacebook()} draggable className="social-login">
                             <img src={facebookLogo} alt="" />
                         </div>
-                        <div className="social-login">
+                        <div onClick={()=>signInWithGithub()} draggable className="social-login">
                             <img src={githubLogo} alt="" />
                         </div>
                     </div>
