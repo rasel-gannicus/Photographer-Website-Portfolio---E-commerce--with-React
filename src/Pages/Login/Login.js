@@ -43,7 +43,10 @@ const Login = () => {
         e.preventDefault();
         
         signInWithEmailAndPassword(email, password);
-        navigate(from, { replace: true });
+        if(user || user2 || user3 || user4){
+            navigate('/');
+            navigate(from, { replace: true });
+        }
         errorText.innerText = '';
 
         return;

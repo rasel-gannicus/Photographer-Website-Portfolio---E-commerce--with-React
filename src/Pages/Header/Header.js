@@ -50,7 +50,7 @@ const Header = () => {
                     <NavLink onClick={hideMenu} to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
                     <NavLink onClick={hideMenu} to="/shop" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Shop</NavLink>
                     <NavLink onClick={hideMenu} to="/wishlist" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Wishlist</NavLink>
-                    {user ? <a onClick={()=>signOut()} href="">Logout</a> : <NavLink onClick={hideMenu} to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>}
+                    {user ? <a onClick={signOut} href="">Logout</a> : <NavLink onClick={hideMenu} to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>}
                     
                     <NavLink onClick={hideMenu} to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')} >About</NavLink>
                 </div>
