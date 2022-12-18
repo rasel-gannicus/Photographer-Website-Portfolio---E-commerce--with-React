@@ -5,7 +5,7 @@ import googleLogo from '../../Logo Icon/google.svg';
 import facebookLogo from '../../Logo Icon/facebook (1).svg';
 import githubLogo from '../../Logo Icon/github.svg';
 import { useNavigate } from 'react-router-dom';
-import { useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithFacebook, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../utilities/firebase.init';
 import { Spinner } from 'react-bootstrap';
 
@@ -33,18 +33,37 @@ const Login = () => {
 
     let errorText = document.querySelector('.error-message p');
     let spinnerSignup = document.querySelector('.spinner-signup');
+
+    const [signInWithEmailAndPassword,user, loading,error, ] = useSignInWithEmailAndPassword(auth);
+
+    function handleSubmit(e){
+        spinnerSignup.style.display = 'block';
+        e.preventDefault();
+        
+        signInWithEmailAndPassword(email, password);
+        errorText.innerText = '';
+
+        return;
+    }
+    if(user || user2 || user3 || user4){
+        navigate('/');
+    }
+    if(error){
+        errorText.innerText = `${error.message}`;
+        spinnerSignup.style.display = 'none';
+    }
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
                 <h4>Login</h4>
                 <hr width='70%' className='mx-auto' />
-                <form action="">
+                <form action="" onSubmit={handleSubmit}>
                     <div className="input-field ">
-                        <input type="text" name="" id="" required />
+                        <input onBlur={handleEmail} type="text" name="" id="" required />
                         <span className='input-placeholder'>Your Email </span>
                     </div>
                     <div className="input-field ">
-                        <input type="password" name="" id="" required />
+                        <input onBlur={handlePassword} type="password" name="" id="" required />
                         <span className='input-placeholder'>Your password </span>
                     </div>
                     {/* ------------------ Error message will be shown here ----------------- */}
