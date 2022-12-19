@@ -20,6 +20,7 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import Wishlist from './Pages/Wishlist/Wishlist';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import Blogs from './Pages/Blogs/Blogs';
 
 function App() {
 
@@ -146,6 +147,7 @@ function App() {
           ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/login' element={<Login></Login>} ></Route>
+          <Route path='/blogs' element={<Blogs></Blogs>} ></Route>
           <Route path='/wishlist' element={<RequireAuth><Wishlist></Wishlist></RequireAuth>} ></Route>
           <Route path='/signup' element={<SignUp></SignUp>} ></Route>
           <Route path='/bookingCart' element={<BookingCart
