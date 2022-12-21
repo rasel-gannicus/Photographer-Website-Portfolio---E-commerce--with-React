@@ -18,6 +18,8 @@
 }
 .blog-body{
     text-align: justify;
+    max-height: 300px;
+    overflow:auto
 }
 .blog-footer{    
     display: flex;

@@ -31,10 +31,12 @@ const Blogs = () => {
                     <div className="h-100">
                         <div className='blog-div h-100'>
                             <div className="blog-heading">
-                                <p>What's the difference between authorization and authentication ?</p>
+                                <p>Why we should use firebase ?</p>
                             </div>
                             <div className="blog-body">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde incidunt facere tenetur temporibus perferendis possimus cupiditate officiis similique, eum itaque dolores odit nulla. Quam consequatur, exercitationem est deserunt mollitia non amet odio ipsa sit tempore nam necessitatibus dolor possimus libero aliquid temporibus provident obcaecati odit, quasi rem quaerat. Voluptas, quod!</p>
+                                <p>The Firebase Realtime Database lets you build rich, collaborative applications by allowing secure access to the database directly from client-side code. Data is persisted locally, and even while offline, realtime events continue to fire, giving the end user a responsive experience. When the device regains connection, the Realtime Database synchronizes the local data changes with the remote updates that occurred while the client was offline, merging any conflicts automatically.
+
+                                The Realtime Database provides a flexible, expression-based rules language, called Firebase Realtime Database Security Rules, to define how your data should be structured and when data can be read from or written to. When integrated with Firebase Authentication, developers can define who has access to what data, and how they can access it.</p>
                             </div>
                             <div className="blog-footer">
                                 <div className="blog-footer-img">
