@@ -1,5 +1,22 @@
 
 
+
+.blog-div{
+    border: 3px solid #2C2C2C;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.blog-heading{
+    text-align: center;
+}
+.blog-body{
+    text-align: justify;
+}
 .blog-footer{    
     display: flex;
     justify-content: flex-start;
@@ -8,11 +25,14 @@
 }
 .blog-footer-img{
     border: 2px solid #2C2C2C;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
 }
 .blog-footer img{
     width: 100%;
+}
+.blog-footer-desc p{
+    margin-bottom: 0;
 }

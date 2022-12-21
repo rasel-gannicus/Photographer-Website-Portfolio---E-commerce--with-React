@@ -17,9 +17,12 @@ const Blogs = () => {
                             </div>
                             <div className="blog-footer">
                                 <div className="blog-footer-img">
-                                    <img src={profileLogo} alt=""/>
+                                    <img src={profileLogo} alt="" />
                                 </div>
-                                <h2>Blog Footer</h2>
+                                <div className="blog-footer-desc">
+                                    <p>Jonathan Wick</p>
+                                    <p>Founder, 86 Canvas</p>
+                                </div>
                             </div>
                         </div>
                     </div>
