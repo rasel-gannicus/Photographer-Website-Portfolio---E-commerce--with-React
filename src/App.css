@@ -49,6 +49,7 @@
   scale: 0;
   transition: all 0.2s;
   transform-origin: bottom left;
+  z-index: 500;
 }
 .popup-overLimit-msg.active{
   scale: 1;
