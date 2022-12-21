@@ -4,7 +4,7 @@
 .blog-div{
     border: 3px solid #2C2C2C;
     padding: 20px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -22,6 +22,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    text-align: justify;
 }
 .blog-footer-img{
     border: 2px solid #2C2C2C;
@@ -35,4 +36,8 @@
 }
 .blog-footer-desc p{
     margin-bottom: 0;
+}
+.blog-footer-desc p:first-child{
+    font-weight: 600;
+    color: #334E60;
 }
