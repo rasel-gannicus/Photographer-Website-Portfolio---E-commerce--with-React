@@ -12,7 +12,9 @@
     align-items: flex-start;
 }
 .blog-heading{
-    text-align: center;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
 }
 .blog-body{
     text-align: justify;
