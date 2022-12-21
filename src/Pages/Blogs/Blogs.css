@@ -1,0 +1,18 @@
+
+
+.blog-footer{    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.blog-footer-img{
+    border: 2px solid #2C2C2C;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog-footer img{
+    width: 100%;
+}
