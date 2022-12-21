@@ -54,10 +54,20 @@ const Blogs = () => {
                     <div className="h-100">
                         <div className='blog-div h-100'>
                             <div className="blog-heading">
-                                <p>What's the difference between authorization and authentication ?</p>
+                                <p>What other services does firebase provide other than authentication ?</p>
                             </div>
                             <div className="blog-body">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde incidunt facere tenetur temporibus perferendis possimus cupiditate officiis similique, eum itaque dolores odit nulla. Quam consequatur, exercitationem est deserunt mollitia non amet odio ipsa sit tempore nam necessitatibus dolor possimus libero aliquid temporibus provident obcaecati odit, quasi rem quaerat. Voluptas, quod!</p>
+                                <p>The Other services firebase provide other than authentication :</p>
+                                <ul>
+                                    <li>Realtime database</li>
+                                    <li>Remote Config</li>
+                                    <li>Firebase Extenstions</li>
+                                    <li>App Check</li>
+                                    <li>Cloud Functions</li>
+                                    <li>Cloud Messaging</li>
+                                    <li>Cloud Storage</li>
+                                    
+                                </ul>
                             </div>
                             <div className="blog-footer">
                                 <div className="blog-footer-img">
