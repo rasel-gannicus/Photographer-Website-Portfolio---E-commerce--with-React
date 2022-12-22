@@ -59,6 +59,10 @@ const Login = () => {
         errorText.innerText = `${error.message}`;
         spinnerSignup.style.display = 'none';
     }
+
+    function navigateResetPass(){
+        navigate('/resetPass');
+    }
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
@@ -83,7 +87,7 @@ const Login = () => {
                     </div>
                 </form>
                 
-                <span draggable className='forgot-password'><p>Forgot Password ?</p></span>
+                <span onClick={navigateResetPass} draggable className='forgot-password'><p>Forgot Password ?</p></span>
                 <p>Don't have an account ? <span onClick={navigation} draggable className=' red-text'>Register Here</span> </p>
                 <div className='or-div'>
                     <hr />
