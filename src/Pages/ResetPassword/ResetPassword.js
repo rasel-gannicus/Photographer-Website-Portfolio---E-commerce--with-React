@@ -7,11 +7,12 @@ const ResetPassword = () => {
     function handleEmail(e){
         setEmail(e.target.value);
     }
+    function handleSubmit(e){
+        e.preventDefault();
+    }
     return (
         <div>
             <div className="input-fields mx-auto login-div ">
-                <h4>Login</h4>
-                <hr width='70%' className='mx-auto' />
                 <form action="" onSubmit={handleSubmit}>
                     <div className="input-field ">
                         <input onBlur={handleEmail} type="text" name="" id="" required />
@@ -23,7 +24,7 @@ const ResetPassword = () => {
                         <p></p>
                     </div>
                     <div className="message-button-div login-button-div">
-                        <button>Login</button>
+                        <button>Reset Password</button>
                     </div>
                 </form>
                 
