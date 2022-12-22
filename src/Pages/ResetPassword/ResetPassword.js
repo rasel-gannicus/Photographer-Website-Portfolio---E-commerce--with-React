@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router';
 import auth from '../../utilities/firebase.init';
 
 const ResetPassword = () => {
@@ -17,7 +18,11 @@ const ResetPassword = () => {
         url: 'http://localhost:3000/login',
     };
     let errorText = document.querySelector('.error-message p');
-    let spinnerSignup = document.querySelector('.spinner-signup');
+    let spinnerSignup = document.querySelector('.spinner-signup');    
+    const navigate = useNavigate();
+    function navigation(){
+        navigate('/login');
+    }
     if (error) {
         errorText.innerText = `${error.message}`;
         document.querySelector('.spinner-signup').style.display = 'none';
@@ -46,6 +51,7 @@ const ResetPassword = () => {
                             );
                             if (success) {
                                 alert('Sent email');
+                                navigation();
                             }
                         }}>Reset Password</button>
                     </div>
