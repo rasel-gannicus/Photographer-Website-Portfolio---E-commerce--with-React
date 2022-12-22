@@ -1,6 +1,6 @@
 import React from 'react';
 import './WeddingPackages.css';
-
+ 
 const WeddingPackages = (props) => {
     const{id, packageCatagory, packageCatagoryName, cameraMan, duration, thumbImg, price} = props.index;
     
