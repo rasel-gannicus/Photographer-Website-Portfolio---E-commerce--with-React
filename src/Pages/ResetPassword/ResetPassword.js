@@ -16,15 +16,14 @@ const ResetPassword = () => {
     const actionCodeSettings = {
         url: 'http://localhost:3000/login',
     };
+    let errorText = document.querySelector('.error-message p');
+    let spinnerSignup = document.querySelector('.spinner-signup');
     if (error) {
-        return (
-            <div>
-                <p>Error: {error.message}</p>
-            </div>
-        );
+        errorText.innerText = `${error.message}`;
+        document.querySelector('.spinner-signup').style.display = 'none';
     }
     if (sending) {
-        return <p>Sending...</p>;
+        document.querySelector('.spinner-signup').style.display = 'block';
     }
     return (
         <div>
