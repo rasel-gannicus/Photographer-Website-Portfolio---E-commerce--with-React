@@ -1,14 +1,30 @@
 import React, { useState } from 'react';
 import { Spinner } from 'react-bootstrap';
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import auth from '../../utilities/firebase.init';
 
 const ResetPassword = () => {
-    const[email, setEmail] = useState('');
+    const [email, setEmail] = useState('');
     // this function will get email from user and will reserve it to 'email' state
-    function handleEmail(e){
+    function handleEmail(e) {
         setEmail(e.target.value);
     }
-    function handleSubmit(e){
+    function handleSubmit(e) {
         e.preventDefault();
+    }
+    const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
+    const actionCodeSettings = {
+        url: 'http://localhost:3000/login',
+    };
+    if (error) {
+        return (
+            <div>
+                <p>Error: {error.message}</p>
+            </div>
+        );
+    }
+    if (sending) {
+        return <p>Sending...</p>;
     }
     return (
         <div>
@@ -20,14 +36,22 @@ const ResetPassword = () => {
                     </div>
                     {/* ------------------ Error message will be shown here ----------------- */}
                     <div className="error-message">
-                        <span className='spinner-signup'><Spinner animation="border"  variant="primary" /></span>
+                        <span className='spinner-signup'><Spinner animation="border" variant="primary" /></span>
                         <p></p>
                     </div>
                     <div className="message-button-div login-button-div">
-                        <button>Reset Password</button>
+                        <button onClick={async () => {
+                            const success = await sendPasswordResetEmail(
+                                email,
+                                actionCodeSettings
+                            );
+                            if (success) {
+                                alert('Sent email');
+                            }
+                        }}>Reset Password</button>
                     </div>
                 </form>
-                
+
             </div>
         </div>
     );

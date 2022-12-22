@@ -58,9 +58,10 @@
 }
 .forgot-password p{
     /* margin: 0; */
-    color: blue;
+    color: #528DD7;
     font-size: 14px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 @media only screen and (max-width:430px){
