@@ -21,6 +21,7 @@ import SignUp from './Pages/SignUp/SignUp';
 import Wishlist from './Pages/Wishlist/Wishlist';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Blogs from './Pages/Blogs/Blogs';
+import ResetPassword from './Pages/ResetPassword/ResetPassword';
 
 function App() {
 
@@ -147,6 +148,7 @@ function App() {
           ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/login' element={<Login></Login>} ></Route>
+          <Route path='/resetPass' element={<ResetPassword></ResetPassword>} ></Route>
           <Route path='/blogs' element={<Blogs></Blogs>} ></Route>
           <Route path='/wishlist' element={<RequireAuth><Wishlist></Wishlist></RequireAuth>} ></Route>
           <Route path='/signup' element={<SignUp></SignUp>} ></Route>
