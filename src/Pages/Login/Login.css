@@ -53,6 +53,16 @@
     align-items: center;
 }
 
+.forgot-password{
+    /* text-align: left; */
+}
+.forgot-password p{
+    /* margin: 0; */
+    color: blue;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:430px){
     .login-div{
         width: 90%;

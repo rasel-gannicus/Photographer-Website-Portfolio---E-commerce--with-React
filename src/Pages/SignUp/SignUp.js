@@ -97,7 +97,7 @@ const SignUp = () => {
                         <p></p>
                     </div>
                     <div className="message-button-div login-button-div">
-                        <button>Login</button>
+                        <button>Sign Up</button>
                     </div>
                 </form>
                 <p>Already have an account ? <span onClick={navigation} draggable className='red-text'>Login Here</span> </p>

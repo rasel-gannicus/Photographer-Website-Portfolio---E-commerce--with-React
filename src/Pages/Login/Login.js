@@ -82,6 +82,8 @@ const Login = () => {
                         <button>Login</button>
                     </div>
                 </form>
+                
+                <span draggable className='forgot-password'><p>Forgot Password ?</p></span>
                 <p>Don't have an account ? <span onClick={navigation} draggable className=' red-text'>Register Here</span> </p>
                 <div className='or-div'>
                     <hr />
