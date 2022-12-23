@@ -23,6 +23,7 @@ import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Blogs from './Pages/Blogs/Blogs';
 import ResetPassword from './Pages/ResetPassword/ResetPassword';
 import CheckoutPage from './Pages/CheckoutPage/CheckoutPage';
+import RequireAuth2 from './Pages/RequireAuth2/RequireAuth2';
 
 function App() {
 
@@ -149,7 +150,7 @@ function App() {
           ></Home>}></Route>
           <Route path='/about' element={<About></About>} ></Route>
           <Route path='/login' element={<Login></Login>} ></Route>
-          <Route path='/checkout' element={<CheckoutPage></CheckoutPage>} ></Route>
+          <Route path='/checkout' element={<RequireAuth2><CheckoutPage></CheckoutPage></RequireAuth2>} ></Route>
           <Route path='/resetPass' element={<ResetPassword></ResetPassword>} ></Route>
           <Route path='/blogs' element={<Blogs></Blogs>} ></Route>
           <Route path='/wishlist' element={<RequireAuth><Wishlist></Wishlist></RequireAuth>} ></Route>
