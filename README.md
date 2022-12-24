@@ -25,6 +25,7 @@ This is a website where a photographer portfolio is displayed alongside with e-c
 * The photographer has various photo canvas to sell. User can buy them. Once user hover on the product, 'add to cart' button will be displayed. After Clicking 'add to cart' button, a cart icon will be popped up like the book icon at right bottom corner of the screen. 
 * There is also a part where user can see Photographers works.
 * If user want to go to wishlist page or try to checkout, He/She must be logged in first. For this i have used firebase require authentication system
+* Fully Mobile responsive site.
 
 
 ### Live site link : https://photographer-portfolio-shafik.netlify.app
