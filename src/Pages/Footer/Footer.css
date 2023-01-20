@@ -69,3 +69,8 @@
 .social-div:hover .second-logo{
     top: 50%;
 }
+
+.footer-bottom a{
+    text-decoration: none;
+    color: #007ACC;
+}
