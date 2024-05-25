@@ -11,61 +11,10 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import StreetDisplay from './StreetDisplay/StreetDisplay';
 import WeddingDisplay from './WeddingDisplay/WeddingDisplay';
 import WildDisplay from './WildDisplay/WildDisplay';
+import { hidePopup, showPortrait, showStreet, showWedding, showWild } from '../../utilities/functions/functions';
 
 const ShowCase = () => {
-    // this function will show popup display for potrait photography works
-    function showPortrait() {
-        const popupParent = document.querySelector('.showcase-popup-parent');
-        const showPopPotrait = document.querySelector('.show-popup-portrait');
 
-        popupParent.classList.add('active');
-        showPopPotrait.classList.add('active');
-    }
-
-    // this function will show popup display for street photography works
-    function showStreet(){
-        const popupParent = document.querySelector('.showcase-popup-parent');
-        popupParent.classList.add('active');
-
-        const showStreet = document.querySelector('.show-popup-street');
-        showStreet.classList.add('active');
-    }
-
-    // this function will show popup display for Wedding photography works
-    function showWedding(){
-        const popupParent = document.querySelector('.showcase-popup-parent');
-        popupParent.classList.add('active');
-
-        const showWedding = document.querySelector('.show-popup-wedding');
-        showWedding.classList.add('active');
-    }
-
-    // this function will show popup display for Wedding photography works
-    function showWild(){
-        const popupParent = document.querySelector('.showcase-popup-parent');
-        popupParent.classList.add('active');
-
-        const showWild = document.querySelector('.show-popup-wild');
-        showWild.classList.add('active');
-    }
-
-    //-------------------------- this function will hide the popup display when clicking x button
-    function hidePopup() {
-        const popupParent = document.querySelector('.showcase-popup-parent');
-        popupParent.classList.remove('active');
-
-        const showPopPotrait = document.querySelector('.show-popup-portrait');
-        showPopPotrait.classList.remove('active');        
-
-        const showStreet = document.querySelector('.show-popup-street');
-        showStreet.classList.remove('active');
-
-        const showWedding = document.querySelector('.show-popup-wedding');
-        showWedding.classList.remove('active');
-
-        const showWild = document.querySelector('.show-popup-wild');
-        showWild.classList.remove('active');
-    }
     return (
         <div className='container showCase-div mx-auto'>
             <h2 className='fw-bold my-5'>My Works</h2>
