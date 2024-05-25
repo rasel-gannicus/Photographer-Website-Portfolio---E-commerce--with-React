@@ -2,3 +2,8 @@
 .app-div{
     margin-top: 50px;
 }
+
+.home-div{
+    max-width: 1550px;
+    margin: auto;
+}
