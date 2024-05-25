@@ -14,7 +14,7 @@
     width: 100%;
     padding-top: 50px;
     z-index: 20;
-    background: #99B1BB;
+    background: #324E60;
 }
 
 .footer-upper img{
@@ -70,7 +70,11 @@
     top: 50%;
 }
 
+.footer-bottom {
+    color: white;
+}
 .footer-bottom a{
     text-decoration: none;
     color: #007ACC;
+    font-weight: 600;
 }

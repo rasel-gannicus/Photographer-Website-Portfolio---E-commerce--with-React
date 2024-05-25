@@ -2,7 +2,6 @@ import React from 'react';
 import PortraitShowcase from './PortraitShowcase/PortraitShowcase';
 import PotraitDisplay from './PotraitDisplay/PotraitDisplay';
 import './ShowCase.css';
-import ShowcasePopup from './ShowcasePopup/ShowcasePopup';
 import StreetShowcase from './StreetShowcase/StreetShowcase';
 import WeddingShowcase from './WeddingShowcase/WeddingShowcase';
 import WildlifeShowcase from './WildlifeShowcase/WildlifeShowcase';
